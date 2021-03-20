@@ -5,3 +5,16 @@ msm_is_installed = {
 msm_is_uninstalled = {
 	always = no
 }
+
+# MSM_FLAG = unique (leader) flag across all mods
+# TODO remove negation on 3.0
+msm_is_registered_mod = {
+	NOT = {
+		exists = event_target:msm_global_country
+		event_target:msm_global_country = {
+			any_owned_leader = {
+				has_leader_flag = $MSM_FLAG$
+			}
+		}
+	}
+}
