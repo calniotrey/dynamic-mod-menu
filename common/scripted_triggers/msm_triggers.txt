@@ -1,0 +1,7 @@
+msm_is_installed = {
+	always = yes
+}
+
+msm_is_uninstalled = {
+	always = no
+}
