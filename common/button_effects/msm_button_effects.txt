@@ -1,0 +1,30 @@
+#Scope type varies depending on what is selected
+# This = selected object or player country
+# From = player country
+msm_button_effect = {
+	potential = {
+		always = yes
+	}
+	allow = {
+		# always = yes
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = msm_opened
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = msm_button_effect_tooltip
+		hidden_effect = {
+			save_event_target_as = msm_country_caller
+			set_variable = {
+				which = msm_starting_leader_index
+				value = 0
+			}
+			set_country_flag = msm_opened
+			country_event = {
+				id = msm_events.0
+			}
+		}
+	}
+}

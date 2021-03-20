@@ -1,0 +1,377 @@
+# FLAG = unique flag across all mods
+# NAME = name displayed on the button
+msm_register_mod = {
+	msm_create_global_country_if_needed = yes
+	event_target:msm_global_country = {
+		if = {
+			limit = {
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = $MSM_FLAG$
+					}
+				}
+			}
+			create_leader = {
+				class = general
+				name = random
+				species = event_target:msm_global_species
+				immortal = yes
+			}
+			last_created_leader = {
+				set_name = $MSM_NAME$
+				set_leader_flag = $MSM_FLAG$
+			}
+		}
+	}
+}
+
+# FLAG = unique flag across all mods
+msm_deregister_mod = {
+	msm_create_global_country_if_needed = yes
+	event_target:msm_global_country = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = $MSM_FLAG$
+			}
+			kill_leader = {
+				type = general
+			}
+		}
+	}
+}
+
+# INDEX = index of the leader
+msm_call_mod_menu = {
+	msm_close_msm_menu = yes
+	# event_target:msm_leader_$INDEX$ = {
+	# 	# TODO call thing
+	# }
+	if = {
+		limit = {
+			always = no
+		}
+		set_global_flag = $INDEX$
+	}
+}
+
+msm_close_msm_menu = {
+	msm_clear_variable_list = yes
+	set_variable = {
+		which = msm_starting_leader_index
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_index
+		value = 0
+	}
+	remove_country_flag = msm_opened
+}
+
+msm_create_global_country_if_needed = {
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:msm_global_country
+			}
+		}
+		create_species = {
+			class = MOL
+			portrait = mol17
+			effect = {
+				save_global_event_target_as = msm_global_species
+			}
+		}
+		create_country = {
+			type = msm_global_country
+			name = "MSM Global Event Country"
+			species = event_target:msm_global_species
+			effect = {
+				save_global_event_target_as = msm_global_country
+			}
+		}
+	}
+}
+
+msm_clear_variable_list = {
+	set_variable = {
+		which = msm_leader_0
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_1
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_2
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_3
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_4
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_5
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_6
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_7
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_8
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_9
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_a
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_b
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_c
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_d
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_e
+		value = 0
+	}
+	set_variable = {
+		which = msm_leader_f
+		value = 0
+	}
+}
+
+# this = caller country
+# prev = leader
+# msm_leader_index < 0
+msm_store_leader_list = {
+	if = {
+		limit = {
+			check_variable = {
+				which = msm_leader_index
+				value < -8
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = msm_leader_index
+					value < -12
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = msm_leader_index
+						value < -14
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = msm_leader_index
+							value < -15
+						}
+					}
+					msm_store_leader = {
+						INDEX = f
+					}
+				}
+				else = {
+					msm_store_leader = {
+						INDEX = e
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							which = msm_leader_index
+							value < -13
+						}
+					}
+					msm_store_leader = {
+						INDEX = d
+					}
+				}
+				else = {
+					msm_store_leader = {
+						INDEX = c
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = msm_leader_index
+						value < -10
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = msm_leader_index
+							value < -11
+						}
+					}
+					msm_store_leader = {
+						INDEX = b
+					}
+				}
+				else = {
+					msm_store_leader = {
+						INDEX = a
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							which = msm_leader_index
+							value < -9
+						}
+					}
+					msm_store_leader = {
+						INDEX = 9
+					}
+				}
+				else = {
+					msm_store_leader = {
+						INDEX = 8
+					}
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				check_variable = {
+					which = msm_leader_index
+					value < -4
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = msm_leader_index
+						value < -6
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = msm_leader_index
+							value < -7
+						}
+					}
+					msm_store_leader = {
+						INDEX = 7
+					}
+				}
+				else = {
+					msm_store_leader = {
+						INDEX = 6
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							which = msm_leader_index
+							value < -5
+						}
+					}
+					msm_store_leader = {
+						INDEX = 5
+					}
+				}
+				else = {
+					msm_store_leader = {
+						INDEX = 4
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = msm_leader_index
+						value < -2
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = msm_leader_index
+							value < -3
+						}
+					}
+					msm_store_leader = {
+						INDEX = 3
+					}
+				}
+				else = {
+					msm_store_leader = {
+						INDEX = 2
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							which = msm_leader_index
+							value < -1
+						}
+					}
+					msm_store_leader = {
+						INDEX = 1
+					}
+				}
+				else = {
+					msm_store_leader = {
+						INDEX = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+# this = caller country
+# prev = leader
+# INDEX = 0..f
+msm_store_leader = {
+	set_variable = {
+		which = msm_leader_$INDEX$
+		value = 1
+	}
+	prev = {
+		save_event_target_as = msm_leader_$INDEX$
+	}
+}
