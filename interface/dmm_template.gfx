@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_dmm_template_vertical_separator"
+		texturefile = "gfx/interface/buttons/dmm_template_vertical_separator.dds"
+	}
+	spriteType = {
+		name = "GFX_dmm_template_vertical_separator_light"
+		texturefile = "gfx/interface/buttons/dmm_template_vertical_separator_light.dds"
+	}
+}

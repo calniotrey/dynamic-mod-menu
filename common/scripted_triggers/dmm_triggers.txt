@@ -1,0 +1,20 @@
+dmm_is_installed = {
+	always = yes
+}
+
+dmm_is_uninstalled = {
+	always = no
+}
+
+# DMM_FLAG = unique (leader) flag across all mods
+# TODO remove negation on 3.0
+dmm_is_registered_mod = {
+	NOT = {
+		exists = event_target:dmm_global_country
+		event_target:dmm_global_country = {
+			any_owned_leader = {
+				has_leader_flag = $DMM_FLAG$
+			}
+		}
+	}
+}

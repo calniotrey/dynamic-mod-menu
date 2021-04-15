@@ -1,0 +1,17 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		dmm_events.10
+	}
+}
+
+on_save_game_load = {
+	events = {
+		dmm_events.10
+	}
+}
+
+dmm_mod_selected = {
+	events = {
+	}
+}

@@ -12,7 +12,7 @@ guiTypes = {
 			name = "window"
 			orientation = center
 			origo = center
-			size = { width = 360 height = 700 }
+			size = { width = 360 height = 670 }
 			position = { x = 0 y = -10 }
 
 			background = {
@@ -87,12 +87,12 @@ guiTypes = {
 
 			effectButtonType =
 			{
-                id = "msm"
-				name = "msm_"
-                effect = msm_button_effect
+                id = "dmm"
+				name = "dmm_button"
+                effect = dmm_button_effect
 				quadTextureSprite = "GFX_standard_button_large_211_40"
 				position = { x= -115 y = 260  }
-				buttonText = "msm_name"
+				buttonText = "dmm_name"
 				buttonFont = "malgun_goth_24"
 				Orientation = "CENTER_UP"
 				oversound = mouse_over

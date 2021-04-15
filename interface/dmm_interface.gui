@@ -1,7 +1,7 @@
 guiTypes = {
 	### DEFAULT EVENT OPTION ###
 	containerWindowType = {
-		name = "msm_left_option"
+		name = "dmm_left_option"
 		position = { x=0 y=0 }
 		size = { width = 0 height = 0 }
 		moveable = no
@@ -16,7 +16,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "msm_right_option"
+		name = "dmm_right_option"
 		position = { x=0 y=0 }
 		size = { width = 388 height = 40 }
 		moveable = no
@@ -31,7 +31,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "msm_next_button"
+		name = "dmm_next_button"
 		position = { x=0 y=0 }
 		size = { width = 0 height = 0 }
 		moveable = no
@@ -46,7 +46,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "msm_previous_button"
+		name = "dmm_previous_button"
 		position = { x=0 y=0 }
 		size = { width = 0 height = 0 }
 		moveable = no
@@ -61,7 +61,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "msm_close_button"
+		name = "dmm_close_button"
 		position = { x=0 y=0 }
 		size = { width = 0 height = 0 }
 		moveable = no
@@ -76,7 +76,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "msm_dummy_button"
+		name = "dmm_dummy_button"
 		position = { x=0 y=0 }
 		size = { width = 0 height = 10 }
 		moveable = no
@@ -92,7 +92,7 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "msm_window"
+		name = "dmm_window"
 		orientation = center
 		origo = center
 		moveable = yes

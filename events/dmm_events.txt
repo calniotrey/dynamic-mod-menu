@@ -1,0 +1,431 @@
+namespace = dmm_events
+#
+#THIS = player/country pressing the button
+country_event = {
+	id = dmm_events.0
+	is_triggered_only = yes
+	title = "dmm.0.name"
+	desc = "dmm.0.desc"
+	diplomatic = yes
+	custom_gui = "dmm_window"
+	immediate = {
+		dmm_create_global_country_if_needed = yes
+		set_variable = {
+			which = dmm_leader_index
+			value = dmm_starting_leader_index
+		}
+		event_target:dmm_global_country = {
+			every_owned_leader = {
+				limit = {
+					leader_class = general
+				}
+				root = {
+					subtract_variable = {
+						which = dmm_leader_index
+						value = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								which = dmm_leader_index
+								value < 0
+							}
+							check_variable = {
+								which = dmm_leader_index
+								value > -17
+							}
+						}
+						dmm_store_leader_list = yes
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = dmm.0.prev
+		custom_gui = "dmm_previous_button"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_starting_leader_index
+					value > 15
+				}
+			}
+		}
+		hidden_effect = {
+			subtract_variable = {
+				which = dmm_starting_leader_index
+				value = 16
+			}
+			dmm_clear_variable_list = yes
+			country_event = {
+				id = dmm_events.0
+			}
+		}
+	}
+	option = {
+		name = dmm.0.close
+		custom_gui = "dmm_close_button"
+		default_hide_option = yes
+		hidden_effect = {
+			dmm_close_dmm_menu = yes
+		}
+	}
+	option = {
+		name = dmm.0.next
+		custom_gui = "dmm_next_button"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_index
+					value < -16
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = dmm_starting_leader_index
+				value = 16
+			}
+			dmm_clear_variable_list = yes
+			country_event = {
+				id = dmm_events.0
+			}
+		}
+	}
+	option = {
+		name = dmm.0.0
+		custom_gui = "dmm_left_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_0
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 0
+			}
+		}
+	}
+	option = {
+		name = dmm.0.1
+		custom_gui = "dmm_right_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_1
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 1
+			}
+		}
+	}
+	option = {
+		name = dmm.0.2
+		custom_gui = "dmm_left_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_2
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 2
+			}
+		}
+	}
+	option = {
+		name = dmm.0.3
+		custom_gui = "dmm_right_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_3
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 3
+			}
+		}
+	}
+	option = {
+		name = dmm.0.4
+		custom_gui = "dmm_left_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_4
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 4
+			}
+		}
+	}
+	option = {
+		name = dmm.0.5
+		custom_gui = "dmm_right_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_5
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 5
+			}
+		}
+	}
+	option = {
+		name = dmm.0.6
+		custom_gui = "dmm_left_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_6
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 6
+			}
+		}
+	}
+	option = {
+		name = dmm.0.7
+		custom_gui = "dmm_right_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_7
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 7
+			}
+		}
+	}
+	option = {
+		name = dmm.0.8
+		custom_gui = "dmm_left_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_8
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 8
+			}
+		}
+	}
+	option = {
+		name = dmm.0.9
+		custom_gui = "dmm_right_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_9
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = 9
+			}
+		}
+	}
+	option = {
+		name = dmm.0.a
+		custom_gui = "dmm_left_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_a
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = a
+			}
+		}
+	}
+	option = {
+		name = dmm.0.b
+		custom_gui = "dmm_right_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_b
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = b
+			}
+		}
+	}
+	option = {
+		name = dmm.0.c
+		custom_gui = "dmm_left_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_c
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = c
+			}
+		}
+	}
+	option = {
+		name = dmm.0.d
+		custom_gui = "dmm_right_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_d
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = d
+			}
+		}
+	}
+	option = {
+		name = dmm.0.e
+		custom_gui = "dmm_left_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_e
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = e
+			}
+		}
+	}
+	option = {
+		name = dmm.0.f
+		custom_gui = "dmm_right_option"
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_leader_f
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_call_mod_menu = {
+				INDEX = f
+			}
+		}
+	}
+	option = {
+		name = dmm.0.close
+		custom_gui = "dmm_dummy_button"
+		hidden_effect = {
+			dmm_close_dmm_menu = yes
+		}
+	}
+}
+
+event = {
+	id = dmm_events.10
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_global_flag = dmm_installed
+		dmm_create_global_country_if_needed = yes
+		# event_target:dmm_global_country = {
+		# 	country_event = {
+		# 		id = dmm_events.11
+		# 		days = 1
+		# 	}
+		# }
+	}
+}
+
+# country_event = {
+# 	id = dmm_events.11
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_global_flag = gigastructures_enabled
+# 			}
+# 			dmm_register_mod = {
+# 				DMM_FLAG = gigastructures
+# 				DMM_NAME = Gigastructures
+# 			}
+# 			# giga_menu.1 ?
+# 			# has_country_flag = giga_host
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_global_flag = mem_more_events_mod
+# 				is_multiplayer = no
+# 			}
+# 			dmm_register_mod = {
+# 				DMM_FLAG = more_events_mod
+# 				DMM_NAME = MEM
+# 			}
+# 			# mem_options.4
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_global_flag = acot_activated
+# 			}
+# 			dmm_register_mod = {
+# 				DMM_FLAG = acot_base
+# 				DMM_NAME = ACOT
+# 			}
+# 			# acot_mod_options.1
+# 		}
+# 	}
+# }

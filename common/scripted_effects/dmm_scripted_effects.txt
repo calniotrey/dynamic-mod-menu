@@ -1,37 +1,37 @@
 # FLAG = unique flag across all mods
 # NAME = name displayed on the button
-msm_register_mod = {
-	msm_create_global_country_if_needed = yes
-	event_target:msm_global_country = {
+dmm_register_mod = {
+	dmm_create_global_country_if_needed = yes
+	event_target:dmm_global_country = {
 		if = {
 			limit = {
 				NOT = {
 					any_owned_leader = {
-						has_leader_flag = $MSM_FLAG$
+						has_leader_flag = $DMM_FLAG$
 					}
 				}
 			}
 			create_leader = {
 				class = general
 				name = random
-				species = event_target:msm_global_species
+				species = event_target:dmm_global_species
 				immortal = yes
 			}
 			last_created_leader = {
-				set_name = $MSM_NAME$
-				set_leader_flag = $MSM_FLAG$
+				set_name = $DMM_NAME$
+				set_leader_flag = $DMM_FLAG$
 			}
 		}
 	}
 }
 
 # FLAG = unique flag across all mods
-msm_deregister_mod = {
-	msm_create_global_country_if_needed = yes
-	event_target:msm_global_country = {
+dmm_deregister_mod = {
+	dmm_create_global_country_if_needed = yes
+	event_target:dmm_global_country = {
 		random_owned_leader = {
 			limit = {
-				has_leader_flag = $MSM_FLAG$
+				has_leader_flag = $DMM_FLAG$
 			}
 			kill_leader = {
 				type = general
@@ -41,162 +41,159 @@ msm_deregister_mod = {
 }
 
 # INDEX = index of the leader
-msm_call_mod_menu = {
-	msm_close_msm_menu = yes
-	# event_target:msm_leader_$INDEX$ = {
-	# 	# TODO call thing
-	# }
-	if = {
-		limit = {
-			always = no
+dmm_call_mod_menu = {
+	dmm_close_dmm_menu = yes
+	fire_on_action = {
+		on_action = dmm_mod_selected
+		scopes = {
+			from = event_target:dmm_leader_$INDEX$
 		}
-		set_global_flag = $INDEX$
 	}
 }
 
-msm_close_msm_menu = {
-	msm_clear_variable_list = yes
+dmm_close_dmm_menu = {
+	dmm_clear_variable_list = yes
 	set_variable = {
-		which = msm_starting_leader_index
+		which = dmm_starting_leader_index
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_index
+		which = dmm_leader_index
 		value = 0
 	}
-	remove_country_flag = msm_opened
+	remove_country_flag = dmm_opened
 }
 
-msm_create_global_country_if_needed = {
+dmm_create_global_country_if_needed = {
 	if = {
 		limit = {
 			NOT = {
-				exists = event_target:msm_global_country
+				exists = event_target:dmm_global_country
 			}
 		}
 		create_species = {
 			class = MOL
 			portrait = mol17
 			effect = {
-				save_global_event_target_as = msm_global_species
+				save_global_event_target_as = dmm_global_species
 			}
 		}
 		create_country = {
-			type = msm_global_country
-			name = "MSM Global Event Country"
-			species = event_target:msm_global_species
+			type = dmm_global_country
+			name = "DMM Global Event Country"
+			species = event_target:dmm_global_species
 			effect = {
-				save_global_event_target_as = msm_global_country
+				save_global_event_target_as = dmm_global_country
 			}
 		}
 	}
 }
 
-msm_clear_variable_list = {
+dmm_clear_variable_list = {
 	set_variable = {
-		which = msm_leader_0
+		which = dmm_leader_0
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_1
+		which = dmm_leader_1
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_2
+		which = dmm_leader_2
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_3
+		which = dmm_leader_3
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_4
+		which = dmm_leader_4
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_5
+		which = dmm_leader_5
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_6
+		which = dmm_leader_6
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_7
+		which = dmm_leader_7
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_8
+		which = dmm_leader_8
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_9
+		which = dmm_leader_9
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_a
+		which = dmm_leader_a
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_b
+		which = dmm_leader_b
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_c
+		which = dmm_leader_c
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_d
+		which = dmm_leader_d
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_e
+		which = dmm_leader_e
 		value = 0
 	}
 	set_variable = {
-		which = msm_leader_f
+		which = dmm_leader_f
 		value = 0
 	}
 }
 
 # this = caller country
 # prev = leader
-# msm_leader_index < 0
-msm_store_leader_list = {
+# dmm_leader_index < 0
+dmm_store_leader_list = {
 	if = {
 		limit = {
 			check_variable = {
-				which = msm_leader_index
+				which = dmm_leader_index
 				value < -8
 			}
 		}
 		if = {
 			limit = {
 				check_variable = {
-					which = msm_leader_index
+					which = dmm_leader_index
 					value < -12
 				}
 			}
 			if = {
 				limit = {
 					check_variable = {
-						which = msm_leader_index
+						which = dmm_leader_index
 						value < -14
 					}
 				}
 				if = {
 					limit = {
 						check_variable = {
-							which = msm_leader_index
+							which = dmm_leader_index
 							value < -15
 						}
 					}
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = f
 					}
 				}
 				else = {
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = e
 					}
 				}
@@ -205,16 +202,16 @@ msm_store_leader_list = {
 				if = {
 					limit = {
 						check_variable = {
-							which = msm_leader_index
+							which = dmm_leader_index
 							value < -13
 						}
 					}
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = d
 					}
 				}
 				else = {
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = c
 					}
 				}
@@ -224,23 +221,23 @@ msm_store_leader_list = {
 			if = {
 				limit = {
 					check_variable = {
-						which = msm_leader_index
+						which = dmm_leader_index
 						value < -10
 					}
 				}
 				if = {
 					limit = {
 						check_variable = {
-							which = msm_leader_index
+							which = dmm_leader_index
 							value < -11
 						}
 					}
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = b
 					}
 				}
 				else = {
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = a
 					}
 				}
@@ -249,16 +246,16 @@ msm_store_leader_list = {
 				if = {
 					limit = {
 						check_variable = {
-							which = msm_leader_index
+							which = dmm_leader_index
 							value < -9
 						}
 					}
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 9
 					}
 				}
 				else = {
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 8
 					}
 				}
@@ -269,30 +266,30 @@ msm_store_leader_list = {
 		if = {
 			limit = {
 				check_variable = {
-					which = msm_leader_index
+					which = dmm_leader_index
 					value < -4
 				}
 			}
 			if = {
 				limit = {
 					check_variable = {
-						which = msm_leader_index
+						which = dmm_leader_index
 						value < -6
 					}
 				}
 				if = {
 					limit = {
 						check_variable = {
-							which = msm_leader_index
+							which = dmm_leader_index
 							value < -7
 						}
 					}
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 7
 					}
 				}
 				else = {
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 6
 					}
 				}
@@ -301,16 +298,16 @@ msm_store_leader_list = {
 				if = {
 					limit = {
 						check_variable = {
-							which = msm_leader_index
+							which = dmm_leader_index
 							value < -5
 						}
 					}
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 5
 					}
 				}
 				else = {
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 4
 					}
 				}
@@ -320,23 +317,23 @@ msm_store_leader_list = {
 			if = {
 				limit = {
 					check_variable = {
-						which = msm_leader_index
+						which = dmm_leader_index
 						value < -2
 					}
 				}
 				if = {
 					limit = {
 						check_variable = {
-							which = msm_leader_index
+							which = dmm_leader_index
 							value < -3
 						}
 					}
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 3
 					}
 				}
 				else = {
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 2
 					}
 				}
@@ -345,16 +342,16 @@ msm_store_leader_list = {
 				if = {
 					limit = {
 						check_variable = {
-							which = msm_leader_index
+							which = dmm_leader_index
 							value < -1
 						}
 					}
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 1
 					}
 				}
 				else = {
-					msm_store_leader = {
+					dmm_store_leader = {
 						INDEX = 0
 					}
 				}
@@ -366,12 +363,12 @@ msm_store_leader_list = {
 # this = caller country
 # prev = leader
 # INDEX = 0..f
-msm_store_leader = {
+dmm_store_leader = {
 	set_variable = {
-		which = msm_leader_$INDEX$
+		which = dmm_leader_$INDEX$
 		value = 1
 	}
 	prev = {
-		save_event_target_as = msm_leader_$INDEX$
+		save_event_target_as = dmm_leader_$INDEX$
 	}
 }

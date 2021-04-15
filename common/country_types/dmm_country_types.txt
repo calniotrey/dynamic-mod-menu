@@ -1,4 +1,4 @@
-msm_global_country = {
+dmm_global_country = {
 	share_communications = no
 	default_ships = no
 	government = no
@@ -19,7 +19,7 @@ msm_global_country = {
 		}
 		# Needed for events
 		exclusive_diplomacy_module = {
-			contact_rule = script_only
+			contact_rule = on_action_only
 		}
 	}
 }
