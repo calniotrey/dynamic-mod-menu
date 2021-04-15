@@ -99,4 +99,5 @@ country_event = {
 	id = dmm_template.1
 	is_triggered_only = yes
 	hide_window = yes
+	# another submenu
 }
