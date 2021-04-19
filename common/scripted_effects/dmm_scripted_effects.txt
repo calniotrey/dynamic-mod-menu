@@ -40,6 +40,60 @@ dmm_deregister_mod = {
 	}
 }
 
+# FLAG = unique flag across all mods
+dmm_show_button_all = {
+	dmm_create_global_country_if_needed = yes
+	event_target:dmm_global_country = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = $DMM_FLAG$
+			}
+			remove_leader_flag = dmm_hide_all
+		}
+	}
+}
+
+# FLAG = unique flag across all mods
+dmm_hide_button_all = {
+	dmm_create_global_country_if_needed = yes
+	event_target:dmm_global_country = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = $DMM_FLAG$
+			}
+			set_leader_flag = dmm_hide_all
+		}
+	}
+}
+
+# FLAG = unique flag across all mods
+# this = country
+dmm_add_button_exception = {
+	dmm_create_global_country_if_needed = yes
+	event_target:dmm_global_country = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = $DMM_FLAG$
+			}
+			set_leader_flag = dmm_display_exception_for_@prevprev
+		}
+	}
+}
+
+# FLAG = unique flag across all mods
+# this = country
+dmm_remove_button_exception = {
+	dmm_create_global_country_if_needed = yes
+	event_target:dmm_global_country = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = $DMM_FLAG$
+			}
+			remove_leader_flag = dmm_display_exception_for_@prevprev
+		}
+	}
+}
+
 # INDEX = index of the leader
 dmm_call_mod_menu = {
 	dmm_close_dmm_menu = yes
