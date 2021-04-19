@@ -15,3 +15,13 @@ dmm_is_registered_mod = {
 		}
 	}
 }
+
+# This = leader scope
+# root = country scope
+dmm_should_hide_button = {
+	calc_true_if = {
+		amount = 1
+		has_leader_flag = dmm_hide_all
+		has_leader_flag = dmm_display_exception_for_@root
+	}
+}
