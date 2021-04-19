@@ -5,7 +5,7 @@ on_game_start = {
 	}
 }
 
-on_save_game_load = {
+on_single_player_save_game_load = {
 	events = {
 		dmm_events.10
 	}
