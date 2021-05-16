@@ -3,9 +3,31 @@ Ever felt like your edicts list becomes cluttered by edicts whose sole purpose i
 [h1]For players[/h1]
 This mod adds a button on the main menu (opened up by pressing escape) that opens the Mod Menu. You can then select the mod you want to access the settings of. Simple right?
 The mods simply have to register themselves. If you don't see the mod you're looking for, you can [b]kindly[/b] ask its modder to come see this mod description, so they can see if they want to make their mod register itself.
-Place this mod right at the bottom of your load order. (Yes, below any mod touching the UI).
-This mod changes checksum and had nearly no compatibility issues (placing it at the bottom of the load order will solve most of the remaining ones anyway).
+Place this mod below SWFR and any other mod altering interface/mainmenu_view.gui.
+This mod changes checksum and has nearly no compatibility issues.
+This mod alters interface/mainmenu_view.gui.
+If you don't see the button on the "escape menu", another mod is altering that file. To solve it, you can simply place DMM below it (or at the bottom of the load order).
 This mod is save game compatible.
+
+[h2]Mods supporting DMM[/h2]
+This is a non-exhaustive list, if you know of other mods supporting DMM, feel free to comment ;)
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2028826064]A Deadly Tempest[/url] by FirePrince
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2268189539]Aggressive Crisis Engine[/url] by OldEnt, Rodahtnov and Fiiral
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1830063425]AI Species Limit[/url] by mario0244
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2297628906]AutoFabs Origin[/url] by James Fire
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2033764043]Crisis Manager[/url] by FirePrince and others
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460049826]Interstellar Incorporated: Space Corp [3.0][/url] by mr_trousers and TheFlyingPotato
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2245491122]Locate It![/url] by BurningRaptor
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458738951]Machine Intelligence Ruler Replacer[/url] by SableDrake
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1853570703]Merge AI Species[/url] by mario0244
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=727000451]More Events Mod[/url] by Malthus and many others
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460698354]Otter Editor's Dynamic Mod Menu Add-on[/url] by Seamoo
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=899795759]Ruler Level System[/url] by jasonpepe
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2423885359]Space Exploitation[/url] by James Fire
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2066377400]Void Dwellers traits: Ring World & modded habitats fix[/url] by OldEnt
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2462927769]Weapon Research Menu[/url] by SableDrake
+[/list]
 
 [h1]For modders[/h1]
 Welcome! The configuration is really straightforward, don't be afraid ;)
@@ -69,39 +91,16 @@ Here's a bunch of utility stuff:
 If for you want to unregister your mod (for example before the player uninstall it), simply use dmm_deregister_mod = { DMM_FLAG = my_amazing_mod_unique_flag }.
 You can check if your mod is registered using dmm_is_registered_mod = { DMM_FLAG = my_amazing_mod_unique_flag }.
 
-[h1]Hide the button[/h1]
-If you want to hide the button for some reason (crisis happened so remove crisis spawn), you can use `dmm_hide_button_all = { DMM_FLAG = my_amazing_mod_unique_flag }`.
-To show it, use `dmm_show_button_all = { DMM_FLAG = my_amazing_mod_unique_flag }`.
-If you want to [b]inverse[/b] the show/hide for a specific country, then scope to that country and use `dmm_add_button_exception = { DMM_FLAG = my_amazing_mod_unique_flag }`.
-To remove it, simply use `dmm_remove_button_exception = { DMM_FLAG = my_amazing_mod_unique_flag }`.
+[h2]Hide the button[/h2]
+If you want to hide the button for some reason (crisis happened so remove crisis spawn), you can use [code]dmm_hide_button_all = { DMM_FLAG = my_amazing_mod_unique_flag }[/code]
+To show it, use [code]dmm_show_button_all = { DMM_FLAG = my_amazing_mod_unique_flag }[/code]
+If you want to [b]inverse[/b] the show/hide for a specific country, then scope to that country and use [code]dmm_add_button_exception = { DMM_FLAG = my_amazing_mod_unique_flag }[/code]
+To remove it, simply use [code]dmm_remove_button_exception = { DMM_FLAG = my_amazing_mod_unique_flag }[/code]
 If you hide it to all and have an exception on a country (the host of the game for example), then only that country will see the button. Remember that AIs can't access DMM anyway.
 
 [h1]Template for settings menu[/h1]
 You probably know it, GUI modding in Stellaris is quite hard and annoying. But having a good looking event is really nice. So I created a template you can freely use and change!
-Warning: while using this template is imho easier than learning gui modding and trying stuff out, it still require a basic knowledge of events and some efforts (I won't hold your hand as for the configuration above: you're gonna have to look at the template to understand).
-On another note: you are welcome to modify the template to suit your needs (please credit :P). Just make sure to change the name of all of the elements you change so that you don't affect another mod using the default template.
-
-Take a look of the dmm_template.0 event and use it as base (if you didn't download the mod, you can find it on [url=https://github.com/calniotrey/dynamic-mod-menu/blob/master/events/dmm_template_events.txt]github[/url])
-First thing to notice:
-	diplomatic = yes
-	custom_gui = "dmm_template_window"
-Then come all of the options. They can be separated in 3:
-[list]
-[*] The submenus. Use them to open another page of the settings menu. One of them should be disabled (because you are currently in it), the other will fire similar events (same gui, different options).
-[*] The settings. They are divided in left and right settings. On each side, there is a text and then either a checkbox or a button.
-[*] The close option. default_hide_option = yes makes it selected when pressing escape.
-[/list]
-
-The submenus should be pretty straightforward, just keep in mind to increment the number in custom_gui = "dmm_template_submenu_0" for each of them (start at 0, up to f in hexadecimal).
-The close option should also be straightforward. You can also make it fire the DMM event if you want to (country event dmm_events.0).
-
-The settings:
-As previously stated, there is a left and a right part. You basically order your options as: left text, left button/checkbox, right text, right button/checkbox/dummy (more on that right after).
-To mark a new line, you have to have a right button/checkbox/dummy. That gui generates the new line.
-If you don't want a button or a checkbox, use a dummy (custom_gui = "dmm_template_right_dummy") with no text.
-As you can probably tell, the checkbox can either be checked or unchecked. You probably want to have 2 options (one with each), mutually exclusive that switch between each other.
-
-What isn't in the template (for more lisibility) is that each setting (except the close) should refire the same event.
+Checkout [url=https://steamcommunity.com/workshop/filedetails/discussion/2458024521/3131667021971880420/]this discussion[/url] for more info on it!
 
 [h1]Credits[/h1]
 Thanks to Mario for allowing me to use this mod name.

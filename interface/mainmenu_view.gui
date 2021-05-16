@@ -82,12 +82,12 @@ guiTypes = {
 				Orientation = "CENTER_UP"
 				oversound = mouse_over
 				navUp = "load"
-				navDown = "resign"
+				navDown = "dmm_button"
 			}
 
 			effectButtonType =
 			{
-                id = "dmm"
+                id = "dmm_button"
 				name = "dmm_button"
                 effect = dmm_button_effect
 				quadTextureSprite = "GFX_standard_button_large_211_40"
@@ -110,7 +110,7 @@ guiTypes = {
 				buttonFont = "malgun_goth_24"
 				Orientation = "CENTER_UP"
 				oversound = mouse_over
-				navUp = "settings"
+				navUp = "dmm_button"
 				navDown = "quit"
 			}
 
