@@ -27,7 +27,7 @@ container_template = """
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=0 y=0 }
+			position = { x=$$x$$ y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -39,10 +39,10 @@ container_template = """
 # [actual key, ui name of the key, shortcut]
 # ["A", "a_uppercase", "SHIFT+a"]
 supported_keys = []
-for i in range(ord("A"), ord("Z") + 1):
-    supported_keys.append([chr(i), chr(i).lower()+"_uppercase", "SHIFT"+chr(i).lower()])
 for i in range(ord("a"), ord("z") + 1):
     supported_keys.append([chr(i), chr(i), chr(i)])
+for i in range(ord("A"), ord("Z") + 1):
+    supported_keys.append([chr(i), chr(i).lower()+"_shift", "SHIFT+"+chr(i).lower()])
 supported_keys.append([" ", "space", "SPACE"])
 # supported_keys.append(["-", "minus"])
 # supported_keys.append(["'", "apostrophe"])
@@ -59,15 +59,19 @@ def generate_all_options():
     pyperclip.copy(s)
 
 
-def generate_container(key):
-    return container_template.replace("$$UI_NAME$$", key[1]).replace("$$SHORTCUT$$", key[2])
+def generate_container(key, x=0):
+    return container_template.replace("$$UI_NAME$$", key[1]).replace("$$SHORTCUT$$", key[2]).replace("$$x$$",x)
 
 def generate_all_containers():
     s = ""
+    x=0
     for k in supported_keys:
-        s += generate_container(k)
+        s += generate_container(k, str(x))
+        x+=10
     pyperclip.copy(s)
 
 # replace by what you want
 # will copy the result to clipboard
+
 generate_all_options()
+# generate_all_containers()

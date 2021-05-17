@@ -1,6 +1,6 @@
 guiTypes = {
 	containerWindowType = {
-		name = "dmm_keyboard_e_shift"
+		name = "dmm_keyboard_a"
 		position = { x=0 y=0 }
 		size = { width = 0 height = 0 }
 		moveable = no
@@ -12,11 +12,12 @@ guiTypes = {
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
-            shortcut = "SHIFT+e"
+            shortcut = "KP_MINUS"
 		}
 	}
+
 	containerWindowType = {
-		name = "dmm_keyboard_e"
+		name = "dmm_keyboard_b"
 		position = { x=0 y=0 }
 		size = { width = 0 height = 0 }
 		moveable = no
@@ -24,13 +25,14 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=0 y=40 }
+			position = { x=10 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
-            shortcut = "e"
+            shortcut = "b"
 		}
 	}
+
 	containerWindowType = {
 		name = "dmm_keyboard_c"
 		position = { x=0 y=0 }
@@ -40,13 +42,439 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=0 y=80 }
+			position = { x=20 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
             shortcut = "c"
 		}
 	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_d"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=30 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "d"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_e"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=40 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "e"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_f"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=50 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "f"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_g"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=60 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "g"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_h"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=70 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "h"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_i"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=80 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "i"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_j"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=90 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "j"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_k"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=100 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "k"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_l"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=110 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "l"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_m"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=120 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "m"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_n"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=130 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "n"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_o"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=140 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "o"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_p"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=150 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "p"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_q"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=160 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "q"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_r"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=170 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "r"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_s"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=180 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "s"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_t"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=190 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "t"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_u"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=200 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "u"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_v"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=210 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "v"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_w"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=220 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "w"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_x"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=230 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "x"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_y"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=240 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "y"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_z"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=250 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "z"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_a_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=260 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+a"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_b_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=270 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+b"
+		}
+	}
+
 	containerWindowType = {
 		name = "dmm_keyboard_c_shift"
 		position = { x=0 y=0 }
@@ -56,13 +484,422 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=0 y=120 }
+			position = { x=280 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
             shortcut = "SHIFT+c"
 		}
 	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_d_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=290 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+d"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_e_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=300 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+e"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_f_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=310 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+f"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_g_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=320 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+g"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_h_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=330 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+h"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_i_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=340 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+i"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_j_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=350 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+j"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_k_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=360 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+k"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_l_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=370 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+l"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_m_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=380 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+m"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_n_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=390 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+n"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_o_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=400 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+o"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_p_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=410 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+p"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_q_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=420 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+q"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_r_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=430 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+r"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_s_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=440 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+s"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_t_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=450 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+t"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_u_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=460 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+u"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_v_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=470 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+v"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_w_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=480 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+w"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_x_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=490 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+x"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_y_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=500 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+y"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_z_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=510 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+z"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_space"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_265_34"
+			position = { x=520 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SPACE"
+		}
+	}
+
 	containerWindowType = {
 		name = "dmm_keyboard_backspace"
 		position = { x=0 y=0 }
@@ -83,8 +920,7 @@ guiTypes = {
 		name = "dmm_keyboard"
 		orientation = center
 		origo = center
-        moveable = no
-		size = { width = 560 height = 410 }
+		size = { width = 1000 height = 410 }
 		# size = { width = 100% height = 100% }
 
 		background = {
@@ -366,8 +1202,8 @@ guiTypes = {
 				name = "option_list"
 				position = { x = 0 y = 25 }
 				# backGround=""
-				size = { x=1062 y=200 }
-				spacing = 1
+				size = { x=1062 y=3000 }
+                spacing = 1
 				scrollbartype = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }
 				Orientation = "UPPER_LEFT"

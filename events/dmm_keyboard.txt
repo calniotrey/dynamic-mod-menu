@@ -37,25 +37,67 @@ country_event = {
 		custom_gui = "dmm_dummy_button"		#TODO free
 	}
 	option = {
-		name = "E"
-		custom_gui = "dmm_keyboard_e_shift"
+		name = "dmm_keyboard_a"
+		custom_gui = "dmm_keyboard_a"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]E"
+		response_text = "[dmm_keyboard_current_leader.GetName]a"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]E"
+				set_name = "[dmm_keyboard_current_leader.GetName]a"
 			}
 		}
-		# log = "Current = [dmm_keyboard_current_leader.GetName] - [dmm_keyboard_current_leader.dmm_keyboard_name_length]"
-		# log = "Ruler = [dmm_keyboard_country.ruler.GetName] - [dmm_keyboard_country.ruler.dmm_keyboard_name_length]"
-		# log = "------------------"
 	}
 	option = {
-		name = "e"
+		name = "dmm_keyboard_b"
+		custom_gui = "dmm_keyboard_b"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]b"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]b"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_c"
+		custom_gui = "dmm_keyboard_c"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]c"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]c"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_d"
+		custom_gui = "dmm_keyboard_d"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]d"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]d"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_e"
 		custom_gui = "dmm_keyboard_e"
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_current_leader.GetName]e"
@@ -70,29 +112,723 @@ country_event = {
 		}
 	}
 	option = {
-		name = "c"
-		custom_gui = "dmm_keyboard_c"
+		name = "dmm_keyboard_f"
+		custom_gui = "dmm_keyboard_f"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]c"
-		dmm_keyboard_add_letter = yes
-		event_target:dmm_keyboard_leader = {
-			set_name = "[dmm_keyboard_current_leader.GetName]"
-		}
-		event_target:dmm_keyboard_current_leader = {
-			set_name = "[dmm_keyboard_current_leader.GetName]c"
+		response_text = "[dmm_keyboard_current_leader.GetName]f"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]f"
+			}
 		}
 	}
 	option = {
-		name = "C"
+		name = "dmm_keyboard_g"
+		custom_gui = "dmm_keyboard_g"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]g"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]g"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_h"
+		custom_gui = "dmm_keyboard_h"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]h"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]h"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_i"
+		custom_gui = "dmm_keyboard_i"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]i"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]i"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_j"
+		custom_gui = "dmm_keyboard_j"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]j"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]j"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_k"
+		custom_gui = "dmm_keyboard_k"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]k"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]k"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_l"
+		custom_gui = "dmm_keyboard_l"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]l"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]l"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_m"
+		custom_gui = "dmm_keyboard_m"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]m"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]m"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_n"
+		custom_gui = "dmm_keyboard_n"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]n"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]n"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_o"
+		custom_gui = "dmm_keyboard_o"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]o"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]o"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_p"
+		custom_gui = "dmm_keyboard_p"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]p"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]p"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_q"
+		custom_gui = "dmm_keyboard_q"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]q"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]q"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_r"
+		custom_gui = "dmm_keyboard_r"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]r"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]r"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_s"
+		custom_gui = "dmm_keyboard_s"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]s"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]s"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_t"
+		custom_gui = "dmm_keyboard_t"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]t"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]t"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_u"
+		custom_gui = "dmm_keyboard_u"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]u"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]u"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_v"
+		custom_gui = "dmm_keyboard_v"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]v"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]v"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_w"
+		custom_gui = "dmm_keyboard_w"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]w"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]w"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_x"
+		custom_gui = "dmm_keyboard_x"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]x"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]x"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_y"
+		custom_gui = "dmm_keyboard_y"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]y"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]y"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_z"
+		custom_gui = "dmm_keyboard_z"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]z"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]z"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_a_shift"
+		custom_gui = "dmm_keyboard_a_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]A"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]A"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_b_shift"
+		custom_gui = "dmm_keyboard_b_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]B"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]B"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_c_shift"
 		custom_gui = "dmm_keyboard_c_shift"
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_current_leader.GetName]C"
-		dmm_keyboard_add_letter = yes
-		event_target:dmm_keyboard_leader = {
-			set_name = "[dmm_keyboard_current_leader.GetName]"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]C"
+			}
 		}
-		event_target:dmm_keyboard_current_leader = {
-			set_name = "[dmm_keyboard_current_leader.GetName]C"
+	}
+	option = {
+		name = "dmm_keyboard_d_shift"
+		custom_gui = "dmm_keyboard_d_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]D"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]D"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_e_shift"
+		custom_gui = "dmm_keyboard_e_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]E"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]E"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_f_shift"
+		custom_gui = "dmm_keyboard_f_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]F"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]F"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_g_shift"
+		custom_gui = "dmm_keyboard_g_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]G"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]G"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_h_shift"
+		custom_gui = "dmm_keyboard_h_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]H"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]H"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_i_shift"
+		custom_gui = "dmm_keyboard_i_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]I"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]I"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_j_shift"
+		custom_gui = "dmm_keyboard_j_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]J"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]J"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_k_shift"
+		custom_gui = "dmm_keyboard_k_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]K"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]K"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_l_shift"
+		custom_gui = "dmm_keyboard_l_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]L"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]L"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_m_shift"
+		custom_gui = "dmm_keyboard_m_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]M"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]M"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_n_shift"
+		custom_gui = "dmm_keyboard_n_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]N"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]N"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_o_shift"
+		custom_gui = "dmm_keyboard_o_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]O"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]O"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_p_shift"
+		custom_gui = "dmm_keyboard_p_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]P"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]P"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_q_shift"
+		custom_gui = "dmm_keyboard_q_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]Q"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]Q"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_r_shift"
+		custom_gui = "dmm_keyboard_r_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]R"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]R"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_s_shift"
+		custom_gui = "dmm_keyboard_s_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]S"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]S"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_t_shift"
+		custom_gui = "dmm_keyboard_t_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]T"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]T"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_u_shift"
+		custom_gui = "dmm_keyboard_u_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]U"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]U"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_v_shift"
+		custom_gui = "dmm_keyboard_v_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]V"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]V"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_w_shift"
+		custom_gui = "dmm_keyboard_w_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]W"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]W"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_x_shift"
+		custom_gui = "dmm_keyboard_x_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]X"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]X"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_y_shift"
+		custom_gui = "dmm_keyboard_y_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]Y"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]Y"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_z_shift"
+		custom_gui = "dmm_keyboard_z_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]Z"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]Z"
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_space"
+		custom_gui = "dmm_keyboard_space"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName] "
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName] "
+			}
 		}
 	}
 	option = {
