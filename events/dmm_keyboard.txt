@@ -1,0 +1,109 @@
+namespace = dmm_keyboard
+#
+country_event = {
+	id = dmm_keyboard.0
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		dmm_keyboard_get_idle_country = yes
+		event_target:dmm_keyboard_country = {
+			dmm_keyboard_get_idle_leader = yes
+			event_target:dmm_keyboard_leader = {
+				save_event_target_as = dmm_keyboard_current_leader
+				set_variable = {
+					which = dmm_keyboard_name_length
+					value = 0
+				}
+				set_name = ""
+				remove_leader_flag = dmm_keyboard_idle
+			}
+		}
+		country_event = {
+			id = dmm_keyboard.100
+		}
+	}
+}
+
+#THIS = player/country pressing the button
+country_event = {
+	id = dmm_keyboard.100
+	is_triggered_only = yes
+	title = "dmm_keyboard.100.name"
+	desc = "dmm_keyboard.100.desc"
+	diplomatic = yes
+	custom_gui = "dmm_keyboard"
+	option = {
+		name = dmm.100.close
+		custom_gui = "dmm_dummy_button"		#TODO free
+	}
+	option = {
+		name = "E"
+		custom_gui = "dmm_keyboard_e_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]E"
+		dmm_keyboard_add_letter = yes
+		event_target:dmm_keyboard_current_leader = {
+			set_name = "[dmm_keyboard_current_leader.GetName]E"
+		}
+		# log = "Current = [dmm_keyboard_current_leader.GetName] - [dmm_keyboard_current_leader.dmm_keyboard_name_length]"
+		# log = "Ruler = [dmm_keyboard_country.ruler.GetName] - [dmm_keyboard_country.ruler.dmm_keyboard_name_length]"
+		# log = "------------------"
+	}
+	option = {
+		name = "e"
+		custom_gui = "dmm_keyboard_e"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]e"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]e"
+			}
+		}
+	}
+	option = {
+		name = "c"
+		custom_gui = "dmm_keyboard_c"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]c"
+		dmm_keyboard_add_letter = yes
+		event_target:dmm_keyboard_current_leader = {
+			set_name = "[dmm_keyboard_current_leader.GetName]c"
+		}
+	}
+	option = {
+		name = "C"
+		custom_gui = "dmm_keyboard_c_shift"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]C"
+		dmm_keyboard_add_letter = yes
+		event_target:dmm_keyboard_current_leader = {
+			set_name = "[dmm_keyboard_current_leader.GetName]C"
+		}
+	}
+	option = {
+		name = "backspace"
+		custom_gui = "dmm_keyboard_backspace"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_country.ruler.GetName]"
+		allow = {
+			hidden_trigger = {
+				event_target:dmm_keyboard_current_leader = {
+					check_variable = {
+						which = dmm_keyboard_name_length
+						value > 0
+					}
+				}
+			}
+		}
+		dmm_keyboard_remove_letter = yes
+		# log = "Current = [dmm_keyboard_current_leader.GetName] - [dmm_keyboard_current_leader.dmm_keyboard_name_length]"
+		# log = "Ruler = [dmm_keyboard_country.ruler.GetName] - [dmm_keyboard_country.ruler.dmm_keyboard_name_length]"
+		# log = "------------------"
+	}
+	option = {
+		name = dmm.100.close
+		custom_gui = "dmm_dummy_button"
+		default_hide_option = yes
+	}
+}

@@ -41,3 +41,5 @@
     dmm_template.0.3.right_text: "Suspend mod"
     dmm_template.0.3.right_checkbox_unchecked: ""
     dmm_template.0.3.close: ""
+
+    dmm_keyboard.100.desc: "[dmm_keyboard_current_leader.GetName]"
