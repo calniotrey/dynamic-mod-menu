@@ -41,9 +41,14 @@ country_event = {
 		custom_gui = "dmm_keyboard_e_shift"
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_current_leader.GetName]E"
-		dmm_keyboard_add_letter = yes
-		event_target:dmm_keyboard_current_leader = {
-			set_name = "[dmm_keyboard_current_leader.GetName]E"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]E"
+			}
 		}
 		# log = "Current = [dmm_keyboard_current_leader.GetName] - [dmm_keyboard_current_leader.dmm_keyboard_name_length]"
 		# log = "Ruler = [dmm_keyboard_country.ruler.GetName] - [dmm_keyboard_country.ruler.dmm_keyboard_name_length]"
@@ -56,6 +61,9 @@ country_event = {
 		response_text = "[dmm_keyboard_current_leader.GetName]e"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
 			event_target:dmm_keyboard_current_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]e"
 			}
@@ -67,6 +75,9 @@ country_event = {
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_current_leader.GetName]c"
 		dmm_keyboard_add_letter = yes
+		event_target:dmm_keyboard_leader = {
+			set_name = "[dmm_keyboard_current_leader.GetName]"
+		}
 		event_target:dmm_keyboard_current_leader = {
 			set_name = "[dmm_keyboard_current_leader.GetName]c"
 		}
@@ -77,6 +88,9 @@ country_event = {
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_current_leader.GetName]C"
 		dmm_keyboard_add_letter = yes
+		event_target:dmm_keyboard_leader = {
+			set_name = "[dmm_keyboard_current_leader.GetName]"
+		}
 		event_target:dmm_keyboard_current_leader = {
 			set_name = "[dmm_keyboard_current_leader.GetName]C"
 		}
@@ -96,7 +110,12 @@ country_event = {
 				}
 			}
 		}
-		dmm_keyboard_remove_letter = yes
+		hidden_effect = {
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_country.ruler.GetName]"
+			}
+			dmm_keyboard_remove_letter = yes
+		}
 		# log = "Current = [dmm_keyboard_current_leader.GetName] - [dmm_keyboard_current_leader.dmm_keyboard_name_length]"
 		# log = "Ruler = [dmm_keyboard_country.ruler.GetName] - [dmm_keyboard_country.ruler.dmm_keyboard_name_length]"
 		# log = "------------------"

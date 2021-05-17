@@ -92,7 +92,7 @@ dmm_keyboard_add_letter = {
 	event_target:dmm_keyboard_country = {
 		dmm_keyboard_get_idle_leader = yes
 		event_target:dmm_keyboard_leader = {
-			set_name = "[dmm_keyboard_current_leader.GetName]"
+			# set_name = "[dmm_keyboard_current_leader.GetName]"
 			set_variable = {
 				which = dmm_keyboard_name_length
 				value = event_target:dmm_keyboard_current_leader
@@ -112,33 +112,31 @@ dmm_keyboard_add_letter = {
 
 # this = country
 dmm_keyboard_remove_letter = {
-	hidden_effect = {
-		event_target:dmm_keyboard_country.ruler = {
-			# save_event_target_as = dmm_keyboard_current_leader
-			dmm_keyboard_free_leader = yes
+	event_target:dmm_keyboard_country.ruler = {
+		# save_event_target_as = dmm_keyboard_current_leader
+		dmm_keyboard_free_leader = yes
+	}
+	event_target:dmm_keyboard_current_leader = {
+		# set_name = "[dmm_keyboard_country.ruler.GetName]"
+		subtract_variable = {
+			which = dmm_keyboard_name_length
+			value = 1
 		}
-		event_target:dmm_keyboard_current_leader = {
-			set_name = "[dmm_keyboard_country.ruler.GetName]"
+		if = {
+			limit = {
+				check_variable = {
+					which = dmm_keyboard_name_length
+					value > 0
+				}
+			}
 			subtract_variable = {
 				which = dmm_keyboard_name_length
 				value = 1
 			}
-			if = {
-				limit = {
-					check_variable = {
-						which = dmm_keyboard_name_length
-						value > 0
-					}
-				}
-				subtract_variable = {
-					which = dmm_keyboard_name_length
-					value = 1
-				}
-				dmm_keyboard_get_previous_leader = yes
-				change_variable = {
-					which = dmm_keyboard_name_length
-					value = 1
-				}
+			dmm_keyboard_get_previous_leader = yes
+			change_variable = {
+				which = dmm_keyboard_name_length
+				value = 1
 			}
 		}
 	}
@@ -169,6 +167,9 @@ dmm_keyboard_get_previous_leader = {
 	event_target:dmm_keyboard_country = {
 		random_owned_leader = {
 			limit = {
+				NOT = {
+					is_same_value = prevprev
+				}
 				is_variable_set = dmm_keyboard_name_length
 				check_variable = {
 					which = dmm_keyboard_name_length
