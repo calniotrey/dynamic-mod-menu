@@ -17,6 +17,19 @@ country_event = {
 				set_name = ""
 				remove_leader_flag = dmm_keyboard_idle
 			}
+			create_leader = {
+				class = general
+				species = event_target:dmm_global_species
+				immortal = yes
+				name = ""
+				effect = {
+					save_global_event_target_as = dmm_keyboard_dummy_leader
+				}
+			}
+			set_variable = {
+				which = dmm_keyboard_spaces_amount
+				value = 0
+			}
 		}
 		country_event = {
 			id = dmm_keyboard.100
@@ -37,17 +50,43 @@ country_event = {
 		custom_gui = "dmm_dummy_button"		#TODO free
 	}
 	option = {
+		name = "dmm_keyboard_capslock"
+		custom_gui = "dmm_keyboard_capslock"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				if = {
+					limit = {
+						has_country_flag = dmm_keyboad_capslock
+					}
+					remove_country_flag = dmm_keyboad_capslock
+				}
+				else = {
+					set_country_flag = dmm_keyboad_capslock
+				}
+			}
+			country_event = {
+				id = dmm_keyboard.100
+			}
+		}
+	}
+	option = {
 		name = "dmm_keyboard_a"
 		custom_gui = "dmm_keyboard_a"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]a"
+		response_text = "dmm_keyboard_a_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]a"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardA]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -55,14 +94,20 @@ country_event = {
 		name = "dmm_keyboard_b"
 		custom_gui = "dmm_keyboard_b"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]b"
+		response_text = "dmm_keyboard_b_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]b"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardB]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -70,14 +115,20 @@ country_event = {
 		name = "dmm_keyboard_c"
 		custom_gui = "dmm_keyboard_c"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]c"
+		response_text = "dmm_keyboard_c_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]c"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardC]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -85,14 +136,20 @@ country_event = {
 		name = "dmm_keyboard_d"
 		custom_gui = "dmm_keyboard_d"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]d"
+		response_text = "dmm_keyboard_d_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]d"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardD]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -100,14 +157,20 @@ country_event = {
 		name = "dmm_keyboard_e"
 		custom_gui = "dmm_keyboard_e"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]e"
+		response_text = "dmm_keyboard_e_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]e"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardE]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -115,14 +178,20 @@ country_event = {
 		name = "dmm_keyboard_f"
 		custom_gui = "dmm_keyboard_f"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]f"
+		response_text = "dmm_keyboard_f_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]f"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardF]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -130,14 +199,20 @@ country_event = {
 		name = "dmm_keyboard_g"
 		custom_gui = "dmm_keyboard_g"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]g"
+		response_text = "dmm_keyboard_g_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]g"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardG]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -145,14 +220,20 @@ country_event = {
 		name = "dmm_keyboard_h"
 		custom_gui = "dmm_keyboard_h"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]h"
+		response_text = "dmm_keyboard_h_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]h"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardH]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -160,14 +241,20 @@ country_event = {
 		name = "dmm_keyboard_i"
 		custom_gui = "dmm_keyboard_i"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]i"
+		response_text = "dmm_keyboard_i_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]i"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardI]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -175,14 +262,20 @@ country_event = {
 		name = "dmm_keyboard_j"
 		custom_gui = "dmm_keyboard_j"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]j"
+		response_text = "dmm_keyboard_j_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]j"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardJ]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -190,14 +283,20 @@ country_event = {
 		name = "dmm_keyboard_k"
 		custom_gui = "dmm_keyboard_k"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]k"
+		response_text = "dmm_keyboard_k_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]k"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardK]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -205,14 +304,20 @@ country_event = {
 		name = "dmm_keyboard_l"
 		custom_gui = "dmm_keyboard_l"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]l"
+		response_text = "dmm_keyboard_l_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]l"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardL]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -220,14 +325,20 @@ country_event = {
 		name = "dmm_keyboard_m"
 		custom_gui = "dmm_keyboard_m"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]m"
+		response_text = "dmm_keyboard_m_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]m"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardM]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -235,14 +346,20 @@ country_event = {
 		name = "dmm_keyboard_n"
 		custom_gui = "dmm_keyboard_n"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]n"
+		response_text = "dmm_keyboard_n_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]n"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardN]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -250,14 +367,20 @@ country_event = {
 		name = "dmm_keyboard_o"
 		custom_gui = "dmm_keyboard_o"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]o"
+		response_text = "dmm_keyboard_o_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]o"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardO]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -265,14 +388,20 @@ country_event = {
 		name = "dmm_keyboard_p"
 		custom_gui = "dmm_keyboard_p"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]p"
+		response_text = "dmm_keyboard_p_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]p"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardP]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -280,14 +409,20 @@ country_event = {
 		name = "dmm_keyboard_q"
 		custom_gui = "dmm_keyboard_q"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]q"
+		response_text = "dmm_keyboard_q_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]q"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardQ]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -295,14 +430,20 @@ country_event = {
 		name = "dmm_keyboard_r"
 		custom_gui = "dmm_keyboard_r"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]r"
+		response_text = "dmm_keyboard_r_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]r"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardR]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -310,14 +451,20 @@ country_event = {
 		name = "dmm_keyboard_s"
 		custom_gui = "dmm_keyboard_s"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]s"
+		response_text = "dmm_keyboard_s_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]s"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardS]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -325,14 +472,20 @@ country_event = {
 		name = "dmm_keyboard_t"
 		custom_gui = "dmm_keyboard_t"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]t"
+		response_text = "dmm_keyboard_t_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]t"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardT]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -340,14 +493,20 @@ country_event = {
 		name = "dmm_keyboard_u"
 		custom_gui = "dmm_keyboard_u"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]u"
+		response_text = "dmm_keyboard_u_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]u"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardU]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -355,14 +514,20 @@ country_event = {
 		name = "dmm_keyboard_v"
 		custom_gui = "dmm_keyboard_v"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]v"
+		response_text = "dmm_keyboard_v_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]v"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardV]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -370,14 +535,20 @@ country_event = {
 		name = "dmm_keyboard_w"
 		custom_gui = "dmm_keyboard_w"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]w"
+		response_text = "dmm_keyboard_w_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]w"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardW]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -385,14 +556,20 @@ country_event = {
 		name = "dmm_keyboard_x"
 		custom_gui = "dmm_keyboard_x"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]x"
+		response_text = "dmm_keyboard_x_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]x"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardX]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -400,14 +577,20 @@ country_event = {
 		name = "dmm_keyboard_y"
 		custom_gui = "dmm_keyboard_y"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]y"
+		response_text = "dmm_keyboard_y_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]y"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardY]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -415,14 +598,20 @@ country_event = {
 		name = "dmm_keyboard_z"
 		custom_gui = "dmm_keyboard_z"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]z"
+		response_text = "dmm_keyboard_z_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]z"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardZ]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -430,14 +619,20 @@ country_event = {
 		name = "dmm_keyboard_a_shift"
 		custom_gui = "dmm_keyboard_a_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]A"
+		response_text = "dmm_keyboard_a_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]A"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]A"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -445,14 +640,20 @@ country_event = {
 		name = "dmm_keyboard_b_shift"
 		custom_gui = "dmm_keyboard_b_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]B"
+		response_text = "dmm_keyboard_b_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]B"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]B"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -460,14 +661,20 @@ country_event = {
 		name = "dmm_keyboard_c_shift"
 		custom_gui = "dmm_keyboard_c_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]C"
+		response_text = "dmm_keyboard_c_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]C"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]C"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -475,14 +682,20 @@ country_event = {
 		name = "dmm_keyboard_d_shift"
 		custom_gui = "dmm_keyboard_d_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]D"
+		response_text = "dmm_keyboard_d_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]D"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]D"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -490,14 +703,20 @@ country_event = {
 		name = "dmm_keyboard_e_shift"
 		custom_gui = "dmm_keyboard_e_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]E"
+		response_text = "dmm_keyboard_e_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]E"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]E"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -505,14 +724,20 @@ country_event = {
 		name = "dmm_keyboard_f_shift"
 		custom_gui = "dmm_keyboard_f_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]F"
+		response_text = "dmm_keyboard_f_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]F"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]F"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -520,14 +745,20 @@ country_event = {
 		name = "dmm_keyboard_g_shift"
 		custom_gui = "dmm_keyboard_g_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]G"
+		response_text = "dmm_keyboard_g_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]G"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]G"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -535,14 +766,20 @@ country_event = {
 		name = "dmm_keyboard_h_shift"
 		custom_gui = "dmm_keyboard_h_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]H"
+		response_text = "dmm_keyboard_h_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]H"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]H"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -550,14 +787,20 @@ country_event = {
 		name = "dmm_keyboard_i_shift"
 		custom_gui = "dmm_keyboard_i_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]I"
+		response_text = "dmm_keyboard_i_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]I"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]I"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -565,14 +808,20 @@ country_event = {
 		name = "dmm_keyboard_j_shift"
 		custom_gui = "dmm_keyboard_j_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]J"
+		response_text = "dmm_keyboard_j_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]J"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]J"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -580,14 +829,20 @@ country_event = {
 		name = "dmm_keyboard_k_shift"
 		custom_gui = "dmm_keyboard_k_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]K"
+		response_text = "dmm_keyboard_k_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]K"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]K"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -595,14 +850,20 @@ country_event = {
 		name = "dmm_keyboard_l_shift"
 		custom_gui = "dmm_keyboard_l_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]L"
+		response_text = "dmm_keyboard_l_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]L"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]L"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -610,14 +871,20 @@ country_event = {
 		name = "dmm_keyboard_m_shift"
 		custom_gui = "dmm_keyboard_m_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]M"
+		response_text = "dmm_keyboard_m_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]M"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]M"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -625,14 +892,20 @@ country_event = {
 		name = "dmm_keyboard_n_shift"
 		custom_gui = "dmm_keyboard_n_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]N"
+		response_text = "dmm_keyboard_n_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]N"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]N"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -640,14 +913,20 @@ country_event = {
 		name = "dmm_keyboard_o_shift"
 		custom_gui = "dmm_keyboard_o_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]O"
+		response_text = "dmm_keyboard_o_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]O"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]O"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -655,14 +934,20 @@ country_event = {
 		name = "dmm_keyboard_p_shift"
 		custom_gui = "dmm_keyboard_p_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]P"
+		response_text = "dmm_keyboard_p_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]P"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]P"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -670,14 +955,20 @@ country_event = {
 		name = "dmm_keyboard_q_shift"
 		custom_gui = "dmm_keyboard_q_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]Q"
+		response_text = "dmm_keyboard_q_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]Q"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]Q"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -685,14 +976,20 @@ country_event = {
 		name = "dmm_keyboard_r_shift"
 		custom_gui = "dmm_keyboard_r_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]R"
+		response_text = "dmm_keyboard_r_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]R"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]R"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -700,14 +997,20 @@ country_event = {
 		name = "dmm_keyboard_s_shift"
 		custom_gui = "dmm_keyboard_s_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]S"
+		response_text = "dmm_keyboard_s_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]S"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]S"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -715,14 +1018,20 @@ country_event = {
 		name = "dmm_keyboard_t_shift"
 		custom_gui = "dmm_keyboard_t_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]T"
+		response_text = "dmm_keyboard_t_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]T"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]T"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -730,14 +1039,20 @@ country_event = {
 		name = "dmm_keyboard_u_shift"
 		custom_gui = "dmm_keyboard_u_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]U"
+		response_text = "dmm_keyboard_u_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]U"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]U"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -745,14 +1060,20 @@ country_event = {
 		name = "dmm_keyboard_v_shift"
 		custom_gui = "dmm_keyboard_v_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]V"
+		response_text = "dmm_keyboard_v_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]V"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]V"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -760,14 +1081,20 @@ country_event = {
 		name = "dmm_keyboard_w_shift"
 		custom_gui = "dmm_keyboard_w_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]W"
+		response_text = "dmm_keyboard_w_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]W"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]W"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -775,14 +1102,20 @@ country_event = {
 		name = "dmm_keyboard_x_shift"
 		custom_gui = "dmm_keyboard_x_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]X"
+		response_text = "dmm_keyboard_x_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]X"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]X"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -790,14 +1123,20 @@ country_event = {
 		name = "dmm_keyboard_y_shift"
 		custom_gui = "dmm_keyboard_y_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]Y"
+		response_text = "dmm_keyboard_y_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]Y"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]Y"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -805,14 +1144,20 @@ country_event = {
 		name = "dmm_keyboard_z_shift"
 		custom_gui = "dmm_keyboard_z_shift"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName]Z"
+		response_text = "dmm_keyboard_z_shift_response"
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]Z"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]Z"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
 			}
 		}
 	}
@@ -820,37 +1165,120 @@ country_event = {
 		name = "dmm_keyboard_space"
 		custom_gui = "dmm_keyboard_space"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_current_leader.GetName] "
+		response_text = "[dmm_keyboard_current_leader.GetName]"
 		hidden_effect = {
-			dmm_keyboard_add_letter = yes
-			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+			# if = {
+			# 	limit = {
+			# 		event_target:dmm_keyboard_country = {
+			# 			check_variable = {
+			# 				which = dmm_keyboard_spaces_amount
+			# 				value = 0
+			# 			}
+			# 		}
+			# 	}
+			# 	# first time adding a space
+			# 	event_target:dmm_keyboard_country = {
+			# 		set_leader = event_target:dmm_keyboard_current_leader
+			# 	}
+			# }
+			event_target:dmm_keyboard_country = {
+				set_leader = event_target:dmm_keyboard_current_leader
 			}
-			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName] "
+			event_target:dmm_keyboard_country = {
+				change_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 1
+				}
 			}
 		}
 	}
 	option = {
-		name = "backspace"
+		name = "dmm_keyboard_backspace"
 		custom_gui = "dmm_keyboard_backspace"
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_country.ruler.GetName]"
 		allow = {
 			hidden_trigger = {
-				event_target:dmm_keyboard_current_leader = {
-					check_variable = {
-						which = dmm_keyboard_name_length
-						value > 0
+				OR = {
+					event_target:dmm_keyboard_current_leader = {
+						check_variable = {
+							which = dmm_keyboard_name_length
+							value > 0
+						}
+					}
+					event_target:dmm_keyboard_country = {
+						check_variable = {
+							which = dmm_keyboard_spaces_amount
+							value > 0
+						}
 					}
 				}
 			}
 		}
 		hidden_effect = {
-			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_country.ruler.GetName]"
+			if = {
+				limit = {
+					event_target:dmm_keyboard_country = {
+						check_variable = {
+							which = dmm_keyboard_spaces_amount
+							value > 0
+						}
+					}
+				}
+				event_target:dmm_keyboard_country = {
+					subtract_variable = {
+						which = dmm_keyboard_spaces_amount
+						value = 1
+					}
+				}
+				if = {
+					limit = {
+						event_target:dmm_keyboard_country = {
+							check_variable = {
+								which = dmm_keyboard_spaces_amount
+								value = 0
+							}
+						}
+						event_target:dmm_keyboard_current_leader = {
+							check_variable = {
+								which = dmm_keyboard_name_length
+								value > 0
+							}
+						}
+					}
+					# get the leader that should be ruler
+					event_target:dmm_keyboard_current_leader = {
+						subtract_variable = {
+							which = dmm_keyboard_name_length
+							value = 1
+						}
+						dmm_keyboard_get_previous_leader = yes
+						change_variable = {
+							which = dmm_keyboard_name_length
+							value = 1
+						}
+					}
+				}
 			}
-			dmm_keyboard_remove_letter = yes
+			else = {
+				event_target:dmm_keyboard_current_leader = {
+					set_name = "[dmm_keyboard_country.ruler.GetName]"
+				}
+				dmm_keyboard_remove_letter = yes
+				if = {
+					limit = {
+						event_target:dmm_keyboard_country = {
+							check_variable = {
+								which = dmm_keyboard_spaces_amount
+								value > 0
+							}
+						}
+					}
+					event_target:dmm_keyboard_country = {
+						set_leader = event_target:dmm_keyboard_current_leader
+					}
+				}
+			}
 		}
 		# log = "Current = [dmm_keyboard_current_leader.GetName] - [dmm_keyboard_current_leader.dmm_keyboard_name_length]"
 		# log = "Ruler = [dmm_keyboard_country.ruler.GetName] - [dmm_keyboard_country.ruler.dmm_keyboard_name_length]"

@@ -100,6 +100,10 @@ dmm_keyboard_add_letter = {
 			prev = {
 				set_leader = prev
 			}
+			set_variable = {
+				which = dmm_keyboard_spaces_amount				# number of spaces at the end of his name
+				value = event_target:dmm_keyboard_country
+			}
 		}
 	}
 	event_target:dmm_keyboard_current_leader = {
@@ -112,9 +116,15 @@ dmm_keyboard_add_letter = {
 
 # this = country
 dmm_keyboard_remove_letter = {
-	event_target:dmm_keyboard_country.ruler = {
+	event_target:dmm_keyboard_country = {
 		# save_event_target_as = dmm_keyboard_current_leader
-		dmm_keyboard_free_leader = yes
+		set_variable = {
+			which = dmm_keyboard_spaces_amount
+			value = ruler
+		}
+		ruler = {
+			dmm_keyboard_free_leader = yes
+		}
 	}
 	event_target:dmm_keyboard_current_leader = {
 		# set_name = "[dmm_keyboard_country.ruler.GetName]"
