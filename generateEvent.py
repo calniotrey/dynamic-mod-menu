@@ -76,7 +76,7 @@ for i in range(ord("a"), ord("z") + 1):
 for i in range(ord("A"), ord("Z") + 1):
     supported_keys.append([chr(i), chr(i).lower()+"_shift", "SHIFT+"+chr(i).lower()])
 for i in range(10):
-    supported_keys.append([chr(i), chr(i), chr(i)])
+    supported_keys.append([str(i), str(i), str(i)])
 # supported_keys.append([" ", "space", "SPACE"])
 supported_keys.append(["-", "kp_minus", "kp_minus"])
 # supported_keys.append(["'", "apostrophe"])
@@ -127,7 +127,7 @@ def generate_all_locs():
 # replace by what you want
 # will copy the result to clipboard
 
-generate_all_options()
+# generate_all_options()
 # generate_all_containers()
 # generate_scripted_locs()
-# generate_all_locs()
+generate_all_locs()

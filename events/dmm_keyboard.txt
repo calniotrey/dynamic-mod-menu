@@ -1162,6 +1162,237 @@ country_event = {
 		}
 	}
 	option = {
+		name = "dmm_keyboard_0"
+		custom_gui = "dmm_keyboard_0"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_0_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]0"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_1"
+		custom_gui = "dmm_keyboard_1"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_1_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]1"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_2"
+		custom_gui = "dmm_keyboard_2"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_2_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]2"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_3"
+		custom_gui = "dmm_keyboard_3"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_3_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]3"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_4"
+		custom_gui = "dmm_keyboard_4"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_4_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]4"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_5"
+		custom_gui = "dmm_keyboard_5"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_5_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]5"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_6"
+		custom_gui = "dmm_keyboard_6"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_6_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]6"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_7"
+		custom_gui = "dmm_keyboard_7"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_7_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]7"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_8"
+		custom_gui = "dmm_keyboard_8"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_8_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]8"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_9"
+		custom_gui = "dmm_keyboard_9"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_9_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]9"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_kp_minus"
+		custom_gui = "dmm_keyboard_kp_minus"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_kp_minus_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]-"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+		}
+	}
+	option = {
 		name = "dmm_keyboard_space"
 		custom_gui = "dmm_keyboard_space"
 		is_dialog_only = yes
