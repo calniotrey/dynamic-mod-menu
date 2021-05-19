@@ -52,6 +52,8 @@ country_event = {
 	option = {
 		name = "dmm_keyboard_capslock"
 		custom_gui = "dmm_keyboard_capslock"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_capslock_response"
 		hidden_effect = {
 			event_target:dmm_keyboard_country = {
 				if = {
@@ -64,9 +66,9 @@ country_event = {
 					set_country_flag = dmm_keyboad_capslock
 				}
 			}
-			country_event = {
-				id = dmm_keyboard.100
-			}
+			# country_event = {
+			# 	id = dmm_keyboard.100
+			# }
 		}
 	}
 	option = {
@@ -626,7 +628,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]A"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardAShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -647,7 +649,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]B"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardBShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -668,7 +670,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]C"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardCShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -689,7 +691,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]D"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardDShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -710,7 +712,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]E"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardEShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -731,7 +733,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]F"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardFShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -752,7 +754,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]G"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardGShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -773,7 +775,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]H"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardHShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -794,7 +796,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]I"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardIShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -815,7 +817,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]J"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardJShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -836,7 +838,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]K"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -857,7 +859,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]L"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardLShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -878,7 +880,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]M"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardMShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -899,7 +901,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]N"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardNShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -920,7 +922,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]O"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardOShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -941,7 +943,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]P"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardPShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -962,7 +964,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]Q"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardQShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -983,7 +985,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]R"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardRShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1004,7 +1006,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]S"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardSShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1025,7 +1027,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]T"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardTShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1046,7 +1048,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]U"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardUShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1067,7 +1069,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]V"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardVShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1088,7 +1090,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]W"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardWShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1109,7 +1111,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]X"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardXShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1130,7 +1132,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]Y"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardYShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1151,7 +1153,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]Z"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardZShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
