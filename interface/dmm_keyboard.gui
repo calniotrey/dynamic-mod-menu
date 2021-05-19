@@ -1,3 +1,38 @@
+@dmm_key_row_0 = 50
+@dmm_key_row_1 = 105
+@dmm_key_row_2 = 160
+@dmm_key_row_3 = 215
+@dmm_key_row_4 = 270
+
+@dmm_key_col_1 = 50
+@dmm_key_col_2 = 105
+@dmm_key_col_3 = 160
+@dmm_key_col_4 = 215
+@dmm_key_col_5 = 270
+@dmm_key_col_6 = 325
+@dmm_key_col_7 = 380
+@dmm_key_col_8 = 435
+@dmm_key_col_9 = 490
+@dmm_key_col_10 = 545
+@dmm_key_col_11 = 600
+@dmm_key_col_12 = 655
+
+@dmm_key_col_off_0 = 20
+@dmm_key_col_off_1 = 75
+@dmm_key_col_off_2 = 130
+@dmm_key_col_off_3 = 185
+@dmm_key_col_off_4 = 240
+@dmm_key_col_off_5 = 295
+@dmm_key_col_off_6 = 350
+@dmm_key_col_off_7 = 405
+@dmm_key_col_off_8 = 460
+@dmm_key_col_off_9 = 515
+@dmm_key_col_off_10 = 570
+@dmm_key_col_off_11 = 625
+@dmm_key_col_off_12 = 680
+
+@dmm_caps_col = -4
+
 guiTypes = {
 	containerWindowType = {
 		name = "dmm_keyboard_capslock"
@@ -7,8 +42,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=0 y=500 }
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_caps_col y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -23,10 +58,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=0 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_1 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "a"
 		}
@@ -40,10 +75,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=10 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_6 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "b"
 		}
@@ -57,10 +92,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=20 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_4 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "c"
 		}
@@ -74,10 +109,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=30 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_3 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "d"
 		}
@@ -91,10 +126,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=40 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_3 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "e"
 		}
@@ -108,10 +143,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=50 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_4 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "f"
 		}
@@ -125,10 +160,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=60 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_5 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "g"
 		}
@@ -142,10 +177,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=70 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_6 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "h"
 		}
@@ -159,10 +194,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=80 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_8 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "i"
 		}
@@ -176,10 +211,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=90 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_7 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "j"
 		}
@@ -193,10 +228,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=100 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_8 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "k"
 		}
@@ -210,10 +245,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=110 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_9 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "l"
 		}
@@ -227,10 +262,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=120 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_8 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "m"
 		}
@@ -244,10 +279,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=130 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_7 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "n"
 		}
@@ -261,10 +296,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=140 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_9 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "o"
 		}
@@ -278,10 +313,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=150 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_10 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "p"
 		}
@@ -295,10 +330,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=160 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_1 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "q"
 		}
@@ -312,10 +347,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=170 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_4 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "r"
 		}
@@ -329,10 +364,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=180 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_2 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "s"
 		}
@@ -346,10 +381,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=190 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_5 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "t"
 		}
@@ -363,10 +398,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=200 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_7 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "u"
 		}
@@ -380,10 +415,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=210 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_5 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "v"
 		}
@@ -397,10 +432,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=220 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_2 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "w"
 		}
@@ -414,10 +449,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=230 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_3 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "x"
 		}
@@ -431,10 +466,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=240 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_6 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "y"
 		}
@@ -448,10 +483,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=250 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_2 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "z"
 		}
@@ -465,8 +500,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=260 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -482,8 +517,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=270 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -499,8 +534,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=280 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -516,8 +551,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=290 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -533,8 +568,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=300 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -550,8 +585,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=310 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -567,8 +602,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=320 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -584,8 +619,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=330 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -601,8 +636,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=340 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -618,8 +653,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=350 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -635,8 +670,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=360 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -652,8 +687,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=370 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -669,8 +704,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=380 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -686,8 +721,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=390 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -703,8 +738,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=400 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -720,8 +755,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=410 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -737,8 +772,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=420 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -754,8 +789,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=430 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -771,8 +806,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=440 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -788,8 +823,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=450 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -805,8 +840,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=460 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -822,8 +857,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=470 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -839,8 +874,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=480 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -856,8 +891,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=490 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -873,8 +908,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=500 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -890,8 +925,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=510 y=0 }
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -907,10 +942,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=520 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_9 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "0"
 		}
@@ -924,10 +959,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=530 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_0 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "1"
 		}
@@ -941,10 +976,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=540 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_1 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "2"
 		}
@@ -958,10 +993,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=550 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_2 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "3"
 		}
@@ -975,10 +1010,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=560 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_3 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "4"
 		}
@@ -992,10 +1027,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=570 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_4 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "5"
 		}
@@ -1009,10 +1044,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=580 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_5 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "6"
 		}
@@ -1026,10 +1061,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=590 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_6 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "7"
 		}
@@ -1043,10 +1078,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=600 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_7 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "8"
 		}
@@ -1060,10 +1095,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=610 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_8 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "9"
 		}
@@ -1077,12 +1112,141 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=620 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_10 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
-			font = "cg_16b"
+			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "kp_minus"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_kp_plus"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_11 y=@dmm_key_row_0 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+            shortcut = "kp_plus"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_left_brace"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_11 y=@dmm_key_row_1 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_right_brace"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_12 y=@dmm_key_row_1 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_colon"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_off_10 y=@dmm_key_row_2 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_apostrophe"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_off_11 y=@dmm_key_row_2 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_comma"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_9 y=@dmm_key_row_3 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_period"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_10 y=@dmm_key_row_3 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_slash"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_11 y=@dmm_key_row_3 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
 		}
 	}
 
@@ -1095,8 +1259,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=520 y=0 }
+			quadTextureSprite = "GFX_dmm_keyboard_spacebar"
+			position = { x=@dmm_key_col_4 y=@dmm_key_row_4 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -1111,8 +1275,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "option_button"
-			quadTextureSprite = "GFX_button_animated_265_34"
-			position = { x=0 y=160 }
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_col_off_12 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
@@ -1176,16 +1340,16 @@ guiTypes = {
 		
 		buttonType = {
 			name = "alien_message_background"
-			size = { x = 325 y = 240 }
-			position = { x = -10010 y = 430 }
+			size = { x = 325 y = 40 }
+			position = { x = 190 y = 45 }
 			spriteType = "GFX_tiles_dark_area_cut_8"
 			alwaysTransparent = yes
 		}
 		
 		instantTextBoxType = {
 			name = "alien_message"
-			font = "cg_16b"
-			position = { x = 20 y = 100 }
+			font = "malgun_goth_24"
+			position = { x = 200 y = 50 }
 			maxWidth = 305
 			maxHeight = 220
 			format = left
