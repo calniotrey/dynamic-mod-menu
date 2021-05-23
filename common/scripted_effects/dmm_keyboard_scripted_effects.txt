@@ -3,8 +3,8 @@ dmm_keyboard_get_idle_country = {
 		limit = {
 			NOT = {
 				any_country = {
-					has_country_flag = dmm_keyboad_country
-					has_country_flag = dmm_keyboad_idle_country
+					has_country_flag = dmm_keyboard_country
+					has_country_flag = dmm_keyboard_idle_country
 				}
 			}
 		}
@@ -12,10 +12,10 @@ dmm_keyboard_get_idle_country = {
 	}
 	random_country = {
 		limit = {
-			has_country_flag = dmm_keyboad_country
-			has_country_flag = dmm_keyboad_idle_country
+			has_country_flag = dmm_keyboard_country
+			has_country_flag = dmm_keyboard_idle_country
 		}
-		remove_country_flag = dmm_keyboad_idle_country
+		remove_country_flag = dmm_keyboard_idle_country
 		save_event_target_as = dmm_keyboard_country
 	}
 }
@@ -41,8 +41,8 @@ dmm_keyboard_create_country = {
 		species = event_target:dmm_global_species
 		effect = {
 			save_event_target_as = dmm_keyboard_country
-			set_country_flag = dmm_keyboad_idle_country
-			set_country_flag = dmm_keyboad_country
+			set_country_flag = dmm_keyboard_idle_country
+			set_country_flag = dmm_keyboard_country
 		}
 	}
 }
@@ -227,3 +227,13 @@ dmm_keyboard_get_previous_leader = {
 # 		save_event_target_as = dmm_keyboard_leader_$LETTER$
 # 	}
 # }
+
+dmm_keyboard_clear_diacritics = {
+	event_target:dmm_keyboard_country = {
+		remove_country_flag = dmm_keyboard_acute
+		remove_country_flag = dmm_keyboard_grave
+		remove_country_flag = dmm_keyboard_circumflex
+		remove_country_flag = dmm_keyboard_diaeresis
+		remove_country_flag = dmm_keyboard_tilde
+	}
+}

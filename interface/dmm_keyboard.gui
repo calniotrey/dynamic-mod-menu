@@ -16,6 +16,9 @@
 @dmm_key_col_10 = 545
 @dmm_key_col_11 = 600
 @dmm_key_col_12 = 655
+@dmm_key_col_13 = 710
+@dmm_key_col_14 = 765
+@dmm_key_col_15 = 820
 
 @dmm_key_col_off_0 = 20
 @dmm_key_col_off_1 = 75
@@ -30,8 +33,15 @@
 @dmm_key_col_off_10 = 570
 @dmm_key_col_off_11 = 625
 @dmm_key_col_off_12 = 680
+@dmm_key_col_off_13 = 735
+@dmm_key_col_off_14 = 790
+@dmm_key_col_off_15 = 845
+@dmm_key_col_off_16 = 900
 
 @dmm_caps_col = -4
+
+@dmm_key_superscript_x = 41
+@dmm_key_superscript_y = 22
 
 guiTypes = {
 	containerWindowType = {
@@ -935,23 +945,6 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "dmm_keyboard_0"
-		position = { x=0 y=0 }
-		size = { width = 0 height = 0 }
-		moveable = no
-		
-		buttonType = {
-			name = "option_button"
-			quadTextureSprite = "GFX_dmm_keyboard_key"
-			position = { x=@dmm_key_col_off_9 y=@dmm_key_row_0 }
-			size = { x = 40 y = 30 }
-			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "0"
-		}
-	}
-
-	containerWindowType = {
 		name = "dmm_keyboard_1"
 		position = { x=0 y=0 }
 		size = { width = 0 height = 0 }
@@ -965,6 +958,22 @@ guiTypes = {
 			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "1"
+		}
+		containerWindowType = {
+			name = "dmm_keyboard_exclamation_box"
+			position = { x=@dmm_key_col_off_0 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_exclamation_text"
+				font = "cg_16b"
+				text = "!"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
 		}
 	}
 
@@ -983,6 +992,22 @@ guiTypes = {
             text = "OPTION_TEXT"
             shortcut = "2"
 		}
+		containerWindowType = {
+			name = "dmm_keyboard_at_box"
+			position = { x=@dmm_key_col_off_1 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_at_text"
+				font = "cg_16b"
+				text = "@"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
+		}
 	}
 
 	containerWindowType = {
@@ -999,6 +1024,22 @@ guiTypes = {
 			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "3"
+		}
+		containerWindowType = {
+			name = "dmm_keyboard_pound_box"
+			position = { x=@dmm_key_col_off_2 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_pound_text"
+				font = "cg_16b"
+				text = "#"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
 		}
 	}
 
@@ -1017,6 +1058,22 @@ guiTypes = {
             text = "OPTION_TEXT"
             shortcut = "4"
 		}
+		containerWindowType = {
+			name = "dmm_keyboard_dollar_box"
+			position = { x=@dmm_key_col_off_3 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_dollar_text"
+				font = "cg_16b"
+				text = "$"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
+		}
 	}
 
 	containerWindowType = {
@@ -1033,6 +1090,22 @@ guiTypes = {
 			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "5"
+		}
+		containerWindowType = {
+			name = "dmm_keyboard_percent_box"
+			position = { x=@dmm_key_col_off_4 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_percent_text"
+				font = "cg_16b"
+				text = "%"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
 		}
 	}
 
@@ -1051,6 +1124,22 @@ guiTypes = {
             text = "OPTION_TEXT"
             shortcut = "6"
 		}
+		containerWindowType = {
+			name = "dmm_keyboard_caret_box"
+			position = { x=@dmm_key_col_off_5 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_caret_text"
+				font = "cg_16b"
+				text = "^"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
+		}
 	}
 
 	containerWindowType = {
@@ -1067,6 +1156,22 @@ guiTypes = {
 			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "7"
+		}
+		containerWindowType = {
+			name = "dmm_keyboard_ampersand_box"
+			position = { x=@dmm_key_col_off_6 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_ampersand_text"
+				font = "cg_16b"
+				text = "&"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
 		}
 	}
 
@@ -1085,6 +1190,22 @@ guiTypes = {
             text = "OPTION_TEXT"
             shortcut = "8"
 		}
+		containerWindowType = {
+			name = "dmm_keyboard_asterisk_box"
+			position = { x=@dmm_key_col_off_7 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_asterisk_text"
+				font = "cg_16b"
+				text = "*"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
+		}
 	}
 
 	containerWindowType = {
@@ -1101,6 +1222,55 @@ guiTypes = {
 			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "9"
+		}
+		containerWindowType = {
+			name = "dmm_keyboard_left_parenthesis_box"
+			position = { x=@dmm_key_col_off_8 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_left_parenthesis_text"
+				font = "cg_16b"
+				text = "("
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_0"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key"
+			position = { x=@dmm_key_col_off_9 y=@dmm_key_row_0 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+            shortcut = "0"
+		}
+		containerWindowType = {
+			name = "dmm_keyboard_right_parenthesis_box"
+			position = { x = @dmm_key_col_off_9 y = @dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_right_parenthesis_text"
+				font = "cg_16b"
+				text = ")"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
 		}
 	}
 
@@ -1119,6 +1289,22 @@ guiTypes = {
             text = "OPTION_TEXT"
             shortcut = "kp_minus"
 		}
+		containerWindowType = {
+			name = "dmm_keyboard_underscore_box"
+			position = { x=@dmm_key_col_off_10 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_underscore_text"
+				font = "cg_16b"
+				text = "_"
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
+		}
 	}
 
 	containerWindowType = {
@@ -1135,6 +1321,226 @@ guiTypes = {
 			font = "malgun_goth_24"
             text = "OPTION_TEXT"
             shortcut = "kp_plus"
+		}
+		containerWindowType = {
+			name = "dmm_keyboard_equals_box"
+			position = { x=@dmm_key_col_off_11 y=@dmm_key_row_0 }
+			size = { width = 0 height = 0 }
+			moveable = no
+			instantTextBoxType = {
+				name = "dmm_keyboard_equals_text"
+				font = "cg_16b"
+				text = "="
+				position = { x = @dmm_key_superscript_x y = @dmm_key_superscript_y }
+				maxWidth = 30
+				maxHeight = 22
+				fixedSize = yes
+				alwaysTransparent = yes
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_1_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+1"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_2_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+2"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_3_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+3"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_4_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+4"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_5_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+5"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_6_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+6"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_7_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+7"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_8_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+8"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_9_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+9"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_0_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+0"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_kp_minus_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+kp_minus"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_kp_plus_shift"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_invisible"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+            text = "OPTION_TEXT"
+            shortcut = "SHIFT+kp_plus"
 		}
 	}
 
@@ -1283,6 +1689,119 @@ guiTypes = {
             shortcut = "BACKSPACE"
 		}
 	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_acute"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_13 y=@dmm_key_row_3 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_grave"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_off_13 y=@dmm_key_row_2 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_circumflex"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_14 y=@dmm_key_row_1 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_diaeresis"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_off_14 y=@dmm_key_row_0 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_tilde"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_off_15 y=@dmm_key_row_0 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_eszett"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_15 y=@dmm_key_row_1 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_ccedilla"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_off_14 y=@dmm_key_row_2 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+            text = "OPTION_TEXT"
+		}
+	}
+
 	containerWindowType = {
 		name = "dmm_keyboard"
 		orientation = center
@@ -1293,7 +1812,48 @@ guiTypes = {
 		background = {
 			name = "background"
 			quadTextureSprite ="GFX_plain_bg_tile"
+		}	
+		
+		containerWindowType = {
+			name = "dmm_keyboard_help"
+			position = { x = 530 y = 0 }
+			effectButtonType = {
+				name = "dmm_keyboard_help_tt"
+				quadTextureSprite = "GFX_dmm_keyboard_key"
+				position = { x = 0 y = 0 }
+				size = { x = 255 y = 32 }
+				effect = "dmm_keyboard_help_tt"
+			}
+			# iconType = {
+			# 	name = "dmm_keyboard_help_icon"
+			# 	quadTextureSprite = "GFX_empire_capital"
+			# 	position = { x = 4 y = 3 }
+			# 	alwaysTransparent = yes
+			# 	scale = 0.75
+			# }
 		}
+
+		containerWindowType = {
+			name = "dmm_keyboard_capslock_button_window"
+			position = { x=@dmm_caps_col y=@dmm_key_row_2 }
+			# effectButtonType = {
+			# 	name = "dmm_keyboard_capslock_button"
+			# 	quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			# 	position = { x = 0 y = 35 }
+			# 	size = { x = 255 y = 32 }
+			# 	effect = "dmm_keyboard_capslock"
+			# }
+			effectButtonType = {
+				name = "dmm_keyboard_capslock_on_button"
+				quadTextureSprite = "GFX_dmm_keyboard_key_long"
+				position = { x = 0 y = 35 }
+				size = { x = 255 y = 32 }
+				frame = 2
+				effect = "dmm_keyboard_capslock_on"
+				alwaysTransparent = yes
+			}
+		}
+
 
 		iconType = { # hidden
 			name = "hex_bg"

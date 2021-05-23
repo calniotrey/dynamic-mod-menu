@@ -49,14 +49,14 @@ defined_text = {
 	name = GetKeyboard$$LETTER_UPPERCASE$$
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_$$LETTER_LOWERCASE$$_shift"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_$$LETTER_LOWERCASE$$_lowercase"

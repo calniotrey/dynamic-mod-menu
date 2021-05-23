@@ -58,13 +58,22 @@ country_event = {
 			event_target:dmm_keyboard_country = {
 				if = {
 					limit = {
-						has_country_flag = dmm_keyboad_capslock
+						has_country_flag = dmm_keyboard_capslock
 					}
-					remove_country_flag = dmm_keyboad_capslock
+					remove_country_flag = dmm_keyboard_capslock
 				}
 				else = {
-					set_country_flag = dmm_keyboad_capslock
+					set_country_flag = dmm_keyboard_capslock
 				}
+			}
+			if = {
+				limit = {
+					has_country_flag = dmm_keyboard_capslock_on
+				}
+				remove_country_flag = dmm_keyboard_capslock_on
+			}
+			else = {
+				set_country_flag = dmm_keyboard_capslock_on
 			}
 			# country_event = {
 			# 	id = dmm_keyboard.100
@@ -72,7 +81,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "dmm_keyboard_a"
+		name = "dmm_keyboard_a_uppercase"
 		custom_gui = "dmm_keyboard_a"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_a_response"
@@ -90,10 +99,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_b"
+		name = "dmm_keyboard_b_uppercase"
 		custom_gui = "dmm_keyboard_b"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_b_response"
@@ -111,10 +121,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_c"
+		name = "dmm_keyboard_c_uppercase"
 		custom_gui = "dmm_keyboard_c"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_c_response"
@@ -132,10 +143,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_d"
+		name = "dmm_keyboard_d_uppercase"
 		custom_gui = "dmm_keyboard_d"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_d_response"
@@ -153,10 +165,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_e"
+		name = "dmm_keyboard_e_uppercase"
 		custom_gui = "dmm_keyboard_e"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_e_response"
@@ -174,10 +187,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_f"
+		name = "dmm_keyboard_f_uppercase"
 		custom_gui = "dmm_keyboard_f"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_f_response"
@@ -195,10 +209,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_g"
+		name = "dmm_keyboard_g_uppercase"
 		custom_gui = "dmm_keyboard_g"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_g_response"
@@ -216,10 +231,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_h"
+		name = "dmm_keyboard_h_uppercase"
 		custom_gui = "dmm_keyboard_h"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_h_response"
@@ -237,10 +253,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_i"
+		name = "dmm_keyboard_i_uppercase"
 		custom_gui = "dmm_keyboard_i"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_i_response"
@@ -258,10 +275,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_j"
+		name = "dmm_keyboard_j_uppercase"
 		custom_gui = "dmm_keyboard_j"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_j_response"
@@ -279,10 +297,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_k"
+		name = "dmm_keyboard_k_uppercase"
 		custom_gui = "dmm_keyboard_k"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_k_response"
@@ -300,10 +319,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_l"
+		name = "dmm_keyboard_l_uppercase"
 		custom_gui = "dmm_keyboard_l"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_l_response"
@@ -321,10 +341,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_m"
+		name = "dmm_keyboard_m_uppercase"
 		custom_gui = "dmm_keyboard_m"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_m_response"
@@ -342,10 +363,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_n"
+		name = "dmm_keyboard_n_uppercase"
 		custom_gui = "dmm_keyboard_n"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_n_response"
@@ -363,10 +385,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_o"
+		name = "dmm_keyboard_o_uppercase"
 		custom_gui = "dmm_keyboard_o"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_o_response"
@@ -384,10 +407,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_p"
+		name = "dmm_keyboard_p_uppercase"
 		custom_gui = "dmm_keyboard_p"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_p_response"
@@ -405,10 +429,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_q"
+		name = "dmm_keyboard_q_uppercase"
 		custom_gui = "dmm_keyboard_q"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_q_response"
@@ -426,10 +451,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_r"
+		name = "dmm_keyboard_r_uppercase"
 		custom_gui = "dmm_keyboard_r"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_r_response"
@@ -447,10 +473,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_s"
+		name = "dmm_keyboard_s_uppercase"
 		custom_gui = "dmm_keyboard_s"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_s_response"
@@ -468,10 +495,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_t"
+		name = "dmm_keyboard_t_uppercase"
 		custom_gui = "dmm_keyboard_t"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_t_response"
@@ -489,10 +517,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_u"
+		name = "dmm_keyboard_u_uppercase"
 		custom_gui = "dmm_keyboard_u"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_u_response"
@@ -510,10 +539,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_v"
+		name = "dmm_keyboard_v_uppercase"
 		custom_gui = "dmm_keyboard_v"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_v_response"
@@ -531,10 +561,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_w"
+		name = "dmm_keyboard_w_uppercase"
 		custom_gui = "dmm_keyboard_w"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_w_response"
@@ -552,10 +583,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_x"
+		name = "dmm_keyboard_x_uppercase"
 		custom_gui = "dmm_keyboard_x"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_x_response"
@@ -573,10 +605,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_y"
+		name = "dmm_keyboard_y_uppercase"
 		custom_gui = "dmm_keyboard_y"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_y_response"
@@ -594,10 +627,11 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
-		name = "dmm_keyboard_z"
+		name = "dmm_keyboard_z_uppercase"
 		custom_gui = "dmm_keyboard_z"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_z_response"
@@ -615,6 +649,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -636,6 +671,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -657,6 +693,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -678,6 +715,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -699,6 +737,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -720,6 +759,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -741,6 +781,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -762,6 +803,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -783,6 +825,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -804,6 +847,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -825,6 +869,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -846,6 +891,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -867,6 +913,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -888,6 +935,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -909,6 +957,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -930,6 +979,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -951,6 +1001,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -972,6 +1023,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -993,6 +1045,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1014,6 +1067,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1035,6 +1089,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1056,6 +1111,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1077,6 +1133,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1098,6 +1155,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1119,6 +1177,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1140,6 +1199,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1161,27 +1221,7 @@ country_event = {
 					value = 0
 				}
 			}
-		}
-	}
-	option = {
-		name = "dmm_keyboard_0"
-		custom_gui = "dmm_keyboard_0"
-		is_dialog_only = yes
-		response_text = "dmm_keyboard_0_response"
-		hidden_effect = {
-			dmm_keyboard_add_letter = yes
-			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
-			}
-			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]0"
-			}
-			event_target:dmm_keyboard_country = {
-				set_variable = {
-					which = dmm_keyboard_spaces_amount
-					value = 0
-				}
-			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1195,7 +1235,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]1"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard1]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1203,6 +1243,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1216,7 +1257,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]2"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard2]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1224,6 +1265,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1237,7 +1279,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]3"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard3]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1245,6 +1287,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1258,7 +1301,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]4"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard4]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1266,6 +1309,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1279,7 +1323,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]5"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard5]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1287,6 +1331,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1300,7 +1345,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]6"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard6]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1308,6 +1353,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1321,7 +1367,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]7"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard7]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1329,6 +1375,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1342,7 +1389,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]8"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard8]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1350,6 +1397,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1363,7 +1411,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]9"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard9]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1371,6 +1419,29 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_0"
+		custom_gui = "dmm_keyboard_0"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_0_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard0]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1384,7 +1455,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]-"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKPMinus]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1392,6 +1463,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1405,7 +1477,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]+"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKPPlus]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1413,6 +1485,271 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_1_shift"
+		custom_gui = "dmm_keyboard_1_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_1_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard1Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_2_shift"
+		custom_gui = "dmm_keyboard_2_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_2_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard2Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_3_shift"
+		custom_gui = "dmm_keyboard_3_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_3_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard3Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_4_shift"
+		custom_gui = "dmm_keyboard_4_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_4_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard4Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_5_shift"
+		custom_gui = "dmm_keyboard_5_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_5_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard5Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_6_shift"
+		custom_gui = "dmm_keyboard_6_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_6_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard6Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_7_shift"
+		custom_gui = "dmm_keyboard_7_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_7_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard7Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_8_shift"
+		custom_gui = "dmm_keyboard_8_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_8_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard8Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_9_shift"
+		custom_gui = "dmm_keyboard_9_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_9_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard9Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_0_shift"
+		custom_gui = "dmm_keyboard_0_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_0_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard0Shift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_kp_minus_shift"
+		custom_gui = "dmm_keyboard_kp_minus_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_kp_minus_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKPMinusShift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_kp_plus_shift"
+		custom_gui = "dmm_keyboard_kp_plus_shift"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_kp_plus_shift_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKPPlusShift]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1434,6 +1771,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1455,6 +1793,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1476,6 +1815,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1497,6 +1837,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1518,6 +1859,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1539,6 +1881,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1560,6 +1903,7 @@ country_event = {
 					value = 0
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1591,6 +1935,7 @@ country_event = {
 					value = 1
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 	}
 	option = {
@@ -1680,10 +2025,115 @@ country_event = {
 					}
 				}
 			}
+			dmm_keyboard_clear_diacritics = yes
 		}
 		# log = "Current = [dmm_keyboard_current_leader.GetName] - [dmm_keyboard_current_leader.dmm_keyboard_name_length]"
 		# log = "Ruler = [dmm_keyboard_country.ruler.GetName] - [dmm_keyboard_country.ruler.dmm_keyboard_name_length]"
 		# log = "------------------"
+	}
+	option = {
+		name = "dmm_keyboard_acute"
+		custom_gui = "dmm_keyboard_acute"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				dmm_keyboard_clear_diacritics = yes
+				set_country_flag = dmm_keyboard_acute
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_grave"
+		custom_gui = "dmm_keyboard_grave"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				dmm_keyboard_clear_diacritics = yes
+				set_country_flag = dmm_keyboard_grave
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_circumflex"
+		custom_gui = "dmm_keyboard_circumflex"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				dmm_keyboard_clear_diacritics = yes
+				set_country_flag = dmm_keyboard_circumflex
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_diaeresis"
+		custom_gui = "dmm_keyboard_diaeresis"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				dmm_keyboard_clear_diacritics = yes
+				set_country_flag = dmm_keyboard_diaeresis
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_tilde"
+		custom_gui = "dmm_keyboard_tilde"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				dmm_keyboard_clear_diacritics = yes
+				set_country_flag = dmm_keyboard_tilde
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_eszett"
+		custom_gui = "dmm_keyboard_eszett"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_eszett_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]ß"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_ccedilla"
+		custom_gui = "dmm_keyboard_ccedilla"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_ccedilla_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]Ç"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
 	}
 	option = {
 		name = dmm.100.close

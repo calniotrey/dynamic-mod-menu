@@ -127,14 +127,14 @@ defined_text = {
 	name = GetKeyboardCapslock
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_capslock_icon"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = ""
@@ -145,14 +145,14 @@ defined_text = {
 	name = GetKeyboardCapslockInverted
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = ""
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_capslock_icon"
@@ -163,17 +163,111 @@ defined_text = {
 	name = GetKeyboardA
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
-		localization_key = "dmm_keyboard_a_shift"
+		localization_key = "dmm_keyboard_a_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_a_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_a_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_a_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_a_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_a_tilde_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
 		localization_key = "dmm_keyboard_a_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_a_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_a_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_a_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_a_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_a_tilde_lowercase"
 	}
 }
 
@@ -181,14 +275,14 @@ defined_text = {
 	name = GetKeyboardB
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_b_shift"
+		localization_key = "dmm_keyboard_b_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_b_lowercase"
@@ -199,14 +293,14 @@ defined_text = {
 	name = GetKeyboardC
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_c_shift"
+		localization_key = "dmm_keyboard_c_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_c_lowercase"
@@ -217,14 +311,14 @@ defined_text = {
 	name = GetKeyboardD
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_d_shift"
+		localization_key = "dmm_keyboard_d_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_d_lowercase"
@@ -235,17 +329,111 @@ defined_text = {
 	name = GetKeyboardE
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
-		localization_key = "dmm_keyboard_e_shift"
+		localization_key = "dmm_keyboard_e_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_e_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_e_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_e_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_e_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_e_tilde_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
 		localization_key = "dmm_keyboard_e_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_e_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_e_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_e_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_e_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_e_tilde_lowercase"
 	}
 }
 
@@ -253,14 +441,14 @@ defined_text = {
 	name = GetKeyboardF
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_f_shift"
+		localization_key = "dmm_keyboard_f_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_f_lowercase"
@@ -271,14 +459,14 @@ defined_text = {
 	name = GetKeyboardG
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_g_shift"
+		localization_key = "dmm_keyboard_g_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_g_lowercase"
@@ -289,14 +477,14 @@ defined_text = {
 	name = GetKeyboardH
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_h_shift"
+		localization_key = "dmm_keyboard_h_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_h_lowercase"
@@ -307,17 +495,111 @@ defined_text = {
 	name = GetKeyboardI
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
-		localization_key = "dmm_keyboard_i_shift"
+		localization_key = "dmm_keyboard_i_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_i_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_i_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_i_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_i_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_i_tilde_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
 		localization_key = "dmm_keyboard_i_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_i_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_i_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_i_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_i_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_i_tilde_lowercase"
 	}
 }
 
@@ -325,14 +607,14 @@ defined_text = {
 	name = GetKeyboardJ
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_j_shift"
+		localization_key = "dmm_keyboard_j_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_j_lowercase"
@@ -343,14 +625,14 @@ defined_text = {
 	name = GetKeyboardK
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_k_shift"
+		localization_key = "dmm_keyboard_k_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_k_lowercase"
@@ -361,14 +643,14 @@ defined_text = {
 	name = GetKeyboardL
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_l_shift"
+		localization_key = "dmm_keyboard_l_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_l_lowercase"
@@ -379,14 +661,14 @@ defined_text = {
 	name = GetKeyboardM
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_m_shift"
+		localization_key = "dmm_keyboard_m_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_m_lowercase"
@@ -397,17 +679,37 @@ defined_text = {
 	name = GetKeyboardN
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_capslock
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
-		localization_key = "dmm_keyboard_n_shift"
+		localization_key = "dmm_keyboard_n_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_n_tilde_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			NOT = {
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
-		localization_key = "dmm_keyboard_n_lowercase"
+		localization_key = "dmm_keyboard_n_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_n_tilde_uppercase"
 	}
 }
 
@@ -415,17 +717,111 @@ defined_text = {
 	name = GetKeyboardO
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
-		localization_key = "dmm_keyboard_o_shift"
+		localization_key = "dmm_keyboard_o_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_o_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_o_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_o_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_o_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_o_tilde_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
 		localization_key = "dmm_keyboard_o_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_o_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_o_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_o_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_o_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_o_tilde_lowercase"
 	}
 }
 
@@ -433,14 +829,14 @@ defined_text = {
 	name = GetKeyboardP
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_p_shift"
+		localization_key = "dmm_keyboard_p_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_p_lowercase"
@@ -451,14 +847,14 @@ defined_text = {
 	name = GetKeyboardQ
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_q_shift"
+		localization_key = "dmm_keyboard_q_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_q_lowercase"
@@ -469,14 +865,14 @@ defined_text = {
 	name = GetKeyboardR
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_r_shift"
+		localization_key = "dmm_keyboard_r_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_r_lowercase"
@@ -487,14 +883,14 @@ defined_text = {
 	name = GetKeyboardS
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_s_shift"
+		localization_key = "dmm_keyboard_s_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_s_lowercase"
@@ -505,14 +901,14 @@ defined_text = {
 	name = GetKeyboardT
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_t_shift"
+		localization_key = "dmm_keyboard_t_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_t_lowercase"
@@ -523,17 +919,111 @@ defined_text = {
 	name = GetKeyboardU
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
-		localization_key = "dmm_keyboard_u_shift"
+		localization_key = "dmm_keyboard_u_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_u_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_u_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_u_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_u_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_u_tilde_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
 		localization_key = "dmm_keyboard_u_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_u_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_u_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_u_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_u_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_u_tilde_lowercase"
 	}
 }
 
@@ -541,14 +1031,14 @@ defined_text = {
 	name = GetKeyboardV
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_v_shift"
+		localization_key = "dmm_keyboard_v_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_v_lowercase"
@@ -559,14 +1049,14 @@ defined_text = {
 	name = GetKeyboardW
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_w_shift"
+		localization_key = "dmm_keyboard_w_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_w_lowercase"
@@ -577,14 +1067,14 @@ defined_text = {
 	name = GetKeyboardX
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_x_shift"
+		localization_key = "dmm_keyboard_x_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_x_lowercase"
@@ -595,14 +1085,14 @@ defined_text = {
 	name = GetKeyboardY
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_y_shift"
+		localization_key = "dmm_keyboard_y_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_y_lowercase"
@@ -613,14 +1103,14 @@ defined_text = {
 	name = GetKeyboardZ
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = "dmm_keyboard_z_shift"
+		localization_key = "dmm_keyboard_z_uppercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
 		localization_key = "dmm_keyboard_z_lowercase"
@@ -631,17 +1121,111 @@ defined_text = {
 	name = GetKeyboardAShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
 		localization_key = "dmm_keyboard_a_lowercase"
 	}
 	text = {
 		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_a_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_a_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_a_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_a_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_a_tilde_lowercase"
+	}
+	text = {
+		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
-		localization_key = "dmm_keyboard_a_shift"
+		localization_key = "dmm_keyboard_a_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_a_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_a_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_a_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_a_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_a_tilde_uppercase"
 	}
 }
 
@@ -649,17 +1233,17 @@ defined_text = {
 	name = GetKeyboardBShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_b_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_b_shift"
+		localization_key = "dmm_keyboard_b_uppercase"
 	}
 }
 
@@ -667,17 +1251,17 @@ defined_text = {
 	name = GetKeyboardCShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_c_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_c_shift"
+		localization_key = "dmm_keyboard_c_uppercase"
 	}
 }
 
@@ -685,17 +1269,17 @@ defined_text = {
 	name = GetKeyboardDShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_d_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_d_shift"
+		localization_key = "dmm_keyboard_d_uppercase"
 	}
 }
 
@@ -703,17 +1287,111 @@ defined_text = {
 	name = GetKeyboardEShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
 		localization_key = "dmm_keyboard_e_lowercase"
 	}
 	text = {
 		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_e_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_e_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_e_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_e_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_e_tilde_lowercase"
+	}
+	text = {
+		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
-		localization_key = "dmm_keyboard_e_shift"
+		localization_key = "dmm_keyboard_e_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_e_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_e_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_e_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_e_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_e_tilde_uppercase"
 	}
 }
 
@@ -721,17 +1399,17 @@ defined_text = {
 	name = GetKeyboardFShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_f_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_f_shift"
+		localization_key = "dmm_keyboard_f_uppercase"
 	}
 }
 
@@ -739,17 +1417,17 @@ defined_text = {
 	name = GetKeyboardGShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_g_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_g_shift"
+		localization_key = "dmm_keyboard_g_uppercase"
 	}
 }
 
@@ -757,17 +1435,17 @@ defined_text = {
 	name = GetKeyboardHShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_h_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_h_shift"
+		localization_key = "dmm_keyboard_h_uppercase"
 	}
 }
 
@@ -775,17 +1453,111 @@ defined_text = {
 	name = GetKeyboardIShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
 		localization_key = "dmm_keyboard_i_lowercase"
 	}
 	text = {
 		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_i_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_i_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_i_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_i_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_i_tilde_lowercase"
+	}
+	text = {
+		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
-		localization_key = "dmm_keyboard_i_shift"
+		localization_key = "dmm_keyboard_i_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_i_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_i_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_i_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_i_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_i_tilde_uppercase"
 	}
 }
 
@@ -793,17 +1565,17 @@ defined_text = {
 	name = GetKeyboardJShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_j_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_j_shift"
+		localization_key = "dmm_keyboard_j_uppercase"
 	}
 }
 
@@ -811,17 +1583,17 @@ defined_text = {
 	name = GetKeyboardKShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_k_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_k_shift"
+		localization_key = "dmm_keyboard_k_uppercase"
 	}
 }
 
@@ -829,17 +1601,17 @@ defined_text = {
 	name = GetKeyboardLShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_l_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_l_shift"
+		localization_key = "dmm_keyboard_l_uppercase"
 	}
 }
 
@@ -847,17 +1619,17 @@ defined_text = {
 	name = GetKeyboardMShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_m_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_m_shift"
+		localization_key = "dmm_keyboard_m_uppercase"
 	}
 }
 
@@ -865,17 +1637,37 @@ defined_text = {
 	name = GetKeyboardNShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOT = {
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
 		localization_key = "dmm_keyboard_n_lowercase"
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_n_tilde_lowercase"
+	}
+	text = {
+		trigger = {
+			NOR = {
+				has_country_flag = dmm_keyboard_capslock
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
-		localization_key = "dmm_keyboard_n_shift"
+		localization_key = "dmm_keyboard_n_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_n_tilde_uppercase"
 	}
 }
 
@@ -883,17 +1675,111 @@ defined_text = {
 	name = GetKeyboardOShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
 		localization_key = "dmm_keyboard_o_lowercase"
 	}
 	text = {
 		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_o_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_o_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_o_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_o_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_o_tilde_lowercase"
+	}
+	text = {
+		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
-		localization_key = "dmm_keyboard_o_shift"
+		localization_key = "dmm_keyboard_o_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_o_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_o_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_o_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_o_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_o_tilde_uppercase"
 	}
 }
 
@@ -901,17 +1787,17 @@ defined_text = {
 	name = GetKeyboardPShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_p_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_p_shift"
+		localization_key = "dmm_keyboard_p_uppercase"
 	}
 }
 
@@ -919,17 +1805,17 @@ defined_text = {
 	name = GetKeyboardQShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_q_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_q_shift"
+		localization_key = "dmm_keyboard_q_uppercase"
 	}
 }
 
@@ -937,17 +1823,17 @@ defined_text = {
 	name = GetKeyboardRShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_r_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_r_shift"
+		localization_key = "dmm_keyboard_r_uppercase"
 	}
 }
 
@@ -955,17 +1841,17 @@ defined_text = {
 	name = GetKeyboardSShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_s_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_s_shift"
+		localization_key = "dmm_keyboard_s_uppercase"
 	}
 }
 
@@ -973,17 +1859,17 @@ defined_text = {
 	name = GetKeyboardTShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_t_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_t_shift"
+		localization_key = "dmm_keyboard_t_uppercase"
 	}
 }
 
@@ -991,17 +1877,111 @@ defined_text = {
 	name = GetKeyboardUShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
+			}
 		}
 		localization_key = "dmm_keyboard_u_lowercase"
 	}
 	text = {
 		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_u_acute_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_u_grave_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_u_circumflex_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_u_diaeresis_lowercase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_u_tilde_lowercase"
+	}
+	text = {
+		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
+			}
+			NOR = {
+				has_country_flag = dmm_keyboard_acute
+				has_country_flag = dmm_keyboard_grave
+				has_country_flag = dmm_keyboard_circumflex
+				has_country_flag = dmm_keyboard_diaeresis
+				has_country_flag = dmm_keyboard_tilde
 			}
 		}
-		localization_key = "dmm_keyboard_u_shift"
+		localization_key = "dmm_keyboard_u_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_acute
+		}
+		localization_key = "dmm_keyboard_u_acute_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_grave
+		}
+		localization_key = "dmm_keyboard_u_grave_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_circumflex
+		}
+		localization_key = "dmm_keyboard_u_circumflex_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+		localization_key = "dmm_keyboard_u_diaeresis_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+			has_country_flag = dmm_keyboard_tilde
+		}
+		localization_key = "dmm_keyboard_u_tilde_uppercase"
 	}
 }
 
@@ -1009,17 +1989,17 @@ defined_text = {
 	name = GetKeyboardVShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_v_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_v_shift"
+		localization_key = "dmm_keyboard_v_uppercase"
 	}
 }
 
@@ -1027,17 +2007,17 @@ defined_text = {
 	name = GetKeyboardWShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_w_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_w_shift"
+		localization_key = "dmm_keyboard_w_uppercase"
 	}
 }
 
@@ -1045,17 +2025,17 @@ defined_text = {
 	name = GetKeyboardXShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_x_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_x_shift"
+		localization_key = "dmm_keyboard_x_uppercase"
 	}
 }
 
@@ -1063,17 +2043,17 @@ defined_text = {
 	name = GetKeyboardYShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_y_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_y_shift"
+		localization_key = "dmm_keyboard_y_uppercase"
 	}
 }
 
@@ -1081,16 +2061,448 @@ defined_text = {
 	name = GetKeyboardZShift
 	text = {
 		trigger = {
-			has_country_flag = dmm_keyboad_capslock
+			has_country_flag = dmm_keyboard_capslock
 		}
 		localization_key = "dmm_keyboard_z_lowercase"
 	}
 	text = {
 		trigger = {
 			NOT = {
-				has_country_flag = dmm_keyboad_capslock
+				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = "dmm_keyboard_z_shift"
+		localization_key = "dmm_keyboard_z_uppercase"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard1
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_1_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_1"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard2
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_2_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_2"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard3
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_3_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_3"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard4
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_4_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_4"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard5
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_5_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_5"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard6
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_6_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_6"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard7
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_7_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_7"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard8
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_8_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_8"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard9
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_9_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_9"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard0
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_0_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_0"
+	}
+}
+
+defined_text = {
+	name = GetKeyboardKPMinus
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_kp_minus_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_kp_minus"
+	}
+}
+
+defined_text = {
+	name = GetKeyboardKPPlus
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_kp_plus_shift"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_kp_plus"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard1Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_1"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_1_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard2Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_2"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_2_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard3Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_3"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_3_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard4Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_4"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_4_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard5Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_5"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_5_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard6Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_6"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_6_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard7Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_7"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_7_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard8Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_8"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_8_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard9Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_9"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_9_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboard0Shift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_0"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_0_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboardKPMinusShift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_kp_minus"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_kp_minus_shift"
+	}
+}
+
+defined_text = {
+	name = GetKeyboardKPPlusShift
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_kp_plus"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_kp_plus_shift"
 	}
 }

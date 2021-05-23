@@ -79,4 +79,15 @@ spriteTypes = {
 		}
 		hitbox_margin = { x=11 y=11 }
 	}
+	
+	spriteType = {
+		name = "GFX_text_dmm_keyboard_icons"
+		texturefile = "gfx/interface/icons/text_icons/dmm_keyboard_icons.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_text_dmm_keyboard_diacritics"
+		texturefile = "gfx/interface/icons/text_icons/dmm_keyboard_diacritics.dds"
+		noOfFrames = 5
+	}
 }

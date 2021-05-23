@@ -28,3 +28,35 @@ dmm_button_effect = {
 		}
 	}
 }
+
+dmm_keyboard_help_tt = {
+	potential = {
+		always = yes
+	}
+	allow = {
+		custom_tooltip = "dmm.keyboard.help.tt"
+		always = yes
+	}
+	effect = { custom_tooltip = "dmm.keyboard.help.tt" }
+}
+
+# dmm_keyboard_capslock = {
+# 	potential = {
+# 		NOT = { has_country_flag = dmm_keyboard_capslock_on }
+# 	}
+# 	allow = {
+# 		always = yes
+# 	}
+# 	effect = {
+# 		set_country_flag = dmm_keyboard_capslock_on
+# 	}
+# }
+
+dmm_keyboard_capslock_on = {
+	potential = {
+		has_country_flag = dmm_keyboard_capslock_on
+	}
+	allow = {
+		always = yes
+	}
+}
