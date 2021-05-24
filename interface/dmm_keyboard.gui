@@ -57,6 +57,7 @@ guiTypes = {
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
+            shortcut = "CTRL+C"
 		}
 	}
 
@@ -1670,6 +1671,7 @@ guiTypes = {
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
             text = "OPTION_TEXT"
+            shortcut = "CTRL+s"
 		}
 	}
 

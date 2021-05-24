@@ -2506,3 +2506,21 @@ defined_text = {
 		localization_key = "dmm_keyboard_kp_plus_shift"
 	}
 }
+
+defined_text = {
+	name = GetKeyboardCcedilla
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_ccedilla_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_ccedilla_lowercase"
+	}
+}

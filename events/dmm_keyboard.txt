@@ -1942,7 +1942,7 @@ country_event = {
 		name = "dmm_keyboard_backspace"
 		custom_gui = "dmm_keyboard_backspace"
 		is_dialog_only = yes
-		response_text = "[dmm_keyboard_country.ruler.GetName]"
+		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_country.ruler.GetName]"
 		allow = {
 			hidden_trigger = {
 				OR = {
@@ -2114,7 +2114,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "dmm_keyboard_ccedilla"
+		name = "dmm_keyboard_ccedilla_uppercase"
 		custom_gui = "dmm_keyboard_ccedilla"
 		is_dialog_only = yes
 		response_text = "dmm_keyboard_ccedilla_response"
@@ -2124,7 +2124,7 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]Ç"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardCcedilla]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
