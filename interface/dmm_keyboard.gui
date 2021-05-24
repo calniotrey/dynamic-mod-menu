@@ -43,6 +43,10 @@
 @dmm_key_superscript_x = 41
 @dmm_key_superscript_y = 22
 
+@dmm_key_colors_col_0 = -290
+@dmm_key_colors_col_1 = -192
+@dmm_key_colors_col_2 = -94
+
 guiTypes = {
 	containerWindowType = {
 		name = "dmm_keyboard_capslock"
@@ -56,8 +60,216 @@ guiTypes = {
 			position = { x=@dmm_caps_col y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "CTRL+C"
+			text = "OPTION_TEXT"
+			shortcut = "CTRL+C"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_blue"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_0 y=@dmm_key_row_0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_teal"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_0 y=@dmm_key_row_1 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_green"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_0 y=@dmm_key_row_2 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_orange"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_0 y=@dmm_key_row_3 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_brown"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_1 y=@dmm_key_row_0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_purple"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_1 y=@dmm_key_row_1 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_light_red"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_1 y=@dmm_key_row_2 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_red"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_1 y=@dmm_key_row_3 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_dark_orange"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_2 y=@dmm_key_row_0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_light_grey"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_2 y=@dmm_key_row_1 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_white"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_2 y=@dmm_key_row_2 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_yellow"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_long"
+			position = { x=@dmm_key_colors_col_2 y=@dmm_key_row_3 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_selected_color_default"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_spacebar"
+			position = { x=@dmm_key_colors_col_0 y=@dmm_key_row_4 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -73,8 +285,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_1 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "a"
+			text = "OPTION_TEXT"
+			shortcut = "a"
 		}
 	}
 
@@ -90,8 +302,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_6 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "b"
+			text = "OPTION_TEXT"
+			shortcut = "b"
 		}
 	}
 
@@ -107,8 +319,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_4 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "c"
+			text = "OPTION_TEXT"
+			shortcut = "c"
 		}
 	}
 
@@ -124,8 +336,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_3 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "d"
+			text = "OPTION_TEXT"
+			shortcut = "d"
 		}
 	}
 
@@ -141,8 +353,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_3 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "e"
+			text = "OPTION_TEXT"
+			shortcut = "e"
 		}
 	}
 
@@ -158,8 +370,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_4 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "f"
+			text = "OPTION_TEXT"
+			shortcut = "f"
 		}
 	}
 
@@ -175,8 +387,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_5 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "g"
+			text = "OPTION_TEXT"
+			shortcut = "g"
 		}
 	}
 
@@ -192,8 +404,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_6 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "h"
+			text = "OPTION_TEXT"
+			shortcut = "h"
 		}
 	}
 
@@ -209,8 +421,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_8 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "i"
+			text = "OPTION_TEXT"
+			shortcut = "i"
 		}
 	}
 
@@ -226,8 +438,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_7 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "j"
+			text = "OPTION_TEXT"
+			shortcut = "j"
 		}
 	}
 
@@ -243,8 +455,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_8 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "k"
+			text = "OPTION_TEXT"
+			shortcut = "k"
 		}
 	}
 
@@ -260,8 +472,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_9 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "l"
+			text = "OPTION_TEXT"
+			shortcut = "l"
 		}
 	}
 
@@ -277,8 +489,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_8 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "m"
+			text = "OPTION_TEXT"
+			shortcut = "m"
 		}
 	}
 
@@ -294,8 +506,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_7 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "n"
+			text = "OPTION_TEXT"
+			shortcut = "n"
 		}
 	}
 
@@ -311,8 +523,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_9 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "o"
+			text = "OPTION_TEXT"
+			shortcut = "o"
 		}
 	}
 
@@ -328,8 +540,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_10 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "p"
+			text = "OPTION_TEXT"
+			shortcut = "p"
 		}
 	}
 
@@ -345,8 +557,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_1 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "q"
+			text = "OPTION_TEXT"
+			shortcut = "q"
 		}
 	}
 
@@ -362,8 +574,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_4 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "r"
+			text = "OPTION_TEXT"
+			shortcut = "r"
 		}
 	}
 
@@ -379,8 +591,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_2 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "s"
+			text = "OPTION_TEXT"
+			shortcut = "s"
 		}
 	}
 
@@ -396,8 +608,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_5 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "t"
+			text = "OPTION_TEXT"
+			shortcut = "t"
 		}
 	}
 
@@ -413,8 +625,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_7 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "u"
+			text = "OPTION_TEXT"
+			shortcut = "u"
 		}
 	}
 
@@ -430,8 +642,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_5 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "v"
+			text = "OPTION_TEXT"
+			shortcut = "v"
 		}
 	}
 
@@ -447,8 +659,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_2 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "w"
+			text = "OPTION_TEXT"
+			shortcut = "w"
 		}
 	}
 
@@ -464,8 +676,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_3 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "x"
+			text = "OPTION_TEXT"
+			shortcut = "x"
 		}
 	}
 
@@ -481,8 +693,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_6 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "y"
+			text = "OPTION_TEXT"
+			shortcut = "y"
 		}
 	}
 
@@ -498,8 +710,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_2 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "z"
+			text = "OPTION_TEXT"
+			shortcut = "z"
 		}
 	}
 
@@ -515,8 +727,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+a"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+a"
 		}
 	}
 
@@ -532,8 +744,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+b"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+b"
 		}
 	}
 
@@ -549,8 +761,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+c"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+c"
 		}
 	}
 
@@ -566,8 +778,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+d"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+d"
 		}
 	}
 
@@ -583,8 +795,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+e"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+e"
 		}
 	}
 
@@ -600,8 +812,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+f"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+f"
 		}
 	}
 
@@ -617,8 +829,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+g"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+g"
 		}
 	}
 
@@ -634,8 +846,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+h"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+h"
 		}
 	}
 
@@ -651,8 +863,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+i"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+i"
 		}
 	}
 
@@ -668,8 +880,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+j"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+j"
 		}
 	}
 
@@ -685,8 +897,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+k"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+k"
 		}
 	}
 
@@ -702,8 +914,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+l"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+l"
 		}
 	}
 
@@ -719,8 +931,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+m"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+m"
 		}
 	}
 
@@ -736,8 +948,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+n"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+n"
 		}
 	}
 
@@ -753,8 +965,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+o"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+o"
 		}
 	}
 
@@ -770,8 +982,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+p"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+p"
 		}
 	}
 
@@ -787,8 +999,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+q"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+q"
 		}
 	}
 
@@ -804,8 +1016,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+r"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+r"
 		}
 	}
 
@@ -821,8 +1033,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+s"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+s"
 		}
 	}
 
@@ -838,8 +1050,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+t"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+t"
 		}
 	}
 
@@ -855,8 +1067,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+u"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+u"
 		}
 	}
 
@@ -872,8 +1084,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+v"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+v"
 		}
 	}
 
@@ -889,8 +1101,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+w"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+w"
 		}
 	}
 
@@ -906,8 +1118,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+x"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+x"
 		}
 	}
 
@@ -923,8 +1135,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+y"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+y"
 		}
 	}
 
@@ -940,8 +1152,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+z"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+z"
 		}
 	}
 
@@ -957,8 +1169,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_0 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "1"
+			text = "OPTION_TEXT"
+			shortcut = "1"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_exclamation_box"
@@ -990,8 +1202,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_1 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "2"
+			text = "OPTION_TEXT"
+			shortcut = "2"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_at_box"
@@ -1023,8 +1235,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_2 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "3"
+			text = "OPTION_TEXT"
+			shortcut = "3"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_pound_box"
@@ -1056,8 +1268,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_3 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "4"
+			text = "OPTION_TEXT"
+			shortcut = "4"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_dollar_box"
@@ -1089,8 +1301,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_4 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "5"
+			text = "OPTION_TEXT"
+			shortcut = "5"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_percent_box"
@@ -1122,8 +1334,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_5 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "6"
+			text = "OPTION_TEXT"
+			shortcut = "6"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_caret_box"
@@ -1155,8 +1367,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_6 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "7"
+			text = "OPTION_TEXT"
+			shortcut = "7"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_ampersand_box"
@@ -1188,8 +1400,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_7 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "8"
+			text = "OPTION_TEXT"
+			shortcut = "8"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_asterisk_box"
@@ -1221,8 +1433,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_8 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "9"
+			text = "OPTION_TEXT"
+			shortcut = "9"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_left_parenthesis_box"
@@ -1254,8 +1466,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_9 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "0"
+			text = "OPTION_TEXT"
+			shortcut = "0"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_right_parenthesis_box"
@@ -1287,8 +1499,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_10 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "kp_minus"
+			text = "OPTION_TEXT"
+			shortcut = "kp_minus"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_underscore_box"
@@ -1320,8 +1532,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_11 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
-            shortcut = "kp_plus"
+			text = "OPTION_TEXT"
+			shortcut = "kp_plus"
 		}
 		containerWindowType = {
 			name = "dmm_keyboard_equals_box"
@@ -1353,8 +1565,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+1"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+1"
 		}
 	}
 
@@ -1370,8 +1582,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+2"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+2"
 		}
 	}
 
@@ -1387,8 +1599,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+3"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+3"
 		}
 	}
 
@@ -1404,8 +1616,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+4"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+4"
 		}
 	}
 
@@ -1421,8 +1633,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+5"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+5"
 		}
 	}
 
@@ -1438,8 +1650,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+6"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+6"
 		}
 	}
 
@@ -1455,8 +1667,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+7"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+7"
 		}
 	}
 
@@ -1472,8 +1684,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+8"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+8"
 		}
 	}
 
@@ -1489,8 +1701,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+9"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+9"
 		}
 	}
 
@@ -1506,8 +1718,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+0"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+0"
 		}
 	}
 
@@ -1523,8 +1735,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+kp_minus"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+kp_minus"
 		}
 	}
 
@@ -1540,8 +1752,8 @@ guiTypes = {
 			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "SHIFT+kp_plus"
+			text = "OPTION_TEXT"
+			shortcut = "SHIFT+kp_plus"
 		}
 	}
 
@@ -1557,7 +1769,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_11 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1573,7 +1785,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_12 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1589,7 +1801,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_10 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1605,7 +1817,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_11 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1621,7 +1833,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_9 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1637,7 +1849,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_10 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1653,7 +1865,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_11 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1670,8 +1882,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_4 y=@dmm_key_row_4 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "CTRL+s"
+			text = "OPTION_TEXT"
+			shortcut = "CTRL+s"
 		}
 	}
 
@@ -1687,8 +1899,8 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_12 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
-            text = "OPTION_TEXT"
-            shortcut = "BACKSPACE"
+			text = "OPTION_TEXT"
+			shortcut = "BACKSPACE"
 		}
 	}
 
@@ -1704,7 +1916,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_13 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1720,7 +1932,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_13 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1736,7 +1948,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_14 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1752,7 +1964,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_14 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1768,7 +1980,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_15 y=@dmm_key_row_0 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1784,7 +1996,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_15 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1800,7 +2012,7 @@ guiTypes = {
 			position = { x=@dmm_key_col_off_14 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
-            text = "OPTION_TEXT"
+			text = "OPTION_TEXT"
 		}
 	}
 
@@ -1808,8 +2020,9 @@ guiTypes = {
 		name = "dmm_keyboard"
 		orientation = center
 		origo = center
-		size = { width = 1000 height = 410 }
+		size = { width = 1250 height = 410 }
 		# size = { width = 100% height = 100% }
+		moveable = yes
 
 		background = {
 			name = "background"
@@ -1818,7 +2031,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "dmm_keyboard_help"
-			position = { x = 530 y = 0 }
+			position = { x = 830 y = 0 }
 			effectButtonType = {
 				name = "dmm_keyboard_help_tt"
 				quadTextureSprite = "GFX_dmm_keyboard_key"
@@ -1848,7 +2061,7 @@ guiTypes = {
 			effectButtonType = {
 				name = "dmm_keyboard_capslock_on_button"
 				quadTextureSprite = "GFX_dmm_keyboard_key_long"
-				position = { x = 0 y = 35 }
+				position = { x = 300 y = 35 }
 				size = { x = 255 y = 32 }
 				frame = 2
 				effect = "dmm_keyboard_capslock_on"
@@ -1903,7 +2116,7 @@ guiTypes = {
 		buttonType = {
 			name = "alien_message_background"
 			size = { x = 325 y = 40 }
-			position = { x = 190 y = 45 }
+			position = { x = 490 y = 45 }
 			spriteType = "GFX_tiles_dark_area_cut_8"
 			alwaysTransparent = yes
 		}
@@ -1911,7 +2124,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "alien_message"
 			font = "malgun_goth_24"
-			position = { x = 200 y = 50 }
+			position = { x = 500 y = 50 }
 			maxWidth = 305
 			maxHeight = 220
 			format = left
@@ -1921,7 +2134,7 @@ guiTypes = {
 		buttonType = {
 			name = "confirm_button"
 			quadTextureSprite = "GFX_standard_button_142_34_button"
-			position = { x= -10075 y = 564  }
+			position = { x= -10075 y = 564 }
 			Orientation = "UPPER_RIGHT"
 			font = "cg_16b"
 			text = "MESSAGE_OK"
@@ -2116,7 +2329,7 @@ guiTypes = {
 			instantTextBoxType={
 				name = "action_title"
 				font = "malgun_goth_24"
-				position = { x = 100 y = 5 }
+				position = { x = 400 y = 5 }
 				maxWidth = 520
 				alwaysTransparent = yes
 			}
@@ -2124,15 +2337,15 @@ guiTypes = {
 			instantTextBoxType={ #hidden
 				name = "action_desc"
 				font = "malgun_goth_24"
-				position = { x = 200 y = 10 }
+				position = { x = 500 y = 10 }
 			}
 			
 			listboxType = {
 				name = "option_list"
-				position = { x = 0 y = 25 }
+				position = { x = 300 y = 25 }
 				# backGround=""
 				size = { x=1062 y=3000 }
-                spacing = 1
+				spacing = 1
 				scrollbartype = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }
 				Orientation = "UPPER_LEFT"

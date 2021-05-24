@@ -124,6 +124,216 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetKeyboardColorCode
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = dmm_keyboard_current_color
+				}
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_default"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 1
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_blue"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 2
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_teal"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 3
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_green"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 4
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_orange"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 5
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_brown"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 6
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_purple"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 7
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_light_red"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 8
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_red"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 9
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_dark_orange"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 10
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_light_grey"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 11
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_white"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value != dmm_keyboard_current_color
+				}
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 12
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_yellow"
+	}
+}
+
+defined_text = {
 	name = GetKeyboardCapslock
 	text = {
 		trigger = {

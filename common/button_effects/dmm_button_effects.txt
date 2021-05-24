@@ -37,7 +37,9 @@ dmm_keyboard_help_tt = {
 		custom_tooltip = "dmm.keyboard.help.tt"
 		always = yes
 	}
-	effect = { custom_tooltip = "dmm.keyboard.help.tt" }
+	effect = {
+		custom_tooltip = "dmm.keyboard.help.tt"
+	}
 }
 
 # dmm_keyboard_capslock = {
@@ -51,10 +53,12 @@ dmm_keyboard_help_tt = {
 # 		set_country_flag = dmm_keyboard_capslock_on
 # 	}
 # }
-
 dmm_keyboard_capslock_on = {
 	potential = {
-		has_country_flag = dmm_keyboard_capslock_on
+		from = {
+			is_scope_type = country			# to prevent errors
+			has_country_flag = dmm_keyboard_capslock_on
+		}
 	}
 	allow = {
 		always = yes

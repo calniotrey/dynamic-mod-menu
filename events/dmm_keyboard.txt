@@ -91,12 +91,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardA]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardA]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -113,12 +117,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardB]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardB]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -135,12 +143,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardC]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardC]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -157,12 +169,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardD]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardD]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -179,12 +195,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardE]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardE]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -201,12 +221,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardF]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardF]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -223,12 +247,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardG]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardG]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -245,12 +273,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardH]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardH]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -267,12 +299,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardI]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardI]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -289,12 +325,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardJ]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardJ]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -311,12 +351,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardK]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardK]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -333,12 +377,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardL]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardL]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -355,12 +403,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardM]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardM]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -377,12 +429,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardN]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardN]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -399,12 +455,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardO]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardO]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -421,12 +481,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardP]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardP]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -443,12 +507,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardQ]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardQ]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -465,12 +533,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardR]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardR]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -487,12 +559,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardS]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardS]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -509,12 +585,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardT]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardT]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -531,12 +611,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardU]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardU]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -553,12 +637,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardV]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardV]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -575,12 +663,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardW]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardW]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -597,12 +689,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardX]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardX]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -619,12 +715,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardY]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardY]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -641,12 +741,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardZ]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardZ]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -663,12 +767,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardAShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardAShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -685,12 +793,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardBShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardBShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -707,12 +819,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardCShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardCShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -729,12 +845,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardDShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardDShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -751,12 +871,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardEShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardEShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -773,12 +897,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardFShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardFShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -795,12 +923,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardGShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardGShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -817,12 +949,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardHShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardHShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -839,12 +975,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardIShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardIShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -861,12 +1001,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardJShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardJShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -883,12 +1027,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -905,12 +1053,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardLShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardLShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -927,12 +1079,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardMShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardMShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -949,12 +1105,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardNShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardNShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -971,12 +1131,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardOShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardOShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -993,12 +1157,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardPShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardPShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1015,12 +1183,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardQShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardQShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1037,12 +1209,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardRShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardRShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1059,12 +1235,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardSShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardSShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1081,12 +1261,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardTShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardTShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1103,12 +1287,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardUShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardUShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1125,12 +1313,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardVShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardVShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1147,12 +1339,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardWShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardWShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1169,12 +1365,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardXShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardXShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1191,12 +1391,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardYShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardYShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1213,12 +1417,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardZShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardZShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1235,12 +1443,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard1]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard1]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1257,12 +1469,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard2]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard2]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1279,12 +1495,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard3]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard3]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1301,12 +1521,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard4]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard4]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1323,12 +1547,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard5]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard5]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1345,12 +1573,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard6]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard6]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1367,12 +1599,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard7]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard7]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1389,12 +1625,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard8]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard8]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1411,12 +1651,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard9]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard9]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1433,12 +1677,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard0]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard0]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1455,12 +1703,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKPMinus]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKPMinus]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1477,12 +1729,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKPPlus]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKPPlus]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1499,12 +1755,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard1Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard1Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1521,12 +1781,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard2Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard2Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1543,12 +1807,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard3Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard3Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1565,12 +1833,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard4Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard4Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1587,12 +1859,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard5Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard5Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1609,12 +1885,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard6Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard6Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1631,12 +1911,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard7Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard7Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1653,12 +1937,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard8Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard8Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1675,12 +1963,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard9Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard9Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1697,12 +1989,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboard0Shift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard0Shift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1719,12 +2015,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKPMinusShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKPMinusShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1741,12 +2041,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardKPPlusShift]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKPPlusShift]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1763,12 +2067,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]{"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]{"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1785,12 +2093,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]}"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]}"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1807,12 +2119,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]:"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]:"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1829,12 +2145,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]'"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]'"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1851,12 +2171,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace],"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode],"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1873,12 +2197,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]."
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]."
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -1895,12 +2223,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]/"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]/"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -2102,12 +2434,16 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace]ß"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]ß"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
 				}
 			}
 			dmm_keyboard_clear_diacritics = yes
@@ -2124,20 +2460,221 @@ country_event = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][dmm_keyboard_country.GetKeyboardCcedilla]"
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardCcedilla]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
 					which = dmm_keyboard_spaces_amount
 					value = 0
 				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
+				}
 			}
 			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_blue"
+		custom_gui = "dmm_keyboard_selected_color_blue"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_teal"
+		custom_gui = "dmm_keyboard_selected_color_teal"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 2
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_green"
+		custom_gui = "dmm_keyboard_selected_color_green"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 3
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_orange"
+		custom_gui = "dmm_keyboard_selected_color_orange"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 4
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_brown"
+		custom_gui = "dmm_keyboard_selected_color_brown"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_purple"
+		custom_gui = "dmm_keyboard_selected_color_purple"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 6
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_light_red"
+		custom_gui = "dmm_keyboard_selected_color_light_red"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 7
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_red"
+		custom_gui = "dmm_keyboard_selected_color_red"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 8
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_dark_orange"
+		custom_gui = "dmm_keyboard_selected_color_dark_orange"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 9
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_light_grey"
+		custom_gui = "dmm_keyboard_selected_color_light_grey"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 10
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_white"
+		custom_gui = "dmm_keyboard_selected_color_white"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 11
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_yellow"
+		custom_gui = "dmm_keyboard_selected_color_yellow"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 12
+				}
+			}
+		}
+	}
+	option = {
+		name = "dmm_keyboard_selected_color_default"
+		custom_gui = "dmm_keyboard_selected_color_default"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard.100.desc"
+		hidden_effect = {
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_selected_color
+					value = 0
+				}
+			}
 		}
 	}
 	option = {
 		name = dmm.100.close
 		custom_gui = "dmm_dummy_button"
 		default_hide_option = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:dmm_keyboard_country = {
+						check_variable = {
+							which = dmm_keyboard_current_color
+							value != 0
+						}
+					}
+				}
+				event_target:dmm_keyboard_current_leader = {
+					set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]§!"
+				}
+			}
+		}
 	}
 }

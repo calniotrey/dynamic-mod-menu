@@ -17,6 +17,14 @@ dmm_keyboard_get_idle_country = {
 		}
 		remove_country_flag = dmm_keyboard_idle_country
 		save_event_target_as = dmm_keyboard_country
+		set_variable = {
+			which = dmm_keyboard_selected_color
+			value = 0
+		}
+		set_variable = {
+			which = dmm_keyboard_current_color
+			value = dmm_keyboard_selected_color
+		}
 	}
 }
 
@@ -78,6 +86,12 @@ dmm_keyboard_get_idle_leader = {
 		}
 		remove_leader_flag = dmm_keyboard_idle
 		save_event_target_as = dmm_keyboard_leader
+		if = {
+			limit = {
+				is_variable_set = dmm_keyboard_selected_color
+			}
+			clear_variable = dmm_keyboard_selected_color
+		}
 	}
 }
 
@@ -96,6 +110,10 @@ dmm_keyboard_add_letter = {
 			set_variable = {
 				which = dmm_keyboard_name_length
 				value = event_target:dmm_keyboard_current_leader
+			}
+			set_variable = {
+				which = dmm_keyboard_current_color
+				value = prev
 			}
 			prev = {
 				set_leader = prev
@@ -120,6 +138,10 @@ dmm_keyboard_remove_letter = {
 		# save_event_target_as = dmm_keyboard_current_leader
 		set_variable = {
 			which = dmm_keyboard_spaces_amount
+			value = ruler
+		}
+		set_variable = {
+			which = dmm_keyboard_current_color
 			value = ruler
 		}
 		ruler = {
@@ -227,7 +249,6 @@ dmm_keyboard_get_previous_leader = {
 # 		save_event_target_as = dmm_keyboard_leader_$LETTER$
 # 	}
 # }
-
 dmm_keyboard_clear_diacritics = {
 	event_target:dmm_keyboard_country = {
 		remove_country_flag = dmm_keyboard_acute
