@@ -42,17 +42,6 @@ dmm_keyboard_help_tt = {
 	}
 }
 
-# dmm_keyboard_capslock = {
-# 	potential = {
-# 		NOT = { has_country_flag = dmm_keyboard_capslock_on }
-# 	}
-# 	allow = {
-# 		always = yes
-# 	}
-# 	effect = {
-# 		set_country_flag = dmm_keyboard_capslock_on
-# 	}
-# }
 dmm_keyboard_capslock_on = {
 	potential = {
 		from = {
