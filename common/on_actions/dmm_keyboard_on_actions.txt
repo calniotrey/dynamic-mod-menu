@@ -1,0 +1,6 @@
+# this = target that was renamed
+# from = player country
+dmm_keyboard_rename_finished = {
+	events = {
+	}
+}
