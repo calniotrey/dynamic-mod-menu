@@ -65,13 +65,13 @@ guiTypes = {
 	containerWindowType = {
 		name = "dmm_keyboard_submit"
 		position = { x=0 y=0 }
-		size = { width = 0 height = 0 }
+		size = { width = 0 height = 10 }
 		moveable = no
 		
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_standard_button_80_34"
-			position = { x=640 y=-7 }
+			position = { x=640 y=1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -87,7 +87,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_standard_button_80_34"
-			position = { x=30 y=-7 }
+			position = { x=30 y=-9 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -2424,7 +2424,7 @@ guiTypes = {
 			font = "malgun_goth_24"
 			position = { x = 230 y = 40 }
 			maxWidth = 405
-			maxHeight = 220
+			maxHeight = 40
 			format = left
 			scrollbartype = "standardtext_slider"
 		}

@@ -14,18 +14,18 @@ country_event = {
 					which = dmm_keyboard_name_length
 					value = 0
 				}
-				set_name = ""
+				set_name = "dmm_keyboard_selected_color_code_white_alone"
 				remove_leader_flag = dmm_keyboard_idle
 			}
-			create_leader = {
-				class = general
-				species = event_target:dmm_global_species
-				immortal = yes
-				name = ""
-				effect = {
-					save_global_event_target_as = dmm_keyboard_dummy_leader
-				}
-			}
+			# create_leader = {
+			# 	class = general
+			# 	species = event_target:dmm_global_species
+			# 	immortal = yes
+			# 	name = ""
+			# 	effect = {
+			# 		save_global_event_target_as = dmm_keyboard_dummy_leader
+			# 	}
+			# }
 			set_variable = {
 				which = dmm_keyboard_spaces_amount
 				value = 0
@@ -51,9 +51,8 @@ country_event = {
 	# 	clear_variable = dmm_keyboard_selected_color
 	# }
 	option = {
-		name = dmm.100.close
-		custom_gui = "dmm_dummy_button"
-		default_hide_option = yes
+		name = "dmm_keyboard_submit"
+		custom_gui = "dmm_keyboard_submit"
 		hidden_effect = {
 			if = {
 				limit = {
@@ -65,9 +64,15 @@ country_event = {
 					}
 				}
 				event_target:dmm_keyboard_current_leader = {
-					set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]§!"
+					set_name = "[dmm_keyboard_current_leader.GetName]$dmm_keyboard_selected_color_code_default$"
+				}
+				clear_variable = dmm_keyboard_selected_color
+				event_target:dmm_keyboard_country = {
+					clear_variable = dmm_keyboard_selected_color
 				}
 			}
+			remove_country_flag = dmm_keyboard_capslock
+			dmm_keyboard_clear_diacritics = yes
 			event_target:dmm_keyboard_rename_target = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 				fire_on_action = {
@@ -2773,26 +2778,17 @@ country_event = {
 					value = 0
 				}
 			}
-			clear_variable = dmm_keyboard_selected_color
-		}
-	}
-	option = {
-		name = "dmm_keyboard_submit"
-		custom_gui = "dmm_keyboard_submit"
-		hidden_effect = {
-			#save name
+			if = {
+				limit = {
+					is_variable_set = dmm_keyboard_selected_color
+				}
+				clear_variable = dmm_keyboard_selected_color
+			}
 		}
 	}
 	option = {
 		name = "dmm_keyboard_cancel"
 		custom_gui = "dmm_keyboard_cancel"
-		hidden_effect = {
-			#discard changes
-		}
-	}
-	option = {
-		name = dmm.100.close
-		custom_gui = "dmm_dummy_button"
 		default_hide_option = yes
 		hidden_effect = {
 			if = {
@@ -2805,9 +2801,16 @@ country_event = {
 					}
 				}
 				event_target:dmm_keyboard_current_leader = {
-					set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]§!"
+					# set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]§!"
+					set_name = "[dmm_keyboard_current_leader.GetName]$dmm_keyboard_selected_color_code_default$"
+				}
+				clear_variable = dmm_keyboard_selected_color
+				event_target:dmm_keyboard_country = {
+					clear_variable = dmm_keyboard_selected_color
 				}
 			}
+			remove_country_flag = dmm_keyboard_capslock
+			dmm_keyboard_clear_diacritics = yes
 			event_target:dmm_keyboard_rename_target = {
 				set_name = "[dmm_keyboard_current_leader.GetName]"
 				fire_on_action = {
@@ -2826,6 +2829,14 @@ country_event = {
 				}
 				set_country_flag = dmm_keyboard_idle_country
 			}
+		}
+	}
+	option = {
+		# hidden option, useful only for size > 0
+		name = dmm.100.close
+		custom_gui = "dmm_dummy_button"
+		hidden_effect = {
+			#discard changes
 		}
 	}
 }
