@@ -45,6 +45,11 @@ country_event = {
 	desc = "dmm_keyboard.100.desc"
 	diplomatic = yes
 	custom_gui = "dmm_keyboard"
+	# after = {
+	# 	remove_country_flag = dmm_keyboard_capslock
+	# 	dmm_keyboard_clear_diacritics = yes
+	# 	clear_variable = dmm_keyboard_selected_color
+	# }
 	option = {
 		name = dmm.100.close
 		custom_gui = "dmm_dummy_button"		#TODO free
@@ -68,12 +73,12 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_country_flag = dmm_keyboard_capslock_on
+					has_country_flag = dmm_keyboard_capslock
 				}
-				remove_country_flag = dmm_keyboard_capslock_on
+				remove_country_flag = dmm_keyboard_capslock
 			}
 			else = {
-				set_country_flag = dmm_keyboard_capslock_on
+				set_country_flag = dmm_keyboard_capslock
 			}
 			# country_event = {
 			# 	id = dmm_keyboard.100
@@ -2369,8 +2374,9 @@ country_event = {
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
 		hidden_effect = {
+			dmm_keyboard_clear_diacritics = yes
+			set_country_flag = dmm_keyboard_acute
 			event_target:dmm_keyboard_country = {
-				dmm_keyboard_clear_diacritics = yes
 				set_country_flag = dmm_keyboard_acute
 			}
 		}
@@ -2381,8 +2387,9 @@ country_event = {
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
 		hidden_effect = {
+			dmm_keyboard_clear_diacritics = yes
+			set_country_flag = dmm_keyboard_grave
 			event_target:dmm_keyboard_country = {
-				dmm_keyboard_clear_diacritics = yes
 				set_country_flag = dmm_keyboard_grave
 			}
 		}
@@ -2393,8 +2400,9 @@ country_event = {
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
 		hidden_effect = {
+			dmm_keyboard_clear_diacritics = yes
+			set_country_flag = dmm_keyboard_circumflex
 			event_target:dmm_keyboard_country = {
-				dmm_keyboard_clear_diacritics = yes
 				set_country_flag = dmm_keyboard_circumflex
 			}
 		}
@@ -2405,8 +2413,9 @@ country_event = {
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
 		hidden_effect = {
+			dmm_keyboard_clear_diacritics = yes
+			set_country_flag = dmm_keyboard_diaeresis
 			event_target:dmm_keyboard_country = {
-				dmm_keyboard_clear_diacritics = yes
 				set_country_flag = dmm_keyboard_diaeresis
 			}
 		}
@@ -2417,8 +2426,9 @@ country_event = {
 		is_dialog_only = yes
 		response_text = "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
 		hidden_effect = {
+			dmm_keyboard_clear_diacritics = yes
+			set_country_flag = dmm_keyboard_tilde
 			event_target:dmm_keyboard_country = {
-				dmm_keyboard_clear_diacritics = yes
 				set_country_flag = dmm_keyboard_tilde
 			}
 		}
@@ -2476,6 +2486,32 @@ country_event = {
 		}
 	}
 	option = {
+		name = "dmm_keyboard_ash_uppercase"
+		custom_gui = "dmm_keyboard_ash"
+		is_dialog_only = yes
+		response_text = "dmm_keyboard_ash_response"
+		hidden_effect = {
+			dmm_keyboard_add_letter = yes
+			event_target:dmm_keyboard_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName]"
+			}
+			event_target:dmm_keyboard_current_leader = {
+				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardAsh]"
+			}
+			event_target:dmm_keyboard_country = {
+				set_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 0
+				}
+				set_variable = {
+					which = dmm_keyboard_current_color
+					value = dmm_keyboard_selected_color
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
 		name = "dmm_keyboard_selected_color_blue"
 		custom_gui = "dmm_keyboard_selected_color_blue"
 		is_dialog_only = yes
@@ -2486,6 +2522,10 @@ country_event = {
 					which = dmm_keyboard_selected_color
 					value = 1
 				}
+			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 1
 			}
 		}
 	}
@@ -2501,6 +2541,10 @@ country_event = {
 					value = 2
 				}
 			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 2
+			}
 		}
 	}
 	option = {
@@ -2514,6 +2558,10 @@ country_event = {
 					which = dmm_keyboard_selected_color
 					value = 3
 				}
+			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 3
 			}
 		}
 	}
@@ -2529,6 +2577,10 @@ country_event = {
 					value = 4
 				}
 			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 4
+			}
 		}
 	}
 	option = {
@@ -2542,6 +2594,10 @@ country_event = {
 					which = dmm_keyboard_selected_color
 					value = 5
 				}
+			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 5
 			}
 		}
 	}
@@ -2557,6 +2613,10 @@ country_event = {
 					value = 6
 				}
 			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 6
+			}
 		}
 	}
 	option = {
@@ -2570,6 +2630,10 @@ country_event = {
 					which = dmm_keyboard_selected_color
 					value = 7
 				}
+			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 7
 			}
 		}
 	}
@@ -2585,6 +2649,10 @@ country_event = {
 					value = 8
 				}
 			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 8
+			}
 		}
 	}
 	option = {
@@ -2598,6 +2666,10 @@ country_event = {
 					which = dmm_keyboard_selected_color
 					value = 9
 				}
+			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 9
 			}
 		}
 	}
@@ -2613,6 +2685,10 @@ country_event = {
 					value = 10
 				}
 			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 10
+			}
 		}
 	}
 	option = {
@@ -2626,6 +2702,10 @@ country_event = {
 					which = dmm_keyboard_selected_color
 					value = 11
 				}
+			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 11
 			}
 		}
 	}
@@ -2641,6 +2721,10 @@ country_event = {
 					value = 12
 				}
 			}
+			set_variable = {
+				which = dmm_keyboard_selected_color
+				value = 12
+			}
 		}
 	}
 	option = {
@@ -2655,6 +2739,21 @@ country_event = {
 					value = 0
 				}
 			}
+			clear_variable = dmm_keyboard_selected_color
+		}
+	}
+	option = {
+		name = "dmm_keyboard_submit"
+		custom_gui = "dmm_keyboard_submit"
+		hidden_effect = {
+			#save name
+		}
+	}
+	option = {
+		name = "dmm_keyboard_cancel"
+		custom_gui = "dmm_keyboard_cancel"
+		hidden_effect = {
+			#discard changes
 		}
 	}
 	option = {

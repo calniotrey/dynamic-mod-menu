@@ -101,6 +101,27 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_dmm_standard_button_80_34"
+		texturefile = "gfx/interface/buttons/dmm_button_80_34_animated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/button_142_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_142_animated_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 40.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+		hitbox_margin = { x=11 y=11 }
+	}
+
+	spriteType = {
 		name = "GFX_text_dmm_keyboard_icons"
 		texturefile = "gfx/interface/icons/text_icons/dmm_keyboard_icons.dds"
 		noOfFrames = 3
@@ -113,6 +134,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_text_dmm_keyboard_colors"
 		texturefile = "gfx/interface/icons/text_icons/dmm_keyboard_colors.dds"
-		noOfFrames = 11
+		noOfFrames = 12
+	}
+	spriteType = {
+		name = "GFX_dmm_keyboard_bg"
+		texturefile = "gfx/interface/dmm_keyboard_bg.dds"
+		alwaysTransparent = yes
 	}
 }

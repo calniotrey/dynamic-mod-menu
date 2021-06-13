@@ -46,7 +46,246 @@ dmm_keyboard_capslock_on = {
 	potential = {
 		from = {
 			is_scope_type = country			# to prevent errors
-			has_country_flag = dmm_keyboard_capslock_on
+			has_country_flag = dmm_keyboard_capslock
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_acute_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			has_country_flag = dmm_keyboard_acute
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_grave_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			has_country_flag = dmm_keyboard_grave
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_circumflex_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			has_country_flag = dmm_keyboard_circumflex
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_diaeresis_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			has_country_flag = dmm_keyboard_diaeresis
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_tilde_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			has_country_flag = dmm_keyboard_tilde
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_blue_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 1
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_teal_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 2
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_green_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 3
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_orange_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 4
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_brown_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 5
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_purple_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 6
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_light_red_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 7
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_red_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 8
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_dark_orange_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 9
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_white_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 11
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_yellow_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			check_variable = {
+				which = dmm_keyboard_selected_color
+				value = 12
+			}
+		}
+	}
+	allow = {
+		always = yes
+	}
+}
+
+dmm_keyboard_default_on = {
+	potential = {
+		from = {
+			is_scope_type = country			# to prevent errors
+			NOT = {
+				is_variable_set = dmm_keyboard_selected_color
+			}
 		}
 	}
 	allow = {

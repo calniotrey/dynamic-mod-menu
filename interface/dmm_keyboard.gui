@@ -1,11 +1,12 @@
+@dmm_keyboard_offset = 40 #the alien message background also must be adjusted when this is changed
+
 @dmm_key_row_0 = 50
 @dmm_key_row_1 = 105
 @dmm_key_row_2 = 160
 @dmm_key_row_3 = 215
 @dmm_key_row_4 = 270
 
-@dmm_key_row_colors = 380
-
+@dmm_key_col_0 = -5
 @dmm_key_col_1 = 50
 @dmm_key_col_2 = 105
 @dmm_key_col_3 = 160
@@ -45,11 +46,54 @@
 @dmm_key_superscript_x = 41
 @dmm_key_superscript_y = 22
 
-@dmm_key_colors_col_0 = -290
-@dmm_key_colors_col_1 = -192
-@dmm_key_colors_col_2 = -94
+@dmm_key_row_colors = 352
+
+@dmm_key_colors_col_0 = 45
+@dmm_key_colors_col_1 = 100
+@dmm_key_colors_col_2 = 155
+@dmm_key_colors_col_3 = 210
+@dmm_key_colors_col_4 = 265
+@dmm_key_colors_col_5 = 320
+@dmm_key_colors_col_6 = 375
+@dmm_key_colors_col_7 = 430
+@dmm_key_colors_col_8 = 485
+@dmm_key_colors_col_9 = 540
+@dmm_key_colors_col_10 = 595
+@dmm_key_colors_col_11 = 650
 
 guiTypes = {
+	containerWindowType = {
+		name = "dmm_keyboard_submit"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_standard_button_80_34"
+			position = { x=640 y=-7 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+			text = "OPTION_TEXT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "dmm_keyboard_cancel"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_standard_button_80_34"
+			position = { x=30 y=-7 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+			text = "OPTION_TEXT"
+		}
+	}
+
 	containerWindowType = {
 		name = "dmm_keyboard_capslock"
 		position = { x=0 y=0 }
@@ -76,7 +120,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_10 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_10 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -92,7 +136,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_9 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_9 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -108,7 +152,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_8 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_8 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -124,7 +168,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_6 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_6 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -140,7 +184,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_2 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_2 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -156,7 +200,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_11 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_11 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -172,7 +216,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_3 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_3 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -188,7 +232,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_4 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_4 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -204,7 +248,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_5 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_5 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -220,7 +264,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_7 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_7 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -236,7 +280,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_col_1 y=@dmm_key_row_colors }
+			position = { x=@dmm_key_colors_col_0 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -252,7 +296,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_colors_col_2 y=@dmm_key_row_1 }
+			position = { x=10000 y=0 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -268,7 +312,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_circle"
-			position = { x=@dmm_key_colors_col_2 y=@dmm_key_row_2 }
+			position = { x=@dmm_key_colors_col_1 y=@dmm_key_row_colors }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -1881,7 +1925,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_spacebar"
-			position = { x=@dmm_key_col_4 y=@dmm_key_row_4 }
+			position = { x=@dmm_key_col_off_4 y=@dmm_key_row_4 }
 			size = { x = 40 y = 30 }
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -1915,7 +1959,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
-			position = { x=@dmm_key_col_13 y=@dmm_key_row_3 }
+			position = { x=@dmm_key_col_off_10 y=@dmm_key_row_4 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -1931,7 +1975,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
-			position = { x=@dmm_key_col_off_13 y=@dmm_key_row_2 }
+			position = { x=@dmm_key_col_off_11 y=@dmm_key_row_4 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -1947,7 +1991,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
-			position = { x=@dmm_key_col_14 y=@dmm_key_row_1 }
+			position = { x=@dmm_key_col_12 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -1963,7 +2007,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
-			position = { x=@dmm_key_col_off_14 y=@dmm_key_row_0 }
+			position = { x=@dmm_key_col_off_12 y=@dmm_key_row_2 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -1979,7 +2023,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
-			position = { x=@dmm_key_col_off_15 y=@dmm_key_row_0 }
+			position = { x=@dmm_key_col_13 y=@dmm_key_row_1 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -1995,7 +2039,7 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
-			position = { x=@dmm_key_col_15 y=@dmm_key_row_1 }
+			position = { x=@dmm_key_col_off_1 y=@dmm_key_row_4 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -2011,7 +2055,23 @@ guiTypes = {
 		buttonType = {
 			name = "option_button"
 			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
-			position = { x=@dmm_key_col_off_14 y=@dmm_key_row_2 }
+			position = { x=@dmm_key_col_off_2 y=@dmm_key_row_4 }
+			size = { x = 40 y = 30 }
+			font = "malgun_goth_24"
+			text = "OPTION_TEXT"
+		}
+	}
+
+	containerWindowType = {
+		name = "dmm_keyboard_ash"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+			position = { x=@dmm_key_col_1 y=@dmm_key_row_3 }
 			size = { x = 40 y = 30 }
 			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
@@ -2022,23 +2082,23 @@ guiTypes = {
 		name = "dmm_keyboard"
 		orientation = center
 		origo = center
-		size = { width = 1250 height = 510 }
+		size = { width = 920 height = 510 }
 		# size = { width = 100% height = 100% }
 		moveable = yes
 
 		background = {
 			name = "background"
-			quadTextureSprite ="GFX_plain_bg_tile"
+			quadTextureSprite ="GFX_dmm_keyboard_bg"
 		}	
 		
 		containerWindowType = {
 			name = "dmm_keyboard_help"
-			position = { x = 830 y = 0 }
+			position = { x = 530 y = 0 }
 			effectButtonType = {
 				name = "dmm_keyboard_help_tt"
-				quadTextureSprite = "GFX_dmm_keyboard_key"
+				quadTextureSprite = "GFX_invisible"
 				position = { x = 0 y = 0 }
-				size = { x = 255 y = 32 }
+				size = { x = 255 y = 255 }
 				effect = "dmm_keyboard_help_tt"
 			}
 			# iconType = {
@@ -2051,23 +2111,259 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "dmm_keyboard_capslock_button_window"
-			position = { x=@dmm_caps_col y=@dmm_key_row_2 }
-			# effectButtonType = {
-			# 	name = "dmm_keyboard_capslock_button"
-			# 	quadTextureSprite = "GFX_dmm_keyboard_key_long"
-			# 	position = { x = 0 y = 35 }
-			# 	size = { x = 255 y = 32 }
-			# 	effect = "dmm_keyboard_capslock"
-			# }
-			effectButtonType = {
-				name = "dmm_keyboard_capslock_on_button"
-				quadTextureSprite = "GFX_dmm_keyboard_key_long"
-				position = { x = 300 y = 35 }
-				size = { x = 255 y = 32 }
-				frame = 2
-				effect = "dmm_keyboard_capslock_on"
-				alwaysTransparent = yes
+			name = "dmm_keyboard_overlay_window"
+			position = { x=@dmm_keyboard_offset y=0 }
+
+			containerWindowType = {
+				name = "dmm_keyboard_capslock_on_overlay_window"
+				position = { x=@dmm_caps_col y=@dmm_key_row_2 }
+				effectButtonType = {
+					name = "dmm_keyboard_capslock_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_long"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_capslock_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_acute_on_overlay_window"
+				position = { x=@dmm_key_col_off_10 y=@dmm_key_row_4 }
+				effectButtonType = {
+					name = "dmm_keyboard_acute_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_acute_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_grave_on_overlay_window"
+				position = { x=@dmm_key_col_off_11 y=@dmm_key_row_4 }
+				effectButtonType = {
+					name = "dmm_keyboard_grave_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_grave_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_circumflex_on_overlay_window"
+				position = { x=@dmm_key_col_12 y=@dmm_key_row_3 }
+				effectButtonType = {
+					name = "dmm_keyboard_circumflex_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_circumflex_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_diaeresis_on_overlay_window"
+				position = { x=@dmm_key_col_off_12 y=@dmm_key_row_2 }
+				effectButtonType = {
+					name = "dmm_keyboard_diaeresis_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_diaeresis_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_tilde_on_overlay_window"
+				position = { x=@dmm_key_col_13 y=@dmm_key_row_1 }
+				effectButtonType = {
+					name = "dmm_keyboard_tilde_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_blue"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_tilde_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_blue_on_overlay_window"
+				position = { x=@dmm_key_colors_col_10 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_blue_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_blue_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_teal_on_overlay_window"
+				position = { x=@dmm_key_colors_col_9 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_teal_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_teal_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_green_on_overlay_window"
+				position = { x=@dmm_key_colors_col_8 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_green_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_green_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_orange_on_overlay_window"
+				position = { x=@dmm_key_colors_col_6 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_orange_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_orange_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_brown_on_overlay_window"
+				position = { x=@dmm_key_colors_col_2 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_brown_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_brown_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_purple_on_overlay_window"
+				position = { x=@dmm_key_colors_col_11 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_purple_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_purple_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_light_red_on_overlay_window"
+				position = { x=@dmm_key_colors_col_3 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_light_red_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_light_red_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_red_on_overlay_window"
+				position = { x=@dmm_key_colors_col_4 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_red_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_red_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_dark_orange_on_overlay_window"
+				position = { x=@dmm_key_colors_col_5 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_dark_orange_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_dark_orange_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_white_on_overlay_window"
+				position = { x=@dmm_key_colors_col_1 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_white_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_white_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_yellow_on_overlay_window"
+				position = { x=@dmm_key_colors_col_7 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_yellow_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_yellow_on"
+					alwaysTransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "dmm_keyboard_default_on_overlay_window"
+				position = { x=@dmm_key_colors_col_0 y=@dmm_key_row_colors }
+				effectButtonType = {
+					name = "dmm_keyboard_default_on_overlay"
+					quadTextureSprite = "GFX_dmm_keyboard_key_circle"
+					position = { x = 0 y = 35 }
+					size = { x = 255 y = 32 }
+					frame = 2
+					effect = "dmm_keyboard_default_on"
+					alwaysTransparent = yes
+				}
 			}
 		}
 
@@ -2117,8 +2413,8 @@ guiTypes = {
 		
 		buttonType = {
 			name = "alien_message_background"
-			size = { x = 325 y = 40 }
-			position = { x = 490 y = 45 }
+			size = { x = 405 y = 40 }
+			position = { x = 225 y = 35 }
 			spriteType = "GFX_tiles_dark_area_cut_8"
 			alwaysTransparent = yes
 		}
@@ -2126,8 +2422,8 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "alien_message"
 			font = "malgun_goth_24"
-			position = { x = 500 y = 50 }
-			maxWidth = 305
+			position = { x = 230 y = 40 }
+			maxWidth = 405
 			maxHeight = 220
 			format = left
 			scrollbartype = "standardtext_slider"
@@ -2328,10 +2624,10 @@ guiTypes = {
 			size = { width=563 height=220 }
 			moveable = no
 			
-			instantTextBoxType={
+			instantTextBoxType={ #hidden
 				name = "action_title"
 				font = "malgun_goth_24"
-				position = { x = 400 y = 5 }
+				position = { x = 10400 y = 5 }
 				maxWidth = 520
 				alwaysTransparent = yes
 			}
@@ -2339,12 +2635,12 @@ guiTypes = {
 			instantTextBoxType={ #hidden
 				name = "action_desc"
 				font = "malgun_goth_24"
-				position = { x = 500 y = 10 }
+				position = { x = 200 y = 10 }
 			}
 			
 			listboxType = {
 				name = "option_list"
-				position = { x = 300 y = 25 }
+				position = { x = @dmm_keyboard_offset y = 25 }
 				# backGround=""
 				size = { x=1062 y=3000 }
 				spacing = 1

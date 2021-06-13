@@ -250,6 +250,11 @@ dmm_keyboard_get_previous_leader = {
 # 	}
 # }
 dmm_keyboard_clear_diacritics = {
+	remove_country_flag = dmm_keyboard_acute
+	remove_country_flag = dmm_keyboard_grave
+	remove_country_flag = dmm_keyboard_circumflex
+	remove_country_flag = dmm_keyboard_diaeresis
+	remove_country_flag = dmm_keyboard_tilde
 	event_target:dmm_keyboard_country = {
 		remove_country_flag = dmm_keyboard_acute
 		remove_country_flag = dmm_keyboard_grave

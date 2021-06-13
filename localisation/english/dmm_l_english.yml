@@ -44,6 +44,8 @@
 
     dmm_keyboard.100.name: "Keyboard"
     dmm.100.close: "Close"
+    dmm_keyboard_submit: "Submit"
+    dmm_keyboard_cancel: "Cancel"
     dmm_keyboard.100.desc: "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName]"
     dmm_keyboard_capslock: "£dmm_keyboard_icons|1£"
     dmm_keyboard_capslock_icon: "£dmm_keyboard_icons|1£"
@@ -178,6 +180,9 @@
     dmm_keyboard_ccedilla_lowercase: "ç"
     dmm_keyboard_ccedilla_uppercase: "Ç"
     dmm_keyboard_ccedilla_response: "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardCcedilla]"
+    dmm_keyboard_ash_lowercase: "æ"
+    dmm_keyboard_ash_uppercase: "Æ"
+    dmm_keyboard_ash_response: "[dmm_keyboard_country.GetKeyboardCapslock][dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardAsh]"
 
     dmm_keyboard_a_lowercase: "a"
     dmm_keyboard_a_acute_lowercase: "á"
@@ -312,7 +317,8 @@
     dmm_keyboard_y_shift: "Y"
     dmm_keyboard_z_shift: "Z"
 
-    dmm_keyboard_selected_color_default: "£dmm_keyboard_colors|1£"
+    dmm_keyboard_selected_color_default: "£dmm_keyboard_colors|12£"
+    dmm_keyboard_selected_color_white: "£dmm_keyboard_colors|1£"
     dmm_keyboard_selected_color_blue: "£dmm_keyboard_colors|10£"
     dmm_keyboard_selected_color_teal: "£dmm_keyboard_colors|9£"
     dmm_keyboard_selected_color_green: "£dmm_keyboard_colors|8£"
@@ -325,7 +331,6 @@
     dmm_keyboard_selected_color_yellow: "£dmm_keyboard_colors|7£"
 
     dmm_keyboard_selected_color_light_grey: "§TLight grey§!"
-    dmm_keyboard_selected_color_white: "§WWhite§!"
 
     dmm_keyboard_selected_color_code_default: "§!"
     dmm_keyboard_selected_color_code_blue: "§B"

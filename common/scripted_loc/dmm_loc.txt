@@ -2734,3 +2734,21 @@ defined_text = {
 		localization_key = "dmm_keyboard_ccedilla_lowercase"
 	}
 }
+
+defined_text = {
+	name = GetKeyboardAsh
+	text = {
+		trigger = {
+			has_country_flag = dmm_keyboard_capslock
+		}
+		localization_key = "dmm_keyboard_ash_uppercase"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dmm_keyboard_capslock
+			}
+		}
+		localization_key = "dmm_keyboard_ash_lowercase"
+	}
+}
