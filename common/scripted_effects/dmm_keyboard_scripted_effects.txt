@@ -1,3 +1,14 @@
+# TARGET : should accept set_name
+# country scope = player country
+dmm_keyboard_rename = {
+	$TARGET$ = {
+		save_event_target_as = dmm_keyboard_rename_target
+	}
+	country_event = {
+		id = dmm_keyboard.0
+	}
+}
+
 dmm_keyboard_get_idle_country = {
 	if = {
 		limit = {
@@ -98,7 +109,12 @@ dmm_keyboard_get_idle_leader = {
 # this = leader
 dmm_keyboard_free_leader = {
 	set_leader_flag = dmm_keyboard_idle
-	clear_variable = dmm_keyboard_name_length
+	if = {
+		limit = {
+			is_variable_set = dmm_keyboard_name_length
+		}
+		clear_variable = dmm_keyboard_name_length
+	}
 }
 
 # this = country
