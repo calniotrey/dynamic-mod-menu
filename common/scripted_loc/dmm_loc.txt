@@ -156,15 +156,200 @@ defined_text = {
 			event_target:dmm_keyboard_country = {
 				check_variable = {
 					which = dmm_keyboard_selected_color
+					value = 1
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_blue"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 2
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_teal"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 3
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_green"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 4
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_orange"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 5
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_brown"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 6
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_purple"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 7
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_light_red"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 8
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_red"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 9
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_dark_orange"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 10
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_light_grey"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 11
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_white"
+	}
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
+					value = 12
+				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value = 0
+				}
+			}
+		}
+		localization_key = "dmm_keyboard_selected_color_code_yellow"
+	}
+	### Defaulted
+	text = {
+		trigger = {
+			event_target:dmm_keyboard_country = {
+				check_variable = {
+					which = dmm_keyboard_selected_color
 					value != dmm_keyboard_current_color
 				}
 				check_variable = {
 					which = dmm_keyboard_selected_color
 					value = 1
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_blue"
+		localization_key = "dmm_keyboard_selected_color_code_blue_defaulted"
 	}
 	text = {
 		trigger = {
@@ -177,9 +362,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 2
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_teal"
+		localization_key = "dmm_keyboard_selected_color_code_teal_defaulted"
 	}
 	text = {
 		trigger = {
@@ -192,9 +381,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 3
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_green"
+		localization_key = "dmm_keyboard_selected_color_code_green_defaulted"
 	}
 	text = {
 		trigger = {
@@ -207,9 +400,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 4
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_orange"
+		localization_key = "dmm_keyboard_selected_color_code_orange_defaulted"
 	}
 	text = {
 		trigger = {
@@ -222,9 +419,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 5
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_brown"
+		localization_key = "dmm_keyboard_selected_color_code_brown_defaulted"
 	}
 	text = {
 		trigger = {
@@ -237,9 +438,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 6
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_purple"
+		localization_key = "dmm_keyboard_selected_color_code_purple_defaulted"
 	}
 	text = {
 		trigger = {
@@ -252,9 +457,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 7
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_light_red"
+		localization_key = "dmm_keyboard_selected_color_code_light_red_defaulted"
 	}
 	text = {
 		trigger = {
@@ -267,9 +476,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 8
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_red"
+		localization_key = "dmm_keyboard_selected_color_code_red_defaulted"
 	}
 	text = {
 		trigger = {
@@ -282,9 +495,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 9
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_dark_orange"
+		localization_key = "dmm_keyboard_selected_color_code_dark_orange_defaulted"
 	}
 	text = {
 		trigger = {
@@ -297,9 +514,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 10
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_light_grey"
+		localization_key = "dmm_keyboard_selected_color_code_light_grey_defaulted"
 	}
 	text = {
 		trigger = {
@@ -312,9 +533,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 11
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_white"
+		localization_key = "dmm_keyboard_selected_color_code_white_defaulted"
 	}
 	text = {
 		trigger = {
@@ -327,9 +552,13 @@ defined_text = {
 					which = dmm_keyboard_selected_color
 					value = 12
 				}
+				check_variable = {
+					which = dmm_keyboard_current_color
+					value != 0
+				}
 			}
 		}
-		localization_key = "dmm_keyboard_selected_color_code_yellow"
+		localization_key = "dmm_keyboard_selected_color_code_yellow_defaulted"
 	}
 }
 

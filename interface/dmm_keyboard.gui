@@ -2091,24 +2091,24 @@ guiTypes = {
 			quadTextureSprite ="GFX_dmm_keyboard_bg"
 		}	
 		
-		containerWindowType = {
-			name = "dmm_keyboard_help"
-			position = { x = 530 y = 0 }
-			effectButtonType = {
-				name = "dmm_keyboard_help_tt"
-				quadTextureSprite = "GFX_invisible"
-				position = { x = 0 y = 0 }
-				size = { x = 255 y = 255 }
-				effect = "dmm_keyboard_help_tt"
-			}
-			# iconType = {
-			# 	name = "dmm_keyboard_help_icon"
-			# 	quadTextureSprite = "GFX_empire_capital"
-			# 	position = { x = 4 y = 3 }
-			# 	alwaysTransparent = yes
-			# 	scale = 0.75
-			# }
-		}
+		# containerWindowType = {
+		# 	name = "dmm_keyboard_help"
+		# 	position = { x = 530 y = 0 }
+		# 	effectButtonType = {
+		# 		name = "dmm_keyboard_help_tt"
+		# 		quadTextureSprite = "GFX_invisible"
+		# 		position = { x = 0 y = 0 }
+		# 		size = { x = 255 y = 255 }
+		# 		effect = "dmm_keyboard_help_tt"
+		# 	}
+		# 	# iconType = {
+		# 	# 	name = "dmm_keyboard_help_icon"
+		# 	# 	quadTextureSprite = "GFX_empire_capital"
+		# 	# 	position = { x = 4 y = 3 }
+		# 	# 	alwaysTransparent = yes
+		# 	# 	scale = 0.75
+		# 	# }
+		# }
 
 		containerWindowType = {
 			name = "dmm_keyboard_overlay_window"
@@ -2642,7 +2642,7 @@ guiTypes = {
 				name = "option_list"
 				position = { x = @dmm_keyboard_offset y = 25 }
 				# backGround=""
-				size = { x=1062 y=3000 }
+				size = { x=800 y=3000 }
 				spacing = 1
 				scrollbartype = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }

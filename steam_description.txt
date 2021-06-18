@@ -3,6 +3,10 @@ Ever felt like your edicts list becomes cluttered by edicts whose sole purpose i
 [h1]For players[/h1]
 This mod adds a button on the main menu (opened up by pressing escape) that opens the Mod Menu. You can then select the mod you want to access the settings of. Simple right?
 The mods simply have to register themselves. If you don't see the mod you're looking for, you can [b]kindly[/b] ask its modder to come see this mod description, so they can see if they want to make their mod register itself.
+
+Concerning the keyboard feature:
+You can use SHIFT+A for an A. You can activate capslock with CTRL+C and spaces with CTRL+S. The majority of the special chars need a click (except for + and - with use the numpad + and -).
+
 Place this mod below SWFR and any other mod altering interface/mainmenu_view.gui.
 This mod changes checksum and has nearly no compatibility issues.
 This mod alters interface/mainmenu_view.gui.
@@ -16,6 +20,7 @@ This is a non-exhaustive list, if you know of other mods supporting DMM, feel fr
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2268189539]Aggressive Crisis Engine[/url] by OldEnt, Rodahtnov and Fiiral
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1830063425]AI Species Limit[/url] by mario0244
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2297628906]AutoFabs Origin[/url] by James Fire
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2487827530]Choosable Repeatables[/url] by TheFlyingPotato
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2033764043]Crisis Manager[/url] by FirePrince and others
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460049826]Interstellar Incorporated: Space Corp [3.0][/url] by mr_trousers and TheFlyingPotato
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2245491122]Locate It![/url] by BurningRaptor
@@ -30,86 +35,30 @@ This is a non-exhaustive list, if you know of other mods supporting DMM, feel fr
 [/list]
 
 [h1]For modders[/h1]
-Welcome! The configuration is really straightforward, don't be afraid ;)
-DMM works in 2 part:
-[olist]
-[*] Your mod needs to register itself (give a unique flag and the text that should displayed on the button)
-[*] You need to add a country_event and subscribe it to an on_action
-[/olist]
-OldEnt made an [url=https://github.com/OldEnt/stellaris-aggressive-crisis-engine/commit/f87fced94334334120b0d1301a899845d3c0d87f]example template[/url] if you want to see what it looks like.
+[h2]How to add a button for your mod in DMM[/h2]
+This is really straightforward, so don't be afraid ;)
+All the infos are [url=https://steamcommunity.com/workshop/filedetails/discussion/2458024521/3077629031353110169/]here[/url].
+I had to move them from this page to that discussion because steam limits the size of the workshop description.
 
-[h2]Registering the mod[/h2]
-At game start and on save game load (use on_actions), execute this effect:
-[code]
-    dmm_register_mod = {
-        DMM_NAME = my_amazing_mod.22
-        DMM_FLAG = my_amazing_mod_unique_flag
-    }
-[/code]
-Replace "my_amazing_mod.22" by what you want displayed on the button. I highly recommend using a localisation key.
-Replace "my_amazing_mod_unique_flag" by something that is unique to your mod. I highly recommend using at least the full name of the mod ("origin_mod" is not enough!).
-DO NOT put any spaces. You've been warned! If you want spaces in the text displayed on the button, you have to use a localisation key.
-
-[h2]Adding the event and the on_action[/h2]
-Simply add this event (as usual don't forget the namespace):
-[code]
-    country_event = {
-        id = my_amazing_namespace.111
-        is_triggered_only = yes
-        hide_window = yes
-        trigger = {
-            from = {
-                has_leader_flag = my_amazing_mod_unique_flag
-            }
-        }
-        immediate = {
-            # open my settings menu
-        }
-    }
-[/code]
-Of course reuse the same flag name you set before. In the immediate, you can for example fire the event that opens up your settings menu.
-
-And subscribe the previous event to this on_action:
-[code]
-    dmm_mod_selected = {
-        events = {
-            my_amazing_namespace.111
-        }
-    }
-[/code]
-
-And that's it! Yes! 22 lines of code only! Now you don't need an edict anymore!
-If you don't want to add a hard dependency on DMM (ie you don't want to set it as required), but only want to add a soft dependency, you can add an edict (that fires your settings menu) that is only visible if DMM is not installed.
-To do that, put in the potential clause :
-[code]
-NOT = {
-    has_global_flag = dmm_installed
-}
-[/code]
-
-Here's a bunch of utility stuff:
-If for you want to unregister your mod (for example before the player uninstall it), simply use dmm_deregister_mod = { DMM_FLAG = my_amazing_mod_unique_flag }.
-You can check if your mod is registered using dmm_is_registered_mod = { DMM_FLAG = my_amazing_mod_unique_flag }.
-
-[h2]Hide the button[/h2]
-If you want to hide the button for some reason (crisis happened so remove crisis spawn), you can use [code]dmm_hide_button_all = { DMM_FLAG = my_amazing_mod_unique_flag }[/code]
-To show it, use [code]dmm_show_button_all = { DMM_FLAG = my_amazing_mod_unique_flag }[/code]
-If you want to [b]inverse[/b] the show/hide for a specific country, then scope to that country and use [code]dmm_add_button_exception = { DMM_FLAG = my_amazing_mod_unique_flag }[/code]
-To remove it, simply use [code]dmm_remove_button_exception = { DMM_FLAG = my_amazing_mod_unique_flag }[/code]
-If you hide it to all and have an exception on a country (the host of the game for example), then only that country will see the button. Remember that AIs can't access DMM anyway.
+[h2]Keyboard Feature[/h2]
+This mod also adds a "keyboard" that allows the player to rename stuff. Simply use [code]dmm_keyboard_rename = TARGET = thing_to_rename }[/code] in the country scope of the player (you can use event targets for the TARGET).
+Once the renaming is done, the on_action [code]dmm_keyboard_rename_finished (this = TARGET, from = player country that renamed)[/code] will be fired. If you use it, use a unique flag to make sure that it was your mod that required the rename and check the scope type before (`is_scope_type = leader` if checking for a leader flag).
+See example add-on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2519537561]here[/url]
+This feature was codeveloped with [url=https://steamcommunity.com/profiles/76561198053578024/myworkshopfiles/?appid=281990]mr_trousers[/url] with some design advice from [url=https://steamcommunity.com/id/theminxlynx/myworkshopfiles/?appid=281990]TheMinxLynx[/url].
 
 [h1]Template for settings menu[/h1]
 You probably know it, GUI modding in Stellaris is quite hard and annoying. But having a good looking event is really nice. So I created a template you can freely use and change!
 Checkout [url=https://steamcommunity.com/workshop/filedetails/discussion/2458024521/3131667021971880420/]this discussion[/url] for more info on it!
 
 [h1]Credits[/h1]
+Thanks to mr_trousers for the keyboard feature and to TheMinxLynx for design advice.
 Thanks to Mario for allowing me to use this mod name.
 Thanks to OldEnt for making an example template.
-Thanks to The Stellaris Modding Den and mr_trousers.
+Thanks to The Stellaris Modding Den.
 
 [h1]Legal Stuff[/h1]
 Do not copy any content from this mod without permission. This includes modpacking of course (instead do a steam collection and let your user merge locally).
-You have my permission to use the template (event and gui code). Make sure to rename the elements if you change them. Please credit ;)
+You have my permission to use the template (event and gui code files having "template" in the name). Make sure to rename the elements if you change them. Please credit ;)
 
 [url=https://github.com/calniotrey/dynamic-mod-menu]Github link[/url]
 [url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]

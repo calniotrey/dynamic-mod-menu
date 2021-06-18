@@ -148,8 +148,69 @@ dmm_keyboard_add_letter = {
 	}
 }
 
+# dmm_keyboard_add_letter_post = {
+# 	event_target:dmm_keyboard_country = {
+# 		set_variable = {
+# 			which = dmm_keyboard_spaces_amount
+# 			value = 0
+# 		}
+# 		if = {
+# 			limit = {
+# 				check_variable = {
+# 					which = dmm_keyboard_current_color
+# 					value != dmm_keyboard_selected_color
+# 				}
+# 			}
+# 			# color changed
+# 			set_variable = {
+# 				which = dmm_keyboard_current_color
+# 				value = dmm_keyboard_selected_color
+# 			}
+# 			if = {
+# 				limit = {
+# 					has_country_flag = dmm_keyboard_colored
+# 				}
+# 				if = {
+# 					limit = {
+# 						check_variable = {
+# 							which = dmm_keyboard_current_color
+# 							value = 0
+# 						}
+# 					}
+# 					# color goes back to default
+# 					remove_country_flag = dmm_keyboard_colored
+# 				}
+# 				else = {
+# 					event_target:dmm_keyboard_leader = {
+# 						set_leader_flag = dmm_keyboard_colored
+# 					}
+# 				}
+# 			}
+# 			else = {
+# 				if = {
+# 					limit = {
+# 						check_variable = {
+# 							which = dmm_keyboard_current_color
+# 							value != 0
+# 						}
+# 					}
+# 					# this is non-default color
+# 					set_country_flag = dmm_keyboard_colored
+# 					event_target:dmm_keyboard_leader = {
+# 						set_leader_flag = dmm_keyboard_colored
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	dmm_keyboard_clear_diacritics = yes
+# }
 # this = country
 dmm_keyboard_remove_letter = {
+	# copy info from the ruler to the country and free the ruler
+	# ie load previous letter and its spaces/color
+	# here, the ruler is != current leader, because they can be the same only when spaces > 0 (and don't execute this code)
+	# and when spaces gets to 0, another leader is selected as leader (next delete will execute this)
 	event_target:dmm_keyboard_country = {
 		# save_event_target_as = dmm_keyboard_current_leader
 		set_variable = {

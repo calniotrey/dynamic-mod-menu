@@ -14,7 +14,7 @@ country_event = {
 					which = dmm_keyboard_name_length
 					value = 0
 				}
-				set_name = "dmm_keyboard_selected_color_code_white_alone"
+				set_name = ""
 				remove_leader_flag = dmm_keyboard_idle
 			}
 			# create_leader = {
@@ -2811,23 +2811,50 @@ country_event = {
 			}
 			remove_country_flag = dmm_keyboard_capslock
 			dmm_keyboard_clear_diacritics = yes
-			event_target:dmm_keyboard_rename_target = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
-				fire_on_action = {
-					on_action = dmm_keyboard_rename_finished
-					scopes = {
-						from = root
-					}
-				}
-			}
+			# event_target:dmm_keyboard_rename_target = {
+			# 	set_name = "[dmm_keyboard_current_leader.GetName]"
+			# 	fire_on_action = {
+			# 		on_action = dmm_keyboard_rename_finished
+			# 		scopes = {
+			# 			from = root
+			# 		}
+			# 	}
+			# }
 			event_target:dmm_keyboard_country = {
 				every_owned_leader = {
 					dmm_keyboard_free_leader = yes
-				}
-				ruler = {
-					dmm_keyboard_free_leader = yes
+					if = {
+						limit = {
+							is_variable_set = dmm_keyboard_current_color
+						}
+						clear_variable = dmm_keyboard_current_color
+					}
+					if = {
+						limit = {
+							is_variable_set = dmm_keyboard_spaces_amount
+						}
+						clear_variable = dmm_keyboard_spaces_amount
+					}
 				}
 				set_country_flag = dmm_keyboard_idle_country
+				if = {
+					limit = {
+						is_variable_set = dmm_keyboard_current_color
+					}
+					clear_variable = dmm_keyboard_current_color
+				}
+				if = {
+					limit = {
+						is_variable_set = dmm_keyboard_selected_color
+					}
+					clear_variable = dmm_keyboard_selected_color
+				}
+				if = {
+					limit = {
+						is_variable_set = dmm_keyboard_spaces_amount
+					}
+					clear_variable = dmm_keyboard_spaces_amount
+				}
 			}
 		}
 	}
