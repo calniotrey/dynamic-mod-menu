@@ -5,7 +5,7 @@ This mod adds a button on the main menu (opened up by pressing escape) that open
 The mods simply have to register themselves. If you don't see the mod you're looking for, you can [b]kindly[/b] ask its modder to come see this mod description, so they can see if they want to make their mod register itself.
 
 Concerning the keyboard feature:
-You can use SHIFT+A for an A. You can activate capslock with CTRL+C and spaces with CTRL+S. The majority of the special chars need a click (except for + and - with use the numpad + and -).
+You can use SHIFT+A for an A. You can activate capslock with CTRL+C and spaces with CTRL+S. The majority of the special chars need a click (except for + and - with use the numpad + and -). The keyboard will only work properly on 3.1+, for older version check out the github.
 
 Place this mod below SWFR and any other mod altering interface/mainmenu_view.gui.
 This mod changes checksum and has nearly no compatibility issues.
@@ -22,6 +22,7 @@ This is a non-exhaustive list, if you know of other mods supporting DMM, feel fr
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2297628906]AutoFabs Origin[/url] by James Fire
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2487827530]Choosable Repeatables[/url] by TheFlyingPotato
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2033764043]Crisis Manager[/url] by FirePrince and others
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2389164674]Fatherland: Colonial Empires[/url] by StormFather
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460049826]Interstellar Incorporated: Space Corp [3.0][/url] by mr_trousers and TheFlyingPotato
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2245491122]Locate It![/url] by BurningRaptor
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458738951]Machine Intelligence Ruler Replacer[/url] by SableDrake

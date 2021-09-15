@@ -125,18 +125,18 @@ dmm_keyboard_add_letter = {
 			# set_name = "[dmm_keyboard_current_leader.GetName]"
 			set_variable = {
 				which = dmm_keyboard_name_length
-				value = event_target:dmm_keyboard_current_leader
+				value = event_target:dmm_keyboard_current_leader.dmm_keyboard_name_length
 			}
 			set_variable = {
 				which = dmm_keyboard_current_color
-				value = prev
+				value = prev.dmm_keyboard_current_color
 			}
 			prev = {
 				set_leader = prev
 			}
 			set_variable = {
 				which = dmm_keyboard_spaces_amount				# number of spaces at the end of his name
-				value = event_target:dmm_keyboard_country
+				value = event_target:dmm_keyboard_country.dmm_keyboard_spaces_amount
 			}
 		}
 	}
@@ -215,11 +215,11 @@ dmm_keyboard_remove_letter = {
 		# save_event_target_as = dmm_keyboard_current_leader
 		set_variable = {
 			which = dmm_keyboard_spaces_amount
-			value = ruler
+			value = ruler.dmm_keyboard_spaces_amount
 		}
 		set_variable = {
 			which = dmm_keyboard_current_color
-			value = ruler
+			value = ruler.dmm_keyboard_current_color
 		}
 		ruler = {
 			dmm_keyboard_free_leader = yes
@@ -282,7 +282,7 @@ dmm_keyboard_get_previous_leader = {
 				is_variable_set = dmm_keyboard_name_length
 				check_variable = {
 					which = dmm_keyboard_name_length
-					value = prevprev
+					value = prevprev.dmm_keyboard_name_length
 				}
 			}
 			prev = {
