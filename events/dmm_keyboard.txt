@@ -14,7 +14,7 @@ country_event = {
 					which = dmm_keyboard_name_length
 					value = 0
 				}
-				set_name = ""
+				set_name = "$dmm_keyboard_empty$"
 				remove_leader_flag = dmm_keyboard_idle
 			}
 			# create_leader = {
@@ -64,7 +64,10 @@ country_event = {
 					}
 				}
 				event_target:dmm_keyboard_current_leader = {
-					set_name = "[dmm_keyboard_current_leader.GetName]$dmm_keyboard_selected_color_code_default$"
+					set_name = {
+						key = "dmm_keyboard_submit_set_name"
+						variable_string = "[dmm_keyboard_current_leader.GetName]"
+					}
 				}
 				clear_variable = dmm_keyboard_selected_color
 				event_target:dmm_keyboard_country = {
@@ -74,7 +77,10 @@ country_event = {
 			remove_country_flag = dmm_keyboard_capslock
 			dmm_keyboard_clear_diacritics = yes
 			event_target:dmm_keyboard_rename_target = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 				fire_on_action = {
 					on_action = dmm_keyboard_rename_finished
 					scopes = {
@@ -132,10 +138,35 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				# test 3.4
+				# set_name = "[dmm_keyboard_current_leader.GetName]"
+				# log = "Setting name"
+				# log = "Current name [this.GetName]"
+				# log = "dmm_keyboard_current_leader.name [dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
+				# log = "Name is set"
+				# log = "Current name [this.GetName]"
+				# log = "dmm_keyboard_current_leader.name [dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardA]"
+				# test 3.4
+				# set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardA]"
+				# log = "Setting name"
+				# log = "Current name [this.GetName]"
+				# log = "dmm_keyboard_current_leader.name [dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_a_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardA]"
+				}
+				# log = "Name is set"
+				# log = "Current name [this.GetName]"
+				# log = "dmm_keyboard_current_leader.name [dmm_keyboard_current_leader.GetName]"
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -158,10 +189,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardB]"
+				set_name = {
+					key = "dmm_keyboard_b_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardB]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -184,10 +224,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardC]"
+				set_name = {
+					key = "dmm_keyboard_c_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardC]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -210,10 +259,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardD]"
+				set_name = {
+					key = "dmm_keyboard_d_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardD]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -236,10 +294,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardE]"
+				set_name = {
+					key = "dmm_keyboard_e_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardE]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -262,10 +329,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardF]"
+				set_name = {
+					key = "dmm_keyboard_f_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardF]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -288,10 +364,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardG]"
+				set_name = {
+					key = "dmm_keyboard_g_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardG]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -314,10 +399,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardH]"
+				set_name = {
+					key = "dmm_keyboard_h_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardH]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -340,10 +434,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardI]"
+				set_name = {
+					key = "dmm_keyboard_i_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardI]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -366,10 +469,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardJ]"
+				set_name = {
+					key = "dmm_keyboard_j_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardJ]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -392,10 +504,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardK]"
+				set_name = {
+					key = "dmm_keyboard_k_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardK]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -418,10 +539,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardL]"
+				set_name = {
+					key = "dmm_keyboard_l_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardL]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -444,10 +574,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardM]"
+				set_name = {
+					key = "dmm_keyboard_m_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardM]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -470,10 +609,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardN]"
+				set_name = {
+					key = "dmm_keyboard_n_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardN]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -496,10 +644,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardO]"
+				set_name = {
+					key = "dmm_keyboard_o_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardO]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -522,10 +679,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardP]"
+				set_name = {
+					key = "dmm_keyboard_p_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardP]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -548,10 +714,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardQ]"
+				set_name = {
+					key = "dmm_keyboard_q_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardQ]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -574,10 +749,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardR]"
+				set_name = {
+					key = "dmm_keyboard_r_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardR]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -600,10 +784,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardS]"
+				set_name = {
+					key = "dmm_keyboard_s_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardS]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -626,10 +819,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardT]"
+				set_name = {
+					key = "dmm_keyboard_t_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardT]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -652,10 +854,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardU]"
+				set_name = {
+					key = "dmm_keyboard_u_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardU]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -678,10 +889,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardV]"
+				set_name = {
+					key = "dmm_keyboard_v_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardV]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -704,10 +924,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardW]"
+				set_name = {
+					key = "dmm_keyboard_w_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardW]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -730,10 +959,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardX]"
+				set_name = {
+					key = "dmm_keyboard_x_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardX]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -756,10 +994,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardY]"
+				set_name = {
+					key = "dmm_keyboard_y_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardY]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -782,10 +1029,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardZ]"
+				set_name = {
+					key = "dmm_keyboard_z_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardZ]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -808,10 +1064,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardAShift]"
+				set_name = {
+					key = "dmm_keyboard_a_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardAShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -834,10 +1099,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardBShift]"
+				set_name = {
+					key = "dmm_keyboard_b_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardBShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -860,10 +1134,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardCShift]"
+				set_name = {
+					key = "dmm_keyboard_c_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardCShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -886,10 +1169,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardDShift]"
+				set_name = {
+					key = "dmm_keyboard_d_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardDShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -912,10 +1204,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardEShift]"
+				set_name = {
+					key = "dmm_keyboard_e_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardEShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -938,10 +1239,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardFShift]"
+				set_name = {
+					key = "dmm_keyboard_f_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardFShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -964,10 +1274,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardGShift]"
+				set_name = {
+					key = "dmm_keyboard_g_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardGShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -990,10 +1309,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardHShift]"
+				set_name = {
+					key = "dmm_keyboard_h_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardHShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1016,10 +1344,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardIShift]"
+				set_name = {
+					key = "dmm_keyboard_i_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardIShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1042,10 +1379,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardJShift]"
+				set_name = {
+					key = "dmm_keyboard_j_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardJShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1068,10 +1414,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKShift]"
+				set_name = {
+					key = "dmm_keyboard_k_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardKShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1094,10 +1449,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardLShift]"
+				set_name = {
+					key = "dmm_keyboard_l_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardLShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1120,10 +1484,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardMShift]"
+				set_name = {
+					key = "dmm_keyboard_m_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardMShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1146,10 +1519,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardNShift]"
+				set_name = {
+					key = "dmm_keyboard_n_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardNShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1172,10 +1554,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardOShift]"
+				set_name = {
+					key = "dmm_keyboard_o_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardOShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1198,10 +1589,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardPShift]"
+				set_name = {
+					key = "dmm_keyboard_p_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardPShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1224,10 +1624,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardQShift]"
+				set_name = {
+					key = "dmm_keyboard_q_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardQShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1250,10 +1659,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardRShift]"
+				set_name = {
+					key = "dmm_keyboard_r_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardRShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1276,10 +1694,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardSShift]"
+				set_name = {
+					key = "dmm_keyboard_s_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardSShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1302,10 +1729,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardTShift]"
+				set_name = {
+					key = "dmm_keyboard_t_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardTShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1328,10 +1764,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardUShift]"
+				set_name = {
+					key = "dmm_keyboard_u_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardUShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1354,10 +1799,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardVShift]"
+				set_name = {
+					key = "dmm_keyboard_v_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardVShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1380,10 +1834,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardWShift]"
+				set_name = {
+					key = "dmm_keyboard_w_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardWShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1406,10 +1869,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardXShift]"
+				set_name = {
+					key = "dmm_keyboard_x_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardXShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1432,10 +1904,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardYShift]"
+				set_name = {
+					key = "dmm_keyboard_y_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardYShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1458,10 +1939,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardZShift]"
+				set_name = {
+					key = "dmm_keyboard_z_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardZShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1484,10 +1974,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard1]"
+				set_name = {
+					key = "dmm_keyboard_1_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard1]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1510,10 +2009,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard2]"
+				set_name = {
+					key = "dmm_keyboard_2_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard2]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1536,10 +2044,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard3]"
+				set_name = {
+					key = "dmm_keyboard_3_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard3]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1562,10 +2079,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard4]"
+				set_name = {
+					key = "dmm_keyboard_4_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard4]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1588,10 +2114,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard5]"
+				set_name = {
+					key = "dmm_keyboard_5_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard5]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1614,10 +2149,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard6]"
+				set_name = {
+					key = "dmm_keyboard_6_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard6]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1640,10 +2184,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard7]"
+				set_name = {
+					key = "dmm_keyboard_7_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard7]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1666,10 +2219,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard8]"
+				set_name = {
+					key = "dmm_keyboard_8_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard8]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1692,10 +2254,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard9]"
+				set_name = {
+					key = "dmm_keyboard_9_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard9]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1718,10 +2289,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard0]"
+				set_name = {
+					key = "dmm_keyboard_0_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard0]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1744,10 +2324,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKPMinus]"
+				set_name = {
+					key = "dmm_keyboard_kp_minus_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardKPMinus]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1770,10 +2359,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKPPlus]"
+				set_name = {
+					key = "dmm_keyboard_kp_plus_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardKPPlus]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1796,10 +2394,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard1Shift]"
+				set_name = {
+					key = "dmm_keyboard_1_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard1Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1822,10 +2429,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard2Shift]"
+				set_name = {
+					key = "dmm_keyboard_2_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard2Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1848,10 +2464,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard3Shift]"
+				set_name = {
+					key = "dmm_keyboard_3_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard3Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1874,10 +2499,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard4Shift]"
+				set_name = {
+					key = "dmm_keyboard_4_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard4Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1900,10 +2534,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard5Shift]"
+				set_name = {
+					key = "dmm_keyboard_5_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard5Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1926,10 +2569,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard6Shift]"
+				set_name = {
+					key = "dmm_keyboard_6_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard6Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1952,10 +2604,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard7Shift]"
+				set_name = {
+					key = "dmm_keyboard_7_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard7Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -1978,10 +2639,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard8Shift]"
+				set_name = {
+					key = "dmm_keyboard_8_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard8Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2004,10 +2674,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard9Shift]"
+				set_name = {
+					key = "dmm_keyboard_9_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard9Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2030,10 +2709,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboard0Shift]"
+				set_name = {
+					key = "dmm_keyboard_0_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboard0Shift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2056,10 +2744,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKPMinusShift]"
+				set_name = {
+					key = "dmm_keyboard_kp_minus_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardKPMinusShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2082,10 +2779,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardKPPlusShift]"
+				set_name = {
+					key = "dmm_keyboard_kp_plus_shift_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardKPPlusShift]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2108,10 +2814,18 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]{"
+				set_name = {
+					key = "dmm_keyboard_left_brace_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2134,10 +2848,18 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]}"
+				set_name = {
+					key = "dmm_keyboard_right_brace_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2160,10 +2882,18 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]:"
+				set_name = {
+					key = "dmm_keyboard_colon_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2186,10 +2916,18 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]'"
+				set_name = {
+					key = "dmm_keyboard_apostrophe_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2212,10 +2950,18 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode],"
+				set_name = {
+					key = "dmm_keyboard_comma_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2238,10 +2984,18 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]."
+				set_name = {
+					key = "dmm_keyboard_period_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2264,10 +3018,18 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]/"
+				set_name = {
+					key = "dmm_keyboard_slash_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2384,7 +3146,11 @@ country_event = {
 			}
 			else = {
 				event_target:dmm_keyboard_current_leader = {
-					set_name = "[dmm_keyboard_country.ruler.GetName]"
+					# set_name = "[dmm_keyboard_country.ruler.GetName]"
+					set_name = {
+						key = "dmm_keyboard_ruler_get_name"
+						variable_string = "[dmm_keyboard_country.ruler.GetName]"
+					}
 				}
 				dmm_keyboard_remove_letter = yes
 				if = {
@@ -2480,10 +3246,18 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]ß"
+				set_name = {
+					key = "dmm_keyboard_eszett_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2506,10 +3280,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardCcedilla]"
+				set_name = {
+					key = "dmm_keyboard_ccedilla_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardCcedilla]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2532,10 +3315,19 @@ country_event = {
 		hidden_effect = {
 			dmm_keyboard_add_letter = yes
 			event_target:dmm_keyboard_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName]"
+				set_name = {
+					key = "dmm_keyboard_leader_get_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+				}
 			}
 			event_target:dmm_keyboard_current_leader = {
-				set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode][dmm_keyboard_country.GetKeyboardAsh]"
+				set_name = {
+					key = "dmm_keyboard_ash_set_name"
+					variable_string = "[dmm_keyboard_current_leader.GetName]"
+					variable_string = "[This.GetKeyboardSpace]"
+					variable_string = "[This.GetKeyboardColorCode]"
+					variable_string = "[dmm_keyboard_country.GetKeyboardAsh]"
+				}
 			}
 			event_target:dmm_keyboard_country = {
 				set_variable = {
@@ -2802,7 +3594,10 @@ country_event = {
 				}
 				event_target:dmm_keyboard_current_leader = {
 					# set_name = "[dmm_keyboard_current_leader.GetName][This.GetKeyboardSpace][This.GetKeyboardColorCode]§!"
-					set_name = "[dmm_keyboard_current_leader.GetName]$dmm_keyboard_selected_color_code_default$"
+					set_name = {
+						key = "dmm_keyboard_submit_set_name"
+						variable_string = "[dmm_keyboard_current_leader.GetName]"
+					}
 				}
 				clear_variable = dmm_keyboard_selected_color
 				event_target:dmm_keyboard_country = {

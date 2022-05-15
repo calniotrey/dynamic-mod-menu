@@ -134,7 +134,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = ""
+		localization_key = "dmm_keyboard_empty"
 	}
 	text = {
 		trigger = {
@@ -576,7 +576,7 @@ defined_text = {
 				has_country_flag = dmm_keyboard_capslock
 			}
 		}
-		localization_key = ""
+		localization_key = "dmm_keyboard_empty"
 	}
 }
 
@@ -586,7 +586,7 @@ defined_text = {
 		trigger = {
 			has_country_flag = dmm_keyboard_capslock
 		}
-		localization_key = ""
+		localization_key = "dmm_keyboard_empty"
 	}
 	text = {
 		trigger = {
