@@ -145,6 +145,14 @@ guiTypes = {
 			fixedSize = yes
 			alwaysTransparent = yes
 		}
+
+		buttonType = {
+			name = "tts_button"
+			position = { x = -1000 y = -1000 }
+			spriteType = "GFX_button_tts_start"
+			buttonFont = "cg_16b"
+			shortCut = "t"
+		}
 		
 		buttonType = {
 			name = "alien_message_background"

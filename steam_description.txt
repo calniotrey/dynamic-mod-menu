@@ -20,6 +20,7 @@ This is a non-exhaustive list, if you know of other mods supporting DMM, feel fr
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2268189539]Aggressive Crisis Engine[/url] by OldEnt, Rodahtnov and Fiiral
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1830063425]AI Species Limit[/url] by mario0244
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2297628906]AutoFabs Origin[/url] by James Fire
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2835586880]Better Planet Automation[/url] by Douglas Miller
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2487827530]Choosable Repeatables[/url] by TheFlyingPotato
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2558262194]Crisis Manager[/url] by FirePrince and others
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1590362799]Dynamic Difficulty - Ultimate Customization[/url] by Gratak
@@ -33,7 +34,11 @@ This is a non-exhaustive list, if you know of other mods supporting DMM, feel fr
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2752952962]Realistic Pirates [3.3.☠][/url] by FirePrince
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460698354]Otter Editor's Dynamic Mod Menu Add-on[/url] by Seamoo
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=899795759]Ruler Level System[/url] by jasonpepe
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2821711162]! Sartek Tradition - Ascension Perk Merger[/url] by ArutamSartek
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2423885359]Space Exploitation[/url] by James Fire
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1712760331]~ StarNet AI[/url] by salvor and OldEnt
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2494712590]StarTech AI[/url] by salvor and OldEnt
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2865524513]Uncivic: New Mechanics for Vanilla Civics[/url] by MichaelMakesGames
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2462927769]Weapon Research Menu[/url] by SableDrake
 [/list]
 
@@ -44,24 +49,25 @@ All the infos are [url=https://steamcommunity.com/workshop/filedetails/discussio
 I had to move them from this page to that discussion because steam limits the size of the workshop description.
 
 [h2]Keyboard Feature[/h2]
-This mod also adds a "keyboard" that allows the player to rename stuff. Simply use [code]dmm_keyboard_rename = TARGET = thing_to_rename }[/code] in the country scope of the player (you can use event targets for the TARGET).
+This mod also adds a "keyboard" that allows the player to rename stuff. Simply use [code]dmm_keyboard_rename = { TARGET = thing_to_rename }[/code] in the country scope of the player (you can use event targets for the TARGET).
 Once the renaming is done, the on_action [code]dmm_keyboard_rename_finished (this = TARGET, from = player country that renamed)[/code] will be fired. If you use it, use a unique flag to make sure that it was your mod that required the rename and check the scope type before (`is_scope_type = leader` if checking for a leader flag).
 See example add-on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2519537561]here[/url]
 This feature was codeveloped with [url=https://steamcommunity.com/profiles/76561198053578024/myworkshopfiles/?appid=281990]mr_trousers[/url] with some design advice from [url=https://steamcommunity.com/id/theminxlynx/myworkshopfiles/?appid=281990]TheMinxLynx[/url].
 
-[h1]Template for settings menu[/h1]
-You probably know it, GUI modding in Stellaris is quite hard and annoying. But having a good looking event is really nice. So I created a template you can freely use and change!
+[h2]Template for settings menu[/h2]
+You probably know it, modding GUI in Stellaris is quite hard and annoying. But having a good looking event is really nice. So I created a template you can freely use and change!
 Checkout [url=https://steamcommunity.com/workshop/filedetails/discussion/2458024521/3131667021971880420/]this discussion[/url] for more info on it!
 
 [h1]Credits[/h1]
-Thanks to mr_trousers for the keyboard feature and to TheMinxLynx for design advice.
-Thanks to Mario for allowing me to use this mod name.
-Thanks to OldEnt for making an example template.
-Thanks to The Stellaris Modding Den.
+Thank you to mr_trousers for the keyboard feature and to TheMinxLynx for design advice.
+Thank you to Mario for allowing me to use this mod name.
+Thank you to OldEnt for making an example template.
+Thank you to The Stellaris Modding Den.
 
 [h1]Legal Stuff[/h1]
 Do not copy any content from this mod without permission. This includes modpacking of course (instead do a steam collection and let your user merge locally).
 You have my permission to use the template (event and gui code files having "template" in the name). Make sure to rename the elements if you change them. Please credit ;)
 
 [url=https://github.com/calniotrey/dynamic-mod-menu]Github link[/url]
+[url=https://github.com/calniotrey/dynamic-mod-menu/releases/tag/v1.1.1]Link for manual install for 3.3[/url]
 [url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]

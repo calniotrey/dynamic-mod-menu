@@ -14,7 +14,7 @@ country_event = {
 					which = dmm_keyboard_name_length
 					value = 0
 				}
-				set_name = "$dmm_keyboard_empty$"
+				set_name = "dmm_keyboard_empty"
 				remove_leader_flag = dmm_keyboard_idle
 			}
 			# create_leader = {
@@ -81,6 +81,17 @@ country_event = {
 					key = "dmm_keyboard_leader_get_name"
 					variable_string = "[dmm_keyboard_current_leader.GetName]"
 				}
+				if = {
+					limit = {
+						event_target:dmm_keyboard_current_leader = {
+							is_variable_set = dmm_keyboard_spaces_amount
+						}
+					}
+					set_variable = {
+						which = dmm_keyboard_spaces_amount
+						value = event_target:dmm_keyboard_current_leader.dmm_keyboard_spaces_amount
+					}
+				}
 				fire_on_action = {
 					on_action = dmm_keyboard_rename_finished
 					scopes = {
@@ -96,6 +107,7 @@ country_event = {
 					dmm_keyboard_free_leader = yes
 				}
 				set_country_flag = dmm_keyboard_idle_country
+				remove_country_flag = dmm_keyboard_capslock
 			}
 		}
 	}
@@ -3632,6 +3644,7 @@ country_event = {
 					}
 				}
 				set_country_flag = dmm_keyboard_idle_country
+				remove_country_flag = dmm_keyboard_capslock
 				if = {
 					limit = {
 						is_variable_set = dmm_keyboard_current_color
