@@ -1,0 +1,6 @@
+# this = target where the variable was set
+# from = player country
+dmm_numpad_input_finished = {
+	events = {
+	}
+}

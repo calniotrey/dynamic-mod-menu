@@ -1,0 +1,175 @@
+# TARGET : should accept set_name
+# country scope = player country
+dmm_numpad_input = {
+	$TARGET$ = {
+		save_event_target_as = dmm_numpad_input_target
+	}
+	country_event = {
+		id = dmm_numpad.0
+	}
+}
+
+# this = player country
+# NUMBER : from 0 to 9
+dmm_numpad_initialize = {
+	set_variable = {
+		which = dmm_numpad_current_input
+		value = 0
+	}
+	set_variable = {
+		which = dmm_numpad_current_multiplier
+		value = 1
+	}
+	set_variable = {
+		which = dmm_numpad_previous_input
+		value = 0
+	}
+	set_variable = {
+		which = dmm_numpad_previous_multiplier
+		value = 1
+	}
+}
+
+# this = player country
+# NUMBER : from 0 to 9
+dmm_numpad_add_number = {
+	set_variable = {
+		which = dmm_numpad_previous_input
+		value = dmm_numpad_current_input
+	}
+	set_variable = {
+		which = dmm_numpad_previous_multiplier
+		value = dmm_numpad_current_multiplier
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = dmm_numpad_current_multiplier
+				value = 1
+			}
+		}
+		multiply_variable = {
+			which = dmm_numpad_current_input
+			value = 10
+		}
+		change_variable = {
+			which = dmm_numpad_current_input
+			value = $NUMBER$
+		}
+	}
+	else = {
+		set_variable = {
+			which = dmm_numpad_temp
+			value = $NUMBER$
+		}
+		multiply_variable = {
+			which = dmm_numpad_temp
+			value = dmm_numpad_current_multiplier
+		}
+		change_variable = {
+			which = dmm_numpad_current_input
+			value = dmm_numpad_temp
+		}
+		clear_variable = dmm_numpad_temp
+		divide_variable = {
+			which = dmm_numpad_current_multiplier
+			value = 10
+		}
+	}
+}
+
+# this = player country
+dmm_numpad_add_point = {
+	if = {
+		limit = {
+			check_variable = {
+				which = dmm_numpad_current_multiplier
+				value = 1
+			}
+		}
+		set_variable = {
+			which = dmm_numpad_previous_input
+			value = dmm_numpad_current_input
+		}
+		set_variable = {
+			which = dmm_numpad_previous_multiplier
+			value = dmm_numpad_current_multiplier
+		}
+		set_variable = {
+			which = dmm_numpad_current_multiplier
+			value = 0.1
+		}
+	}
+}
+
+# this = player country
+dmm_numpad_remove_last_number = {
+	# set to previous value
+	set_variable = {
+		which = dmm_numpad_current_input
+		value = dmm_numpad_previous_input
+	}
+	set_variable = {
+		which = dmm_numpad_current_multiplier
+		value = dmm_numpad_previous_multiplier
+	}
+	# then compute next previous values
+	if = {
+		limit = {
+			check_variable = {
+				which = dmm_numpad_previous_multiplier
+				value = 1
+			}
+		}
+		# 17, multiplier is 1 => we want 1
+		divide_variable = {
+			which = dmm_numpad_previous_input
+			value = 10
+		}
+		floor_variable = dmm_numpad_previous_input
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dmm_numpad_previous_multiplier
+				value = 0.1
+			}
+		}
+		# 17., multiplier is 0.1 => we want 17 without point
+		set_variable = {
+			which = dmm_numpad_previous_multiplier
+			value = 1
+		}
+	}
+	else = {
+		# 17.24, multiplier is 0.001, 1/(100*multiplier) is 10 => 17.24/(100*multiplier) = 172.4 gets floored to 172, then 172*(100*multiplier) => 17.2
+		# 17.248, multiplier is 0.0001, 1/(100*multiplier) is 100 => 17.248/(100*multiplier) = 1724.8 gets floored to 1724, then 1724*(100*multiplier) => 17.24
+		# first example 17.24
+		set_variable = {
+			which = dmm_numpad_temp
+			value = 100
+		}
+		multiply_variable = {
+			which = dmm_numpad_temp
+			value = dmm_numpad_previous_multiplier
+		}
+		# temp = 0.1, input = 17.24
+		divide_variable = {
+			which = dmm_numpad_previous_input
+			value = dmm_numpad_temp
+		}
+		# temp = 0.1, input = 172.4
+		floor_variable = dmm_numpad_previous_input
+		# temp = 0.1, input = 172
+		multiply_variable = {
+			which = dmm_numpad_previous_input
+			value = dmm_numpad_temp
+		}
+		# temp = 0.1, input = 17.2
+		multiply_variable = {
+			which = dmm_numpad_previous_multiplier
+			value = 10
+		}
+		clear_variable = dmm_numpad_temp
+	}
+}

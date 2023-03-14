@@ -1,0 +1,65 @@
+defined_text = {
+	name = GetNumpadPoint
+	text = {
+		trigger = {
+			check_variable = {
+				which = dmm_numpad_current_multiplier
+				value = 0.1
+			}
+		}
+		localization_key = "dmm_numpad_point"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = dmm_numpad_current_multiplier
+				value != 0.1
+			}
+		}
+		localization_key = "dmm_numpad_empty"
+	}
+}
+
+defined_text = {
+	name = GetNumpadPointPrevious
+	text = {
+		trigger = {
+			check_variable = {
+				which = dmm_numpad_previous_multiplier
+				value = 0.1
+			}
+		}
+		localization_key = "dmm_numpad_point"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = dmm_numpad_previous_multiplier
+				value != 0.1
+			}
+		}
+		localization_key = "dmm_numpad_empty"
+	}
+}
+
+defined_text = {
+	name = GetCurrentInput
+	text = {
+		trigger = {
+			check_variable = {
+				which = dmm_numpad_current_input
+				value = 0
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = dmm_numpad_current_input
+				value != 0
+			}
+		}
+		localization_key = "[this.dmm_numpad_current_input]"
+	}
+}

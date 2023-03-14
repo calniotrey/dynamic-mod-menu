@@ -1,0 +1,275 @@
+namespace = dmm_numpad
+#
+# this = player country
+country_event = {
+	id = dmm_numpad.0
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		dmm_numpad_initialize = yes
+		country_event = {
+			id = dmm_numpad.100
+		}
+	}
+}
+
+#this = player/country pressing the button
+country_event = {
+	id = dmm_numpad.100
+	is_triggered_only = yes
+	title = "dmm_numpad.100.name"
+	desc = "dmm_numpad.100.desc"
+	diplomatic = yes
+	custom_gui = "dmm_numpad"
+	option = {
+		name = "dmm_numpad_submit"
+		custom_gui = "dmm_numpad_submit"
+		hidden_effect = {
+			event_target:dmm_numpad_input_target = {
+				set_variable = {
+					which = dmm_numpad_input
+					value = root.dmm_numpad_current_input
+				}
+				fire_on_action = {
+					on_action = dmm_numpad_input_finished
+					scopes = {
+						from = root
+					}
+				}
+			}
+			clear_variable = dmm_numpad_current_input
+		}
+	}
+	option = {
+		name = "dmm_numpad_1"
+		custom_gui = "dmm_numpad_1"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_1_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 1
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_2"
+		custom_gui = "dmm_numpad_2"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_2_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 2
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_3"
+		custom_gui = "dmm_numpad_3"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_3_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 3
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_4"
+		custom_gui = "dmm_numpad_4"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_4_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 4
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_5"
+		custom_gui = "dmm_numpad_5"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_5_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 5
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_6"
+		custom_gui = "dmm_numpad_6"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_6_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 6
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_7"
+		custom_gui = "dmm_numpad_7"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_7_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 7
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_8"
+		custom_gui = "dmm_numpad_8"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_8_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 8
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_9"
+		custom_gui = "dmm_numpad_9"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_9_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 6
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_0"
+		custom_gui = "dmm_numpad_0"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_0_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value > 0
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_number = {
+				NUMBER = 0
+			}
+		}
+	}
+	option = {
+		name = "dmm_numpad_point"
+		custom_gui = "dmm_numpad_point"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_point_response"
+		allow = {
+			hidden_trigger = {
+				check_variable = {
+					which = dmm_numpad_current_multiplier
+					value = 1
+				}
+			}
+		}
+		hidden_effect = {
+			dmm_numpad_add_point = yes
+		}
+	}
+	option = {
+		name = "dmm_numpad_backspace"
+		custom_gui = "dmm_numpad_backspace"
+		is_dialog_only = yes
+		response_text = "dmm_numpad_backspace_response"
+		hidden_effect = {
+			dmm_numpad_remove_last_number = yes
+		}
+	}
+	option = {
+		name = "dmm_numpad_cancel"
+		custom_gui = "dmm_numpad_cancel"
+		default_hide_option = yes
+		hidden_effect = {
+			# TODO
+		}
+	}
+	option = {
+		# hidden option, useful only for size > 0
+		name = dmm.100.close
+		custom_gui = "dmm_dummy_button"
+		hidden_effect = {
+			#discard changes
+		}
+	}
+}
