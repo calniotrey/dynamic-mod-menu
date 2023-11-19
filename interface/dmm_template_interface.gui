@@ -339,7 +339,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "dmm_template_right_checkbox_unchecked"
 		position = { x=0 y=0 }
-		size = { width = 0 height = 0 }
+		size = { width = 0 height = 40 }
 		moveable = no
 		
 		buttonType = {
@@ -354,7 +354,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "dmm_template_right_checkbox_checked"
 		position = { x=0 y=0 }
-		size = { width = 0 height = 0 }
+		size = { width = 0 height = 40 }
 		moveable = no
 		
 		buttonType = {
@@ -464,6 +464,13 @@ guiTypes = {
 			maxHeight = 22
 			fixedSize = yes
 			alwaysTransparent = yes
+		}
+
+		buttonType = {
+			name = "tts_button"
+			position = { x = -1000 y = -1000 }
+			spriteType = "GFX_button_tts_start"
+			buttonFont = "cg_16b"
 		}
 		
 		buttonType = {

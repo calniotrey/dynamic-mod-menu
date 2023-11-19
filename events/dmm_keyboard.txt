@@ -3089,6 +3089,38 @@ country_event = {
 		}
 	}
 	option = {
+		name = "dmm_keyboard_space"
+		custom_gui = "dmm_keyboard_space_multiplayer"
+		is_dialog_only = yes
+		response_text = "[dmm_keyboard_current_leader.GetName]"
+		hidden_effect = {
+			# if = {
+			# 	limit = {
+			# 		event_target:dmm_keyboard_country = {
+			# 			check_variable = {
+			# 				which = dmm_keyboard_spaces_amount
+			# 				value = 0
+			# 			}
+			# 		}
+			# 	}
+			# 	# first time adding a space
+			# 	event_target:dmm_keyboard_country = {
+			# 		set_leader = event_target:dmm_keyboard_current_leader
+			# 	}
+			# }
+			event_target:dmm_keyboard_country = {
+				set_leader = event_target:dmm_keyboard_current_leader
+			}
+			event_target:dmm_keyboard_country = {
+				change_variable = {
+					which = dmm_keyboard_spaces_amount
+					value = 1
+				}
+			}
+			dmm_keyboard_clear_diacritics = yes
+		}
+	}
+	option = {
 		name = "dmm_keyboard_backspace"
 		custom_gui = "dmm_keyboard_backspace"
 		is_dialog_only = yes
@@ -3168,6 +3200,7 @@ country_event = {
 				if = {
 					limit = {
 						event_target:dmm_keyboard_country = {
+							is_variable_set = dmm_keyboard_spaces_amount
 							check_variable = {
 								which = dmm_keyboard_spaces_amount
 								value > 0

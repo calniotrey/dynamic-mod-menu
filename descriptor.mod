@@ -1,8 +1,8 @@
-version="1.2.3"
+version="1.2.5"
 tags={
 	"Utilities"
 }
-name="Dynamic Mod Menu [3.7.*]"
+name="Dynamic Mod Menu [3.10.*]"
 picture="thumbnail.png"
-supported_version="3.6.*"
+supported_version="3.10.*"
 remote_file_id="2458024521"

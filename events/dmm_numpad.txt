@@ -207,7 +207,7 @@ country_event = {
 		}
 		hidden_effect = {
 			dmm_numpad_add_number = {
-				NUMBER = 6
+				NUMBER = 9
 			}
 		}
 	}

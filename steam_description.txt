@@ -5,13 +5,13 @@ This mod adds a button on the main menu (opened up by pressing escape) that open
 The mods simply have to register themselves. If you don't see the mod you're looking for, you can [b]kindly[/b] ask its modder to come see this mod description, so they can see if they want to make their mod register itself.
 
 Concerning the keyboard feature:
-You can use SHIFT+A for an A. You can activate capslock with CTRL+C and spaces with CTRL+S. The majority of the special chars need a click (except for + and - with use the numpad + and -). The keyboard will only work properly on 3.1+, for older version check out the github.
+You can use SHIFT+A for an A. You can activate capslock with CTRL+C and spaces with CTRL+S. The majority of the special chars need a click (except for + and - with use the numpad + and -).
 
 Place this mod below SWFR and any other mod altering interface/mainmenu_view.gui.
 This mod changes checksum and has nearly no compatibility issues.
 This mod alters interface/mainmenu_view.gui.
 If you don't see the button on the "escape menu", another mod is altering that file. To solve it, you can simply place DMM below it (or at the bottom of the load order).
-This mod is save game compatible.
+This mod is save game compatible. It can't be uninstalled during a game.
 
 [h2]Mods supporting DMM[/h2]
 This is a non-exhaustive list, if you know of other mods supporting DMM, feel free to comment ;)

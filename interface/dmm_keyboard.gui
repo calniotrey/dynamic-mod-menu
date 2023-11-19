@@ -1932,6 +1932,22 @@ guiTypes = {
 			shortcut = "CTRL+s"
 		}
 	}
+	containerWindowType = {
+		name = "dmm_keyboard_space_multiplayer"
+		position = { x=0 y=0 }
+		size = { width = 0 height = 0 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_keyboard_spacebar"
+			position = { x=10000 y=0 }
+			size = { x = 40 y = 30 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			shortcut = "space"
+		}
+	}
 
 	containerWindowType = {
 		name = "dmm_keyboard_backspace"
